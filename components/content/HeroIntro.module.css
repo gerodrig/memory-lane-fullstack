@@ -1,0 +1,78 @@
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.image-background {
+  background-size: cover;
+  height: 60vh;
+  width: 100%;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0;
+  background-color: rgba(60, 60, 60, 0.8);
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-top: 4px solid #d68eae;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 50px 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #d68eae;
+  border: none;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background: #fdfdfe;
+  color: #d68eae;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 100vh;
+  }
+
+  .hero .container {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero .container {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-height: 500px) {
+  .hero {
+    height: 260vh;
+  }
+}
