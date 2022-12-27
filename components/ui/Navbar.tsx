@@ -27,7 +27,7 @@ export const Navbar = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > 100) {
         setVisible(false);
-        setScrolled('fixed-top');
+        setScrolled(`${styles['header-scrolled']} fixed-top`);
       } else {
         setVisible(true);
         setScrolled('');

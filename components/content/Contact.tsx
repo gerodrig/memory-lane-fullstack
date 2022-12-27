@@ -18,8 +18,8 @@ export const Contact = () => {
       </div>
 
       <div>
-      {/* <h1 className='text-danger text-center'>MAP HERE</h1> */}
-      <MyMap />
+      <h1 className='text-danger text-center'>MAP HERE</h1>
+      {/* <MyMap /> */}
 
       </div>
 
