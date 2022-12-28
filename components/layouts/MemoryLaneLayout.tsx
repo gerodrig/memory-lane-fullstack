@@ -20,7 +20,7 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
   imageFullUrl,
 }) => {
 
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   //iniialized AOS
   useEffect(() => {
@@ -28,13 +28,13 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
   }, [])
 
   //check if window is loaded
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('load', () => {
-        setLoading(false);
-      });
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (typeof window !== 'undefined') {
+  //     window.addEventListener('load', () => {
+  //       setLoading(false);
+  //     });
+  //   }
+  // }, [])
 
   //if window is not loaded, show loading screen
   if (loading) {
