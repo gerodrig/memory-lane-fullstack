@@ -1,6 +1,6 @@
-import {HeroIntro, About, Services, Testimonials, Team, Gallery, Contact } from '../components/content/';
+import {HeroIntro, About, Services, Testimonials, Team, Gallery, Contact, ContactForm } from '../components/content/';
 import { MemoryLaneLayout } from '../components/layouts/MemoryLaneLayout';
-import { ContactForm } from '../components/ui';
+
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
 
         <About />
         <Services />
-        <ContactForm />
+        {/* <ContactForm /> */}
         <Testimonials />
         <Team />
         <Gallery />

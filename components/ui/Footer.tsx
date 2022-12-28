@@ -1,7 +1,8 @@
-import style from  '../../styles/Footer.module.css'
+import { Facebook, Twitter } from 'react-bootstrap-icons';
+import style from  '../../styles/Footer.module.css';
 
 export const Footer = () => {
-  return (
+  return ( 
     <footer id="footer" className={style.footer}>
       <div className={style['footer-top']}>
         <div className="container">
@@ -20,22 +21,22 @@ export const Footer = () => {
                   <strong>Email:</strong> mlliving14@gmail.com
                   <br />
                 </p>
-                <div className="social-links mt-3">
-                  <a href="#" className="twitter">
-                    <i className="bx bxl-twitter"></i>
+                <div className={`${style['social-links']} mt-3`}>
+                  <a href="https://twitter.com/memorylanehl" className="twitter" target="_blank" rel="noreferrer">
+                    <Twitter />
                   </a>
-                  <a href="#" className="facebook">
-                    <i className="bx bxl-facebook"></i>
+                  <a href="https://www.facebook.com/memorylanehomeliving/" className="facebook" target="_blank" rel="noreferrer">
+                    <Facebook />
                   </a>
-                  <a href="#" className="instagram">
+                  {/* <a href="#" className="instagram">
                     <i className="bx bxl-instagram"></i>
-                  </a>
-                  <a href="#" className="google-plus">
+                  </a> */}
+                  {/* <a href="#" className="google-plus">
                     <i className="bx bxl-skype"></i>
-                  </a>
-                  <a href="#" className="linkedin">
+                  </a> */}
+                  {/* <a href="#" className="linkedin">
                     <i className="bx bxl-linkedin"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

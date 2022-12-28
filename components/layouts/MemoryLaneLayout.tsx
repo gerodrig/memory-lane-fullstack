@@ -1,7 +1,10 @@
+import { FC, ReactNode, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FC, ReactNode } from 'react';
 import Head from 'next/head';
-import { Navbar, Footer } from '../ui/';
+import { Navbar, Footer, Loader } from '../ui/';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface MemoryLaneLayoutProps {
   title: string;
@@ -16,6 +19,28 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
   pageDescription,
   imageFullUrl,
 }) => {
+
+  const [loading, setLoading] = useState(true);
+
+  //iniialized AOS
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
+  //check if window is loaded
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('load', () => {
+        setLoading(false);
+      });
+    }
+  }, [])
+
+  //if window is not loaded, show loading screen
+  if (loading) {
+    return < Loader />;
+  }
+
   return (
     <>
       <Head>
