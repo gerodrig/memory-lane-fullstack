@@ -21,7 +21,7 @@ export const About = () => {
               <Image src="/assets/images/about2.jpg"
                 width={516}
                 height={248}
-                priority={false}
+                priority={true}
                 sizes="(max-width: 516px) 100vw, 516px"
                 className={`${style.image} img-fluid my-lg-5`}
                alt="home image" />
