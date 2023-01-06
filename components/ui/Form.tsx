@@ -74,7 +74,7 @@ export const Form = () => {
     }
 
   return (
-    <div className="col-lg-6">
+    <div id='appointment' className="col-lg-6">
       <form
         onSubmit={handleSubmit}
         method="post"
