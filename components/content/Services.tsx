@@ -254,7 +254,7 @@ export const Services = () => {
         </div>
 
         <FlyerImage className="mt-1 mb-5 col-sm-12" source='/assets/images/flyers/MLHL-care-support-last-thursday-of-month.png' />
-        {/* assets/flyers/MLHL-care-support-last-thursday-of-month.png flyer PICTURE HERE */}
+   
       </div>
     </section>
   );

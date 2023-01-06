@@ -11,26 +11,40 @@ export const Form = () => {
   });
   
   const [ loading , setLoading ] = useState(false);
+  const [ formSent , setFormSent ] = useState(false);
   const [ error , setError ] = useState(false);
 
   const { name, email, subject, message } = values;
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => setValues({ ...values, [e.target.name]: e.target.value });
 
+    const clearForm = () => {
+        setValues({
+            name: '',
+            email: '',
+            subject: '',
+            message: '',
+        });
+    };
+
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        console.log(values);
+        // console.log(values);
+        console.log(formSent);
 
         try {
+
             setLoading(true);
-            // await fetch('/api/contact', {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json',
-            //     },
-            //     body: JSON.stringify(values),
-            // });
-        
+
+            if(!formSent) {
+                // await fetch('/api/contact', {
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json',
+                //     },
+                //     body: JSON.stringify(values),
+                // });
+            }
 
             Swal.fire({
                 icon: 'success',
@@ -41,7 +55,8 @@ export const Form = () => {
                 confirmButtonColor: '#d68eae',
                 iconColor: '#d68eae',
             });
- 
+            clearForm();
+            setFormSent(true);
 
         } catch (error) {
             Swal.fire({
@@ -55,7 +70,7 @@ export const Form = () => {
             console.log(error);
         }
 
-        // setLoading(false);
+        setLoading(false);
     }
 
   return (

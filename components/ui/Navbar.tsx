@@ -29,10 +29,10 @@ export const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > 100) {
-        setVisible(false);
+        setVisible(false); 
         setScrolled(`${styles['header-scrolled']} fixed-top`);
       } else {
-        setVisible(true);
+        setVisible(true); 
         setScrolled('');
       }
     };
@@ -45,9 +45,9 @@ export const Navbar = () => {
   useEffect(() => {
     //check if window width is  less than 992px
     if (width < 992) {
-      setIsMobile(true);
+      setIsMobile(true); 
     } else {
-      setIsMobile(false);
+      setIsMobile(false); 
     }
   }, [width]);
 

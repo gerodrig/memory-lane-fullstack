@@ -19,13 +19,12 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
   pageDescription,
   imageFullUrl,
 }) => {
-
   const [loading, setLoading] = useState(false);
 
   //iniialized AOS
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
 
   //check if window is loaded
   // useEffect(() => {
@@ -38,7 +37,7 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
 
   //if window is not loaded, show loading screen
   if (loading) {
-    return < Loader />;
+    return <Loader />;
   }
 
   return (
@@ -52,10 +51,9 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={pageDescription} />
-      
+
         {/* display meta if image is available */}
         {imageFullUrl && <meta name="og:image" content={imageFullUrl} />}
-        
       </Head>
 
       {/* Navbar here */}

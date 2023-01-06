@@ -26,7 +26,8 @@ export const About = () => {
                 className={`${style.image} img-fluid my-lg-5`}
                alt="home image" />
             </div>
-            <div className={`col-lg-6 pt-4 pt-lg-0 ${style.content}`} data-aos="fade-left">
+            <div className={`col-lg-6 pt-4 pt-lg-0 ${style.content}`} data-aos="fade-right">
+          
               <h3>Memory Lane Home Living Inc. offers: </h3>
    
               <ul>
