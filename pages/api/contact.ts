@@ -15,7 +15,7 @@ type Data = {
 
 dotenv.config();
 
-const { SG_API_KEY, FROM_EMAIL, TO_EMAIL } = process.env;
+const { SG_API_KEY, FROM_EMAIL, TO_EMAIL} = process.env;
 console.log(SG_API_KEY, FROM_EMAIL, TO_EMAIL);
 
 sgMail.setApiKey(SG_API_KEY || '');

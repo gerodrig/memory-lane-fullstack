@@ -1,7 +1,17 @@
 import { Facebook, Twitter } from 'react-bootstrap-icons';
 import style from  '../../styles/Footer.module.css';
 
-export const Footer = () => {
+//props to update the year
+
+// type FooterProps = {
+//   year: string;
+// };
+
+//TODO: implement footer props to get year automatically
+
+
+export const Footer = (props: any) => {
+
   return ( 
     <footer id="footer" className={style.footer}>
       <div className={style['footer-top']}>
@@ -103,7 +113,7 @@ export const Footer = () => {
         <div className={style.copyright}>
           &copy;{' '}
           <strong>
-            <span>2022 Memory Lane Home Living Inc.</span>
+            <span>{ '2023'} Memory Lane Home Living Inc.</span>
           </strong>
           .
         </div>

@@ -5,7 +5,6 @@ const ContentSecurityPolicy = `
   script-src 'self' 'unsafe-eval' 'unsafe-inline' https://*.googleapis.com https://*.gstatic.com *.google.com *.googleusercontent.com data: blob:;
   img-src 'self' https://*.googleapis.com https://*.gstatic.com *.google.com  *.googleusercontent.com data:;
   frame-src *.google.com;
-  connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com  data: blob:;
   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
   worker-src blob:;
 `;

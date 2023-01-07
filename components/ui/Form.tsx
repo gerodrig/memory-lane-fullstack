@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import style from '../../styles/Form.module.css';
+
 import Swal from 'sweetalert2';
+
+import style from '../../styles/Form.module.css';
+
 
 export const Form = () => {
   const [values, setValues] = useState({
@@ -44,6 +47,15 @@ export const Form = () => {
                 //     },
                 //     body: JSON.stringify(values),
                 // });
+
+                //EMAILJS
+                await fetch('/api/emailjs', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(values),
+                    });
             }
 
             Swal.fire({
