@@ -1,23 +1,20 @@
 import { useEffect, useState } from 'react';
 import Image from 'next/image';
-
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import * as BsNavbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+import Link from 'next/link';
+import { ChevronDown, List } from 'react-bootstrap-icons';
 
 import { Topbar } from './Topbar';
 
-import styles from '../../styles/Navbar.module.css';
-import { ChevronDown, List } from 'react-bootstrap-icons';
+import styles from '@styles/Navbar.module.css';
 
 export const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [scrolled, setScrolled] = useState('');
   const [mobileNav, setMobileNav] = useState(false);
-  const [ isMobile , setIsMobile ] = useState(false);
-  const [width, setWidth] = useState(typeof window !== 'undefined' ? window.innerWidth : 0);
-
+  const [isMobile, setIsMobile] = useState(false);
+  const [width, setWidth] = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 0
+  );
 
   const [servicesDropdownOpen, setServicesDropDownOpen] = useState(true);
   const [caregiversDropdownOpen, setCareGiverDropDownOpen] = useState(false);
@@ -29,10 +26,10 @@ export const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       if (currentScrollY > 100) {
-        setVisible(false); 
+        setVisible(false);
         setScrolled(`${styles['header-scrolled']} fixed-top`);
       } else {
-        setVisible(true); 
+        setVisible(true);
         setScrolled('');
       }
     };
@@ -45,9 +42,9 @@ export const Navbar = () => {
   useEffect(() => {
     //check if window width is  less than 992px
     if (width < 992) {
-      setIsMobile(true); 
+      setIsMobile(true);
     } else {
-      setIsMobile(false); 
+      setIsMobile(false);
     }
   }, [width]);
 
@@ -72,14 +69,13 @@ export const Navbar = () => {
       setVisible(true);
     }
 
-    if(window.scrollY < 100) {
+    if (window.scrollY < 100) {
       setVisible(true);
     }
   };
 
   const toogleDropdowns = (dropdown: string) => {
-    
-    if(!mobileNav) return;
+    if (!mobileNav) return;
 
     switch (dropdown) {
       case 'services':
@@ -102,6 +98,7 @@ export const Navbar = () => {
     }
   };
 
+
   return (
     <>
       <Topbar hide={!visible} />
@@ -114,7 +111,7 @@ export const Navbar = () => {
         } ${scrolled}`}>
         <div className="container d-flex align-items-center">
           {!mobileNav && (
-            <a href="#" className="logo me-auto">
+            <Link href="/" className="logo me-auto">
               <Image
                 src="/assets/images/logo.png"
                 width={100}
@@ -122,35 +119,35 @@ export const Navbar = () => {
                 style={{ objectFit: 'contain' }}
                 alt=""
               />
-            </a>
+            </Link>
           )}
           {/* <!-- Uncomment below if you prefer to use an image logo --> */}
 
           <nav id="navbar" className={`${styles.navbar} order-last order-lg-0`}>
             <ul>
-              <li>
-                <a className="nav-link scrollto" href="#hero">
+              <li onClick={toggleMobileNav}>
+                <Link className="nav-link scrollto" href="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('services')}>
-                <a href="#services">
-                  <span>Services</span> <ChevronDown className="ms-1" />
-                </a>
+                <Link href='/#services' scroll={false}>
+                <span>Services</span> <ChevronDown className="ms-1" />
+                </Link>
                 <ul
                   className={
                     servicesDropdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <a href="#living-with-us">Living With Us</a>
+                    <Link href="/#living-with-us" scroll={false}>Living With Us</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#day-program">Day Programs</a>
+                    <Link href="/#day-program" scroll={false}>Day Programs</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#respite-care">Caregiver Support</a>
+                    <Link href="/#respite-care" scroll={false}>Caregiver Support</Link>
                   </li>
                 </ul>
               </li>
@@ -166,76 +163,76 @@ export const Navbar = () => {
                     caregiversDropdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Caregiver Support group</a>
+                    <Link href="/#" scroll={false}>Caregiver Support group</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Resources</a>
+                    <Link href="/#" scroll={false}>Resources</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Dementia Blog</a>
+                    <Link href="/#" scroll={false}>Dementia Blog</Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('about')}>
-                <a href="#">
+                <Link href="/#" scroll={false}>
                   <span>About</span> <ChevronDown className="ms-1" />{' '}
-                </a>
+                </Link>
                 <ul
                   className={
                     aboutDropdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Mission</a>
+                    <Link href="/#" scroll={false}>Mission</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#gallery">Gallery</a>
+                    <Link href="/#gallery" scroll={false}>Gallery</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Testimonials</a>
+                    <Link href="/#testimonials" scroll={false}>Testimonials</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Our Team</a>
+                    <Link href="/#team" scroll={false}>Our Team</Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('get-involved')}>
-                <a href="#">
+                <Link href="/#" scroll={false}>
                   <span>Get Involved</span>
                   <ChevronDown className="ms-1" />
-                </a>
+                </Link>
                 <ul
                   className={
                     getInvolvedDopdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Volunteers</a>
+                    <Link href="/#" scroll={false}>Volunteers</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Board of Directors</a>
+                    <Link href="#" scroll={false}>Board of Directors</Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('more')}>
-                <a href="#">
+                <Link href="/#" scroll={false}>
                   <span>More</span>
                   <ChevronDown className="ms-1" />
-                </a>
+                </Link>
                 <ul
                   className={moreDropDownOpen ? styles['dropdown-active'] : ''}>
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Partner Page</a>
+                    <Link href="/partners" scroll={false}>Partner Page</Link>
                   </li>
+                  {/* <li onClick={toggleMobileNav}>
+                    <Link href="/#" scroll={false}>Contact Us</Link>
+                  </li> */}
                   <li onClick={toggleMobileNav}>
-                    <a href="#">Contact Us</a>
-                  </li>
-                  <li onClick={toggleMobileNav}>
-                    <a href="#">Newsletter Sign Up</a>
+                    <Link href="/#footer" scroll={false}>Newsletter Sign Up</Link>
                   </li>
                 </ul>
               </li>
@@ -248,11 +245,18 @@ export const Navbar = () => {
           {/* <!-- .navbar --> */}
 
           {!mobileNav && (
-            <a
-              href="#appointment"
-              className={`${styles['appointment-btn']} scrollto`}>
+            <Link
+              href="/#appointment"
+              className={`${styles['appointment-btn']} scrollto`}
+              scroll={false}>
               <span className="d-none d-md-inline">Contact</span> Us
-            </a>
+            </Link>
+          )}
+          {!mobileNav && (
+            <Link href="/donations" className={`${styles['donate-btn']}`}>
+                {/* <span className="d-none d-md-inline">Donate</span> */}
+                Donate
+            </Link>
           )}
         </div>
       </header>

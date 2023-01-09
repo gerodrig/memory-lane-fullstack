@@ -33,7 +33,7 @@ export const Form = () => {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // console.log(values);
-        console.log(formSent);
+        //console.log(formSent);
 
         try {
 

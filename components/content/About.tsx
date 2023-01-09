@@ -2,13 +2,16 @@ import Image from "next/image";
 import style from './About.module.css';
 import styleSection from '../../styles/Section.module.css';
 import { CheckCircle } from "react-bootstrap-icons";
+import { SeparatorIdentifier } from "@components/ui/SeparatorIdentifier";
 
-export const About = () => {
+export const About = ({id = ''}) => {
 
     const check = <CheckCircle className={styleSection.check}/>
 
     return (
-        <section id="about" className={`${style.about}`}>
+      <>
+      <SeparatorIdentifier id={id} />
+        <section className={`${style.about}`}>
         <div className="container" data-aos="fade-up">
   
           <div className={`${styleSection['section-title']}`}>
@@ -23,7 +26,7 @@ export const About = () => {
                 height={248}
                 priority={true}
                 sizes="(max-width: 516px) 100vw, 516px"
-                className={`${style.image} img-fluid my-lg-5`}
+                className={`${style.image} img-fluid mb-lg-5`}
                alt="home image" />
             </div>
             <div className={`col-lg-6 pt-4 pt-lg-0 ${style.content}`} data-aos="fade-right">
@@ -43,5 +46,6 @@ export const About = () => {
   
         </div>
       </section>
+      </>
     )
 }

@@ -103,11 +103,17 @@
     border-radius: 4px;
   }
   
-  .footer .footer-top .footer-newsletter form input[type=email] {
+  .footer .footer-top .footer-newsletter form input[type=text] {
     border: 0;
     padding: 4px;
+    color: #555555;
     background: transparent;
+
     width: calc(100% - 110px);
+  }
+  
+  .footer-newsletter form input[type=text]:focus {
+    outline: 2px solid #d68eae;
   }
   
   .footer .footer-top .footer-newsletter form input[type=submit] {
@@ -143,4 +149,13 @@
     text-align: center;
     font-size: 13px;
   }
-  
+
+  .footer .suscribe {
+    margin-left: 10px;
+    color: #d68eae;
+  }
+
+.footer-newsletter .error {
+    margin-left: 10px;
+    color: #d33;
+}

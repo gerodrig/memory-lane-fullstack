@@ -15,14 +15,13 @@ export default function Home() {
         text='Quality of life is about connection, community and purpose.These are all necessary for one to live with dementia.'
         button='Read More'
         /> 
-
-        <About />
-        <Services />
+        <About id='about' />
+        <Services id='services' />
         {/* <ContactForm /> */}
-        <Testimonials />
-        <Team />
-        <Gallery />
-        <Contact/>
+        <Testimonials id='testimonials' />
+        <Team id='team' />
+        <Gallery id='gallery' />
+        <Contact id='contact'/>
     </MemoryLaneLayout>
   )
 }

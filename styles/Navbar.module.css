@@ -16,8 +16,8 @@
 }
 
 .header-scrolled {
-    top: 0;
-  }
+  top: 0;
+}
 
 .header .logo {
   font-size: 28px;
@@ -65,6 +65,35 @@
 
 @media (max-width: 768px) {
   .appointment-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 15px;
+  }
+}
+
+/**
+  * Donate Button
+  */
+.donate-btn {
+  margin: 0 10px;
+  background: #ffd700;
+  color: #003087;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.donate-btn:hover {
+  background: #ffe066;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .donate-btn {
     margin: 0 15px 0 0;
     padding: 6px 15px;
   }

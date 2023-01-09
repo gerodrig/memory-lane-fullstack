@@ -1,7 +1,3 @@
-import React, { useState } from 'react';
-import Image from 'next/image';
-import { Modal, Button } from 'react-bootstrap';
-
 import {
   HeartPulseFill,
   SunFill,
@@ -9,35 +5,37 @@ import {
   MoonFill,
   CalendarFill,
 } from 'react-bootstrap-icons';
-import style from './Services.module.css';
-import styleSection from '../../styles/Section.module.css';
-import { FlyerImage } from '../ui';
 
-export const Services = () => {
-  const [show, setShow] = useState(false);
-  const [imageSrc, setImageSrc] = useState('');
+import { FlyerImage, SeparatorIdentifier } from '@components/ui';
+
+import style from './Services.module.css';
+import styleSection from '@styles/Section.module.css';
+
+interface ServicesProps {
+  id?: string;
+};
+
+export const Services = ({id = ''}: ServicesProps) => {
 
   const check = <CheckCircle className={styleSection.check} />;
 
-  const handleClose = () => setShow(false);
-  const handleShow = (src: string) => {
-    setShow(true);
-    setImageSrc(src);
-  };
 
   return (
-    <section id="services" className="mt-5">
+    <>
+    <SeparatorIdentifier id={id} margin='my-1' />
+    <section className="mt-5">
       <div className="container" data-aos="fade-up">
         <div className={styleSection['section-title']}>
           <h2>Services</h2>
         </div>
 
         <div className="row">
+        <SeparatorIdentifier id='living-with-us' />
           <div
             className={`col-md-12 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
             data-aos-delay="100"
-            id="living-with-us">
+          >
             <div className={styleSection.icon}>
               <HeartPulseFill size={32} />
             </div>
@@ -92,12 +90,12 @@ export const Services = () => {
               Orangeville, Bradford, and Toronto, Ontario.{' '}
             </p>
           </div>
-
+          <SeparatorIdentifier id='day-program' />
           <div
             className={`col-md-12 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
             data-aos-delay="100"
-            id="day-program">
+            >
             <div className={styleSection.icon}>
               <SunFill size={32} />
             </div>
@@ -165,12 +163,12 @@ export const Services = () => {
 
          <FlyerImage className="mt-1 mb-5" source='/assets/images/flyers/MLHL-community-connection.png' />
    
-
+         <SeparatorIdentifier id='respite-care' />
           <div
             className={`col-md-12 my-5 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
             data-aos-delay="100"
-            id="respite-care">
+            >
             <div className={styleSection.icon}>
               <MoonFill size={32} />
             </div>
@@ -257,5 +255,6 @@ export const Services = () => {
    
       </div>
     </section>
+    </>
   );
 };

@@ -1,0 +1,29 @@
+.partner-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 20px;
+    margin: 50px 0;
+
+}
+
+.partner-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+  }
+
+  .partner-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .partner-logo {
+    display: block;
+    margin: auto;
+    width: 50%;
+  }

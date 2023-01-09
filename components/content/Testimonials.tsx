@@ -4,13 +4,18 @@ import { Quote } from "react-bootstrap-icons";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
+
+import { SeparatorIdentifier } from '@components/ui/SeparatorIdentifier';
+
 import style from './Testimonials.module.css';
-import sectionStyle from '../../styles/Section.module.css';
+import sectionStyle from '@styles/Section.module.css';
 
 
-export const Testimonials = () => {
+export const Testimonials = ({id = ''}) => {
     return (
-    <section id="testimonials" className="mt-5">
+      <>
+      <SeparatorIdentifier id={id} />
+      <section className="mt-5">
       <div className="container" data-aos="fade-up">
 
         <div className={`${sectionStyle['section-title']}`}>
@@ -155,8 +160,7 @@ export const Testimonials = () => {
         </Swiper>
     
       </div>
-    
-      
     </section>
+      </>
     )
 }
