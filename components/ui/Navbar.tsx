@@ -228,9 +228,9 @@ export const Navbar = () => {
                   <li onClick={toggleMobileNav}>
                     <Link href="/partners" scroll={false}>Partner Page</Link>
                   </li>
-                  {/* <li onClick={toggleMobileNav}>
-                    <Link href="/#" scroll={false}>Contact Us</Link>
-                  </li> */}
+                  <li onClick={toggleMobileNav}>
+                    <Link href="/media" scroll={false}>Media</Link>
+                  </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/#footer" scroll={false}>Newsletter Sign Up</Link>
                   </li>
