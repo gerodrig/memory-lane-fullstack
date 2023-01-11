@@ -112,3 +112,17 @@
   transition: 0.4s ease-in-out;
 
 }
+
+.modal-button {
+  background: #d68eae  !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  transition: 0.3s !important;
+  border: 1px solid #d68eae !important;
+} 
+
+.modal-button:hover {
+  background: #fff  !important;
+  color: #d68eae !important;
+  border: 1px solid #d68eae !important;
+} 
