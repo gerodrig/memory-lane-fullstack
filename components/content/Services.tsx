@@ -23,14 +23,14 @@ export const Services = ({id = ''}: ServicesProps) => {
   return (
     <>
     <SeparatorIdentifier id={id} margin='my-1' />
-    <section className="mt-5">
+    <section>
       <div className="container" data-aos="fade-up">
         <div className={styleSection['section-title']}>
           <h2>Services</h2>
         </div>
 
         <div className="row">
-        <SeparatorIdentifier id='living-with-us' />
+        <SeparatorIdentifier id='living-with-us' margin='my-1' />
           <div
             className={`col-md-12 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
@@ -90,7 +90,7 @@ export const Services = ({id = ''}: ServicesProps) => {
               Orangeville, Bradford, and Toronto, Ontario.{' '}
             </p>
           </div>
-          <SeparatorIdentifier id='day-program' />
+          <SeparatorIdentifier id='day-program' margin='my-1' />
           <div
             className={`col-md-12 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
@@ -163,9 +163,9 @@ export const Services = ({id = ''}: ServicesProps) => {
 
          <FlyerImage className="mt-1 mb-5" source='/assets/images/flyers/MLHL-community-connection.png' />
    
-         <SeparatorIdentifier id='respite-care' />
+         <SeparatorIdentifier id='respite-care' margin='my-1' />
           <div
-            className={`col-md-12 my-5 ${styleSection['icon-box']}`}
+            className={`col-md-12 my-1 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
             data-aos-delay="100"
             >
@@ -231,7 +231,7 @@ export const Services = ({id = ''}: ServicesProps) => {
         </div>
 
         <FlyerImage className="mt-1 mb-5 col-sm-12" source='/assets/images/flyers/MLHL-information-evening-first-monday-of-month.png' />
-
+        <SeparatorIdentifier id='monthly-caregiver-support' margin='my-1' />                
         <div
           className={`col-md-12 ${styleSection['icon-box']}`}
           data-aos="zoom-in"

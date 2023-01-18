@@ -11,6 +11,10 @@
     scale: 1.5;
 }
 
+.contact a {
+  text-decoration: none;
+}
+
 .contact .info-box {
     color: #444444;
     text-align: center;

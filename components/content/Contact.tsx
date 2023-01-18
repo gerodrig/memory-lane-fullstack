@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import style from './Contact.module.css';
 import sectionStyle from '@styles/Section.module.css';
 import { Form, MyMap } from '@components/ui';
@@ -6,7 +7,7 @@ import { GeoAlt, Envelope, TelephoneOutbound } from 'react-bootstrap-icons';
 
 import { SeparatorIdentifier } from '@components/ui/SeparatorIdentifier';
 
-export const Contact = ({id =''}) => {
+export const Contact = ({ id = '' }) => {
   return (
     <>
       <SeparatorIdentifier id={id} />
@@ -43,19 +44,24 @@ export const Contact = ({id =''}) => {
                     <p>Richmond Hill, Ontario, Canada</p>
                   </div>
                 </div>
+
                 <div className="col-md-6">
-                  <div className={style['info-box'] + ' mt-4'}>
-                    <Envelope className={style.icon} />
-                    <h3>Email Us</h3>
-                    <p>mlliving14@gmail.com</p>
-                  </div>
+                  <Link href="mailto:mlliving14@gmail.com">
+                    <div className={style['info-box'] + ' mt-4'}>
+                      <Envelope className={style.icon} />
+                      <h3>Email Us</h3>
+                      <p>mlliving14@gmail.com</p>
+                    </div>
+                  </Link>
                 </div>
                 <div className="col-md-6">
+                <Link href="tel:905-237-1419">
                   <div className={style['info-box'] + ' mt-4'}>
                     <TelephoneOutbound className={style.icon} />
                     <h3>Call Us</h3>
                     <p>(905) 237-1419</p>
                   </div>
+                  </Link>
                 </div>
               </div>
             </div>

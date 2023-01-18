@@ -30,6 +30,7 @@ export const Team = ({ id = '' }) => {
           </div>
 
           <div className="row d-flex justify-content-center">
+          <SeparatorIdentifier id="board-directors" />
             {data
               .filter(({ jobTitle }) => jobTitle === 'President')
               .map((member, index) => (
@@ -45,7 +46,7 @@ export const Team = ({ id = '' }) => {
                 <TeamMember key={index} {...member} />
               ))}
 
-
+              
             {/* <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-bs-toggle="modal"

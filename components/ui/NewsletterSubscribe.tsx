@@ -42,6 +42,7 @@ export const NewsletterSubscribe = () => {
       <p>Enter your email to join our newsletter.</p>
       <form onSubmit={handleSubmit}>
         <input
+          id='subscribe'
           type="text"
           name="email"
           value={values}

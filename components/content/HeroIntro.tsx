@@ -15,7 +15,7 @@ export const HeroIntro = ({image, title, text, button}: HeroIntroProps) => {
                 <div className={`${style.container}`}>
                     <h2>{title}</h2>
                     <p>{text}</p>
-                    <button className={`${style.button}`}>{button}</button>
+                    {/* <button className={`${style.button}`}>{button}</button> */}
                 </div>
             </div>
         </section>

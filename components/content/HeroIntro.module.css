@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 .image-background {
   background-size: cover;
-  height: 60vh;
+  height: 80vh;
   width: 100%;
   /* position: absolute; */
   display: flex;

@@ -126,3 +126,20 @@
   color: #d68eae !important;
   border: 1px solid #d68eae !important;
 } 
+
+.section-image {
+  position: relative;
+  height: 500px;
+}
+
+@media (max-width: 991px) {
+  .section-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-image {
+    height: 200px;
+  }
+}

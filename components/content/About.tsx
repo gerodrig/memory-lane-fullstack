@@ -10,7 +10,7 @@ export const About = ({id = ''}) => {
 
     return (
       <>
-      <SeparatorIdentifier id={id} />
+      <SeparatorIdentifier margin="my-1" id={id} />
         <section className={`${style.about}`}>
         <div className="container" data-aos="fade-up">
   

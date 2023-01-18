@@ -133,7 +133,7 @@ export const Navbar = () => {
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('services')}>
-                <Link href='/#services' scroll={false}>
+                <Link href='#' scroll={false}>
                 <span>Services</span> <ChevronDown className="ms-1" />
                 </Link>
                 <ul
@@ -154,29 +154,29 @@ export const Navbar = () => {
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('caregivers')}>
-                <a href="#">
+                <Link href="#" scroll={false}>
                   <span>Caregiver Support</span>{' '}
                   <ChevronDown className="ms-1" />
-                </a>
+                </Link>
                 <ul
                   className={
                     caregiversDropdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#" scroll={false}>Caregiver Support group</Link>
+                    <Link href="/#monthly-caregiver-support" scroll={false}>Caregiver Support group</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#" scroll={false}>Resources</Link>
+                    <Link href="/dementia-resources" scroll={false}>Resources</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#" scroll={false}>Dementia Blog</Link>
+                    <Link href="/blog">Dementia Blog</Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('about')}>
-                <Link href="/#" scroll={false}>
+                <Link href="#" scroll={false}>
                   <span>About</span> <ChevronDown className="ms-1" />{' '}
                 </Link>
                 <ul
@@ -200,7 +200,7 @@ export const Navbar = () => {
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('get-involved')}>
-                <Link href="/#" scroll={false}>
+                <Link href="#" scroll={false}>
                   <span>Get Involved</span>
                   <ChevronDown className="ms-1" />
                 </Link>
@@ -209,30 +209,30 @@ export const Navbar = () => {
                     getInvolvedDopdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#" scroll={false}>Volunteers</Link>
+                    <Link href="/volunteers">Volunteers</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="#" scroll={false}>Board of Directors</Link>
+                    <Link href="/#board-directors" scroll={false}>Board of Directors</Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
                 onClick={() => toogleDropdowns('more')}>
-                <Link href="/#" scroll={false}>
+                <Link href="#" scroll={false}>
                   <span>More</span>
                   <ChevronDown className="ms-1" />
                 </Link>
                 <ul
                   className={moreDropDownOpen ? styles['dropdown-active'] : ''}>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/partners" scroll={false}>Partner Page</Link>
+                    <Link href="/partners">Partner Page</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/media" scroll={false}>Media</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#footer" scroll={false}>Newsletter Sign Up</Link>
+                    <Link href="#subscribe" onClick={() => document.getElementById("subscribe")?.focus()} scroll={false}>Newsletter Sign Up</Link>
                   </li>
                 </ul>
               </li>

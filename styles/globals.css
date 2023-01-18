@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #d68eae;
+  --secondary-color: #fccfe5;
+}
+
 html,
 body {
   padding: 0;
@@ -27,6 +32,17 @@ main {
     color: white;
     background: black;
   }
+}
+div {
+  scroll-margin: 250px;
+}
+
+.debug {
+  border: 2px solid red;
+}
+
+.primary-color {
+  color: var(--primary-color);
 }
 
 .swiper-pagination {
@@ -94,4 +110,14 @@ main {
 
 :target {
   scroll-margin-top: 180px;
+}
+
+.external-link {
+  color: var(--primary-color);
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.external-link:hover {
+  color: var(--secondary-color);
 }

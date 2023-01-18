@@ -1,4 +1,4 @@
-import { TeamMember } from 'interfaces/members';
+import { ResourcesData, BlogPost, TeamMember } from 'interfaces';
 
 export const teamData: TeamMember[] = [
     {
@@ -33,3 +33,85 @@ export const teamData: TeamMember[] = [
       description: `Ms. Guo completed a  bachelor’s degree in Economics from the University of Manitoba. She is a Rotman MBA Candidate from the University of Toronto. Prior to Rotman, she spent three years at a federally chartered non-profit organization, helping healthcare professionals across Canada and internationally. Her passion in business is refining processes to make operations more efficient;  Ms Guo  has strong analytical skills to uncover insights from data to support decision-making. She is passionate about alternative care, senior care, digital health, project management, client relationship management, strategic planning and operations improvement. She is the Vice President of Rotman Women in Management Association and Rotman Healthcare Management Association. She is the Social Impact Consultant at Collaboration Partners.`
     },
 ];
+
+export const blogData: BlogPost[] = [
+  {
+    id:'1',
+    title:`Early-Onset Alzheimer's Disease`,
+    author:'External Author',
+    date:'Jan 07, 2023',
+    category:'Person Center Care',
+    tags: ['Alzheimer', 'Dementia', 'Caregiver'],
+    credits:'Memory lane home living',
+    articleAuthor:'Mona lancaster',
+    originalDate:'Jan 07, 2023',
+    originalUrl:'https://www.hopkinsmedicine.org/health/conditions-and-diseases/alzheimers-disease/earlyonset-alzheimer-disease#:~:text=Although%20Alzheimer%20disea',
+  },
+  {
+    id:'2',
+    title:`Frontotemporal Dementia`,
+    author:'External Author',
+    date:'Jan 07, 2023',
+    category:'Person Center Care',
+    tags: ['Alzheimer', 'Dementia', 'Caregiver'],
+    credits:'Mayo Clinic',
+    articleAuthor:'Mayo Clinic Staff',
+    originalDate:'Nov 16, 2021',
+    originalUrl:'https://www.mayoclinic.org/diseases-conditions/frontotemporal-dementia/symptoms-causes/syc-20354737'
+  },
+  {
+    id:'3',
+    title:`New study investigates
+    which activities are tied to
+    a lower dementia risk.`,
+    author:'External Author',
+    date:'Jan 07, 2023',
+    category:'Person Center Care',
+    tags: ['Dementia', 'Caregiver'],
+    credits:'The Globe and Mail',
+    articleAuthor:'Annie Lennon',
+    originalDate:'August 02, 2022',
+    originalUrl:'https://www.theglobeandmail.com/canada/article-canada-alzheimer-2030-projection/#:~:text=Nearly%20one%20million%20people%20in,the%20Alzheimer%20Society%20of%20Canada.'
+  },
+  {
+    id:'4',
+    title:`Nearly one million Canadians projected to have
+    dementia by 2030, new report says`,
+    author:'External Author',
+    date:'Dec 23, 2022',
+    category:'Person Center Care',
+    tags: ['Dementia', 'Caregiver'],
+    credits:'Medical News Today',
+    articleAuthor:'Wency Leung',
+    originalDate:'Sept 06, 2022',
+    originalUrl:'https://www.medicalnewstoday.com/articles/new-study-investigates-which-activities-are-tied-to-a-lower-dementia-risk'
+  },
+];
+
+export const resourcesData: ResourcesData[]= [
+  {
+      title: 'Dementia Dialogue',
+      description: 'David Harvey, founder of Dementia Dialogue & Canadian has created podcasts that relate to the Canadian Healthcare system.',
+      url: 'https://www.dementiadialogue.ca/season-2-part-1',
+  },
+  {
+      title: 'Dementia Advocacy Canada',
+      description: 'Dementia Advocacy Canada (DAC) works with partners and community organizations, to connect patients and caregivers with the education and support they require',
+      url: 'https://www.dementiacanada.com/',
+  },
+  {
+      title: 'Dementia Alliance International',
+      description: 'Dementia Alliance International is a registered non-profit organisation whose membership is exclusively for people with a medically confirmed diagnosis of any type of a dementia from all around the world.',
+      url: 'https://www.dementiaallianceinternational.org/',
+  },
+  {
+      title: 'Toronto Memory Program',
+      description: 'Toronto Memory Program is a multidisciplinary, community based medical facility specializing in the diagnosis and treatment of Alzheimer’s disease and related disorders.',
+      url: 'https://www.torontomemoryprogram.com/',
+  },
+  {
+      title: 'Canadian Association for Mental Health - Memory Clinic',
+      description: 'This clinic offers assessments and follow-up services for clients over the age of 50 with concerns regarding memory or other areas of cognition.',
+      url: 'https://www.camh.ca/en/your-care/programs-and-services/memory-clinic',
+  },
+]
