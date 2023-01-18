@@ -57,19 +57,6 @@ export const Testimonials = ({id = ''}) => {
                   <Quote className={`${style['quote-icon-right']}`}></Quote>
                 </p>
             
-                <h3>Charles</h3>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-            <div className={`${style['testimonial-item']}`}>
-                <p>
-                  <Quote className={`${style['quote-icon-left']}`}></Quote>
-                    My sister and I were struggling to identify a suitable solution for our mother’s rapidly intensifying care needs. Large institutional settings were too process-driven and impersonal. Continuing to shoulder the burden ourselves was simply unsustainable.
-
-                    Memory Lanes innovative model of dementia care offers the balance we were hoping for. The quaint home setting and collaborative approach to tailoring our mothers care to her unique needs, distinguish Memory Lane from other options. We are glad to see how happy our mother is in her new home.
-                  <Quote className={`${style['quote-icon-right']}`}></Quote>
-                </p>
-            
                 <h3>Alana</h3>
               </div>
             </SwiperSlide>
