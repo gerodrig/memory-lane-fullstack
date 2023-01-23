@@ -147,6 +147,9 @@ export const Navbar = () => {
                     <Link href="/#day-program" scroll={false}>Day Programs</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
+                    <Link href="/#music-from-the-heart" scroll={false}>Music From The Heart</Link>
+                  </li>
+                  <li onClick={toggleMobileNav}>
                     <Link href="/#respite-care" scroll={false}>Caregiver Support</Link>
                   </li>
                 </ul>
@@ -166,7 +169,7 @@ export const Navbar = () => {
                     <Link href="/#monthly-caregiver-support" scroll={false}>Caregiver Support group</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/dementia-resources" scroll={false}>Resources</Link>
+                    <Link href="/dementia-resources">Resources</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/blog">Dementia Blog</Link>

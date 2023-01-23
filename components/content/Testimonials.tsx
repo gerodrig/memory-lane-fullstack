@@ -20,7 +20,7 @@ export const Testimonials = ({id = ''}) => {
 
         <div className={`${sectionStyle['section-title']}`}>
           <h2>Testimonials</h2>
-          <p>Read what clients have said about Our Richmond Hill Assisted Living Residence</p>
+          <p>Read what clients are saying about Memory Lane Home Living.</p>
         </div>
 
         {/* <div className="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100"> */}
