@@ -4,9 +4,10 @@ import Image from 'next/image';
 import { Modal } from 'react-bootstrap';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay } from 'swiper';
+import { Pagination, Autoplay, Navigation } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import 'swiper/css/autoplay';
 
 import { SeparatorIdentifier } from '@components/ui/SeparatorIdentifier';
@@ -14,30 +15,30 @@ import { SeparatorIdentifier } from '@components/ui/SeparatorIdentifier';
 import style from './Gallery.module.css';
 import sectionStyle from '@styles/Section.module.css';
 
-const images = [
-  '/assets/images/gallery/gallery-1.jpg',
-  '/assets/images/gallery/gallery-2.jpg',
-  '/assets/images/gallery/gallery-3.jpg',
-  '/assets/images/gallery/gallery-4.jpg',
-  '/assets/images/gallery/gallery-5.jpg',
-  '/assets/images/gallery/gallery-6.jpg',
-  '/assets/images/gallery/gallery-7.jpg',
-  '/assets/images/gallery/gallery-8.jpg',
-];
+import { imagesGallery, imagesEvent } from '@data/images';
+import { IGallery } from 'interfaces';
 
 export const Gallery = ({ id = '' }) => {
   const [showModal, setShowModal] = useState(false);
   const [image, setImage] = useState('');
+  const [title, setTitle] = useState('');
+  const [images, setImages] = useState<IGallery[]>();
 
-  const handleShowModal = (image: string) => {
+  const handleShowModal = (index: number, array: IGallery[]) => {
+    const image = array[index].image;
+    const title = array[index]?.title || '';
+    const arrayFiltered = array.filter((item) => item.image !== image);
+
     setShowModal(true);
     setImage(image);
+    setTitle(title);
+    setImages(arrayFiltered);
   };
 
   return (
     <>
       <SeparatorIdentifier id={id} />
-      <section id='gallery' className={`${style.gallery} my-5`}>
+      <section id="gallery" className={`${style.gallery} my-5`}>
         <div className="container" data-aos="fade-up">
           <div className={sectionStyle['section-title']}>
             <h2>Gallery</h2>
@@ -56,18 +57,45 @@ export const Gallery = ({ id = '' }) => {
             key={image}
             centered
             onHide={() => setShowModal(false)}>
-            <Modal.Header closeButton></Modal.Header>
+            <Modal.Header closeButton>
+              
+            </Modal.Header>
             <Modal.Body>
-              <Image
-                src={image}
-                height={520}
-                width={520}
-                className="img-fluid d-block mx-auto"
-                alt={image}
-              />
+              <Swiper
+                pagination={{
+                  type: 'progressbar',
+                }}
+                navigation={true}
+                        
+                modules={[Pagination, Navigation]}
+                className={style.mySwiper}>
+                <SwiperSlide >
+                  <Image
+                    src={image}
+                    height={520}
+                    width={520}
+                    className="img-fluid d-block mx-auto my-auto mt-4"
+                    alt={image}
+                  />
+                  <Modal.Title className="text-center">{title}</Modal.Title>
+                </SwiperSlide>
+                {images?.map(({ image, title = '' }, index) => (
+                  <SwiperSlide key={image}>
+                    <Image
+                      src={image}
+                      height={520}
+                      width={520}
+                      alt={image}
+                      className="img-fluid d-block mx-auto my-auto mt-5"
+                    />
+                    <Modal.Title className="text-center">{title}</Modal.Title>
+                  </SwiperSlide>
+                ))}
+              </Swiper>
             </Modal.Body>
           </Modal>
 
+          <h4 className={style.title}>Home Living</h4>
           <Swiper
             pagination={{
               type: 'bullets',
@@ -94,30 +122,58 @@ export const Gallery = ({ id = '' }) => {
               },
             }}
             className="swiper">
-            {images.map((image) => (
+            {imagesGallery.map(({ image, title = '' }, index, array) => (
               <SwiperSlide key={image}>
                 <Image
-                  onClick={() => handleShowModal(image)}
+                  onClick={() => handleShowModal(index, array)}
                   src={image}
                   height={120}
                   width={150}
-                  alt={image}
+                  alt={title}
                 />
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* <div className="swiper-wrapper align-items-center">
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" className="img-fluid" alt=""></a></div>
-            <div className="swiper-slide"><a className="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" className="img-fluid" alt=""></a></div>
-          </div>
-          <div className="swiper-pagination"></div> */}
+          <h4 className={style.title}>Events Gallery</h4>
+          <Swiper
+            pagination={{
+              type: 'bullets',
+              clickable: true,
+            }}
+            speed={400}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            modules={[Pagination, Autoplay]}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              992: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+              },
+            }}
+            className="swiper">
+            {imagesEvent.map(({ title = '', image }, index, array) => (
+              <SwiperSlide key={image}>
+                <Image
+                  onClick={() => handleShowModal(index, array)}
+                  src={image}
+                  height={120}
+                  width={150}
+                  alt={title}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
     </>

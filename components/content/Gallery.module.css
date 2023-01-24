@@ -16,13 +16,25 @@
   }
   
   .gallery .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #d68eae;
+    background-color: #;
   }
   
   .gallery .swiper-slide-active {
     text-align: center;
   }
+
+  .gallery h4 {
+    font-weight: 600;
+    color:  var(--primary-color);
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
   
+.mySwiper  {
+  color: #d68eae;
+}
+
   @media (min-width: 992px) {
     .gallery .swiper-wrapper {
       padding: 40px 0;

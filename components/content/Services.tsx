@@ -77,7 +77,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 </span>
               </p>
               <p className={styleSection.description}>
-                <span className="italics">
+                <span className="fst-italic">
                   Are we ready to follow Europe’s lead and look at shared
                   housing as a solution to providing supportive care for those
                   living with dementia?
@@ -178,7 +178,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Music From The Heart
               </h4>
               <p className={styleSection.description}>
-                Our Music from the Heart, is a program run by our music
+                Our <span className='fst-italic fw-bold'>Music from the Heart</span>, is a program run by our music
                 therapist to deliver a therapeutic music program to caregivers
                 and their loved ones with a dementia diagnosis, in a community
                 setting. Music therapy is the use of music to accomplish

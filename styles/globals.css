@@ -55,11 +55,19 @@ div {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d68eae;
+  border: 1px solid var(--primary-color);
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d68eae;
+  background-color: var(--primary-color);
+}
+
+.swiper-pagination-progressbar-fill {
+  background-color: var(--primary-color) !important;
+}
+
+.swiper-button-next:after,  .swiper-button-prev:after {
+  color: var(--primary-color) !important;
 }
 
 #gallery .swiper-pagination {
@@ -72,11 +80,11 @@ div {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #d68eae;
+  border: 1px solid var(--primary-color);
 }
 
 #gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #d68eae;
+  background-color: var(--primary-color);
 }
 
 #gallery .swiper-slide-active {
@@ -89,7 +97,7 @@ div {
   }
 
   #gallery .swiper-slide-active {
-    border: 6px solid #d68eae;
+    border: 6px solid var(--primary-color);
     padding: 4px;
     background: #fff;
     z-index: 1;

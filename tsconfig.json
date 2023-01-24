@@ -20,7 +20,8 @@
       "@components/*": ["components/*"],
       "@images/*": ["public/assets/images/*"],
       "@hooks/*": ["lib/hooks/*"],
-      "@helpers/*": ["lib/helpers/*"]
+      "@helpers/*": ["lib/helpers/*"],
+      "@data/*": ["database/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
