@@ -12,12 +12,12 @@ import { teamData as data } from 'database/dummyData';
 export const Team = ({ id = '' }) => {
   return (
     <>
-      <SeparatorIdentifier id={id} />
       <section
-        id="team"
+        // id="team"
         className={`${style['board-members']} ${styleSection['section-bg']} my-5`}>
         <div className="container" data-aos="fade-up">
           <div className={`${styleSection['section-title']}`}>
+          <SeparatorIdentifier id={id} />
             <h2>Our Team</h2>
             <p className={styleSection.description}>
               We are grateful for the guidance and support from friends, family,

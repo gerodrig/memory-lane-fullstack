@@ -150,7 +150,7 @@ export const Navbar = () => {
                     <Link href="/#music-from-the-heart" scroll={false}>Music From The Heart</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#respite-care" scroll={false}>Caregiver Support</Link>
+                    <Link href="/#respite-care" scroll={false}>Respite Care</Link>
                   </li>
                 </ul>
               </li>
@@ -187,7 +187,7 @@ export const Navbar = () => {
                     aboutDropdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#" scroll={false}>Mission</Link>
+                    <Link href="/mission">Mission</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/#gallery" scroll={false}>Gallery</Link>
@@ -212,10 +212,7 @@ export const Navbar = () => {
                     getInvolvedDopdownOpen ? styles['dropdown-active'] : ''
                   }>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/volunteers">Volunteers</Link>
-                  </li>
-                  <li onClick={toggleMobileNav}>
-                    <Link href="/#board-directors" scroll={false}>Board of Directors</Link>
+                    <Link href="/volunteers">Board of Directors/Volunteers</Link>
                   </li>
                 </ul>
               </li>

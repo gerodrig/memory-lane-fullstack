@@ -90,7 +90,8 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </p>
             </div>
 
-            <SeparatorIdentifier id="day-program" margin="my-1" />
+           
+            <SeparatorIdentifier id="day-program" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
@@ -166,7 +167,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
               source="/assets/images/flyers/MLHL-community-connection.png"
             />
 
-            <SeparatorIdentifier id="music-from-the-heart" margin="my-1" />
+            <SeparatorIdentifier id="music-from-the-heart" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
@@ -178,7 +179,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Music From The Heart
               </h4>
               <p className={styleSection.description}>
-                Our <span className='fst-italic fw-bold'>Music from the Heart</span>, is a program run by our music
+                Our <span className='fst-italic fw-bold'>Music from the Heart</span>, is a weekly program run by our music
                 therapist to deliver a therapeutic music program to caregivers
                 and their loved ones with a dementia diagnosis, in a community
                 setting. Music therapy is the use of music to accomplish
@@ -187,14 +188,20 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 well-established in the health community. This hour of music is
                 followed by a social hour led by our recreational therapist.
                 Join us for these 2 hours of community engagements. There is not
-                charge for this event, however we do require pre-registration to
+                charge for this program, however we do require pre-registration to
                 join us; Please call{' '}
                 <span>
                   <Link href="tel:905-237-1419">905-237-1419</Link>
                 </span>. Caregivers may include family members or PSWs to accompany
                 their loved one with a dementia diagnosis. They will be active
-                participants in this event.
+                participants in this program.
               </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">WHERE:</span> Presbyterian Church, 1066 Yonge Street @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">COST:</span> No Charge.
+              </p>            
             </div>
 
             <FlyerImage
@@ -202,7 +209,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
               source="/assets/images/flyers/music-from-the-heart.jpg"
             />
 
-            <SeparatorIdentifier id="respite-care" margin="my-1" />
+<SeparatorIdentifier id="respite-care" className='my-0' />
             <div
               className={`col-md-12 my-1 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
