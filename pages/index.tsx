@@ -12,7 +12,7 @@ export default function Home() {
        <HeroIntro 
         image='/assets/images/slide-1.jpg'
         title='Welcome to Memory Lane Home Living'
-        text='Quality of life is about connection, community and purpose.These are all necessary for one to live with dementia.'
+        text='Quality of life is about connection, community and purpose.These are all necessary for one to live well with dementia.'
         button='Read More'
         /> 
         <About id='about' />
