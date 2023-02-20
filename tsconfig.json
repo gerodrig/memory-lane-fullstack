@@ -21,7 +21,9 @@
       "@images/*": ["public/assets/images/*"],
       "@hooks/*": ["lib/hooks/*"],
       "@helpers/*": ["lib/helpers/*"],
-      "@data/*": ["database/*"]
+      "@data/*": ["database/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@database/*": ["database/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

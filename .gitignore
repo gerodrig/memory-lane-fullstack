@@ -35,3 +35,17 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+docker-compose.yaml
+mongo
+
+database/seed-data.ts
+
+pages/api/admin/
+pages/api/admin-login.ts
+pages/api/login.ts
+
+database/db.ts
+database/index.ts
+
+models/

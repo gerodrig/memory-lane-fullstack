@@ -12,7 +12,10 @@ import style from '@styles/Footer.module.css';
 
 //TODO: implement footer props to get year automatically
 
-export const Footer = (props: any) => {
+export const Footer = () => {
+
+  //get current year
+  const year = new Date().getFullYear();
 
   return (
     <footer id="footer" className={style.footer}>
@@ -108,7 +111,7 @@ export const Footer = (props: any) => {
         <div className={style.copyright}>
           &copy;{' '}
           <strong>
-            <span>{'2023'} Memory Lane Home Living Inc.</span>
+            <span>{year} Memory Lane Home Living Inc.</span>
           </strong>
           .
         </div>

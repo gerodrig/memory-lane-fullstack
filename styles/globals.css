@@ -129,3 +129,23 @@ div {
 .external-link:hover {
   color: var(--secondary-color);
 }
+
+/* NEXT IMage override */
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+.custom-image {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+.image-container  {
+  width: 100%;
+}
+.image-container  > div {
+  position: unset !important;
+}

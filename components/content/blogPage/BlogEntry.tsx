@@ -11,7 +11,7 @@ export const BlogEntry = (props: BlogPost) => {
       </Link>
       <p>
         Author: <span className="primary-color">{props.articleAuthor}</span> |{' '}
-        {props.date} | Categories: {props.category}
+        {props.postedDate} | Categories: {props.category}
       </p>
       <p>Original Article Source Credits: {props.credits}</p>
       <p>Article Written by: {props.articleAuthor}</p>

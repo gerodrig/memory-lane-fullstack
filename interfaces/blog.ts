@@ -2,7 +2,7 @@ interface BlogEntry {
     id: string;
     title: string;
     author: string;
-    date: string;
+    postedDate: string;
     category: string;
     credits: string;
     articleAuthor: string;
