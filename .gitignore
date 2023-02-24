@@ -12,6 +12,9 @@
 /.next/
 /out/
 
+#vscode config
+/.vscode/
+
 # production
 /build
 
@@ -49,3 +52,4 @@ database/db.ts
 database/index.ts
 
 models/
+

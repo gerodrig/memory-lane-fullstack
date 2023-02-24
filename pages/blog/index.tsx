@@ -1,17 +1,18 @@
-// import { GetStaticProps } from 'next';
+import { GetStaticProps, GetServerSideProps } from 'next';
 import Image from 'next/image';
-import { MemoryLaneLayout } from '@components/layouts';
 
-// import { db } from 'database/';
-// import ModelBlogPost from 'models/BlogPost';
+import { MemoryLaneLayout } from '@components/layouts';
 import { BlogEntry } from '@components/content/blogPage/BlogEntry';
+
+// import { dbBlogs } from 'database/';
+// import ModelBlogPost from 'models/BlogPost';
+
 import styleSection from '@styles/Section.module.css';
 
 import { BlogPost as IBlogPost } from 'interfaces';
 import { blogData } from 'database/dummyData';
-// import BlogPost from '../../models/BlogPost';
 
-export default function Blog({ blogs }: { blogs: IBlogPost[] }) {
+export default function Blog({ blogs: blogData}: { blogs: IBlogPost[] }) {
   return (
     <MemoryLaneLayout
       title="Memory Lane Home Living Inc. | Dementia Care Home Richmond Hill ON"
@@ -66,21 +67,19 @@ export default function Blog({ blogs }: { blogs: IBlogPost[] }) {
 //     return blogs;
 // }
 
-// export const getStaticProps: GetStaticProps = async (ctx) => {
-  
-//   const blogs = await getBlogs();
+export const getStaticProps: GetStaticProps = async (ctx) => {
 
-//   console.log('blogs', blogs);
+  const blogs = blogData;
 
-//   if(!blogs) {
-//       return {
-//           notFound: true
-//       }
-//   }
+  if(!blogs) {
+      return {
+          notFound: true
+      }
+  }
 
-//   return {
-//       props: {
-//           blogs: JSON.parse(JSON.stringify(blogs))
-//       }
-//   }
-// }
+  return {
+      props: {
+          blogs: blogs
+      }
+  }
+}

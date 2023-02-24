@@ -9,8 +9,15 @@
   display: flex;
   flex-direction: column-reverse;
   margin: 0;
-  background-color: rgba(60, 60, 60, 0.8);
   overflow: hidden;
+  filter: blur(10px);
+  animation: unblur 0.5s forwards ease;
+}
+
+@keyframes unblur {
+  100% {
+    filter: blur(0);
+  }
 }
 
 .container {

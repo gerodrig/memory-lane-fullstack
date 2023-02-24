@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import parse from 'html-react-parser';
 import { blogData } from 'database/dummyData';
-// import { db } from 'database/';
+import { dbBlogs } from 'database/';
 
 // import ModelBlogPost from 'models/BlogPost';
 
@@ -17,6 +17,7 @@ import styleSection from '@styles/Section.module.css';
 import style from '../../components/content/blogPage/BlogEntry.module.css';
 
 import { BlogPost as IBlogPost } from 'interfaces';
+import { getAllBlogs } from '../../database/dbBlogs';
 
 interface Props {
   id: number;
@@ -86,7 +87,7 @@ export default BlogPost;
 // };
 
 //? Fetching Data from a DummyDatabase
-const getBlogs = () => blogData;
+// const getBlogs = () => blogData;
 
 //? Fetching Data from a Database
 // const getBlogs = async(): Promise<IBlogPost[]> => {
@@ -100,8 +101,7 @@ const getBlogs = () => blogData;
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
  
-    // const blogs = await getBlogs();
-    const blogs = getBlogs();
+    const blogs = blogData;
 
     const ids = blogs.map((blog) => blog.id);
 

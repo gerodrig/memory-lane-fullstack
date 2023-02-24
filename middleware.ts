@@ -1,15 +1,14 @@
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse, NextRequest } from 'next/server';
 
 export function middleware(req: NextRequest) {
-  const cookie = req.cookies.get("admin");
-
-  console.log("cookie", cookie);
-
-    if (cookie === undefined) {
-      return NextResponse.rewrite(new URL('/', req.url))
-    }
+  if (process.env.NODE_ENV !== 'development') {
+    const url = req.nextUrl.clone();
+    url.pathname = '/';
+    return NextResponse.redirect(url);
+  }
 }
 
 export const config = {
-  matcher: '/api/admin/:path*'
+  // matcher: '/api/admin/:path*'
+  matcher: '/api/:path*',
 };

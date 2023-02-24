@@ -5,7 +5,7 @@ type HeroIntroProps = {
     image: string;
     title: string;
     text: string;
-    button: string;
+    button?: string;
 }
 
 export const HeroIntro = ({image, title, text, button}: HeroIntroProps) => {
