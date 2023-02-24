@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import parse from 'html-react-parser';
 import { blogData } from 'database/dummyData';
-import { dbBlogs } from 'database/';
+// import { dbBlogs } from 'database/';
 
 // import ModelBlogPost from 'models/BlogPost';
 
@@ -17,7 +17,7 @@ import styleSection from '@styles/Section.module.css';
 import style from '../../components/content/blogPage/BlogEntry.module.css';
 
 import { BlogPost as IBlogPost } from 'interfaces';
-import { getAllBlogs } from '../../database/dbBlogs';
+// import { getAllBlogs } from '../../database/dbBlogs';
 
 interface Props {
   id: number;

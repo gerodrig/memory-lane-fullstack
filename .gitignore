@@ -48,6 +48,9 @@ pages/api/admin/
 pages/api/admin-login.ts
 pages/api/login.ts
 
+pages/api/blogs/
+pages/api/resources/
+
 database/db.ts
 database/index.ts
 
