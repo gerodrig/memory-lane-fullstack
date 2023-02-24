@@ -51,5 +51,7 @@ pages/api/login.ts
 database/db.ts
 database/index.ts
 
+database/dbBlogs.ts
+
 models/
 
