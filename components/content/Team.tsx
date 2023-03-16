@@ -127,7 +127,7 @@ const TeamMember = ({
           </Button>
         </Modal.Footer>
       </Modal>
-      <div className="col-lg-3 col-md-6 d-flex align-items-stretch mb-4">
+      <div className="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
         <div
           className={style.member}
           data-aos="fade-up"

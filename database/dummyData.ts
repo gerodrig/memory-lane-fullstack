@@ -32,6 +32,26 @@ export const teamData: TeamMember[] = [
       jobTitle: 'Board Member',
       description: `Ms. Guo completed a  bachelor’s degree in Economics from the University of Manitoba. She is a Rotman MBA Candidate from the University of Toronto. Prior to Rotman, she spent three years at a federally chartered non-profit organization, helping healthcare professionals across Canada and internationally. Her passion in business is refining processes to make operations more efficient;  Ms Guo  has strong analytical skills to uncover insights from data to support decision-making. She is passionate about alternative care, senior care, digital health, project management, client relationship management, strategic planning and operations improvement. She is the Vice President of Rotman Women in Management Association and Rotman Healthcare Management Association. She is the Social Impact Consultant at Collaboration Partners.`
     },
+    {
+      image: '/assets/images/board-members/madison.jpg',
+      name: 'Madison',
+      jobTitle: 'Client/Program Manager',
+      description: `Madison has a Therapeutic Recreation degree with a minor in Gerontology. She is also a candidate for a Master of Science in Aging and Health. She works as a Certified Therapeutic Recreation Specialist (CTRS). Madison has worked in a variety of settings and brings therapeutic approach to dementia care. Madison has developed programs for people living with dementia and to slow down the symptoms and promote a quality of life for our women who experience memory loss. 
+      Madison has recently been invited to sit on the Richmond Hill Age Friendly Council.   She has a passion ensure the Richmond Hill Community  includes proper supports for those with a dementia diagnosis.   h
+     In her spare time, you may find Madison on a volleyball court.`
+    },
+    {
+      image: '/assets/images/board-members/cassidy.jpg',
+      name: 'Cassidy',
+      jobTitle: 'Program Manager Part-Time',
+      description: `Cassidy is a part-time Recreation Therapist with Memory Lane Home Living for our Wednesday and Saturday programs. Cassidy has a BSc focusing on Aging Studies from the University of Waterloo, ON.  Cassidy is pursuing further education as a Doctor of Chiropractic in North York, ON.
+      Cassidy strives to promote a safe and interactive environment for community members living with Dementia through a variety of activities and exercises.
+      
+      She was a volunteering in with a Young Onset Dementia Association @ University of Waterloo and is aware that the whole family is impacted when a dementia diagnosis is made.
+      
+      In her spare time, you can find Cassidy studying in her school library or enjoying  fishing & hiking in her spare time.
+      `
+    },
 ];
 
 export const blogData: BlogPost[] = [
