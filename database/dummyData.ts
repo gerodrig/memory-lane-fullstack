@@ -34,22 +34,23 @@ export const teamData: TeamMember[] = [
     },
     {
       image: '/assets/images/board-members/madison.jpg',
-      name: 'Madison',
+      name: 'Madison Squires',
       jobTitle: 'Client/Program Manager',
-      description: `Madison has a Therapeutic Recreation degree with a minor in Gerontology. She is also a candidate for a Master of Science in Aging and Health. She works as a Certified Therapeutic Recreation Specialist (CTRS). Madison has worked in a variety of settings and brings therapeutic approach to dementia care. Madison has developed programs for people living with dementia and to slow down the symptoms and promote a quality of life for our women who experience memory loss. 
-      Madison has recently been invited to sit on the Richmond Hill Age Friendly Council.   She has a passion ensure the Richmond Hill Community  includes proper supports for those with a dementia diagnosis.   h
-     In her spare time, you may find Madison on a volleyball court.`
+      description: `Madison holds a degree in Therapeutic Recreation and a minor in Gerontology. She is currently pursuing a Master of Science in Aging and Health. As a Certified Therapeutic Recreation Specialist (CTRS), Madison has worked in various settings, bringing a therapeutic approach to dementia care. She has developed programs aimed at slowing down symptoms and promoting a better quality of life for women experiencing memory loss.
+
+      Madison was recently invited to join the Richmond Hill Age Friendly Council. She is passionate about ensuring that the community of Richmond Hill provides proper support for those diagnosed with dementia.
+      
+      In her free time, Madison can be found playing volleyball.`
     },
     {
       image: '/assets/images/board-members/cassidy.jpg',
-      name: 'Cassidy',
+      name: 'Cassidy Boniface',
       jobTitle: 'Program Manager Part-Time',
-      description: `Cassidy is a part-time Recreation Therapist with Memory Lane Home Living for our Wednesday and Saturday programs. Cassidy has a BSc focusing on Aging Studies from the University of Waterloo, ON.  Cassidy is pursuing further education as a Doctor of Chiropractic in North York, ON.
-      Cassidy strives to promote a safe and interactive environment for community members living with Dementia through a variety of activities and exercises.
+      description: `Cassidy works part-time as a Recreation Therapist at Memory Lane Home Living for our Wednesday and Saturday programs. She holds a BSc degree in Aging Studies from the University of Waterloo, ON, and is currently pursuing a Doctor of Chiropractic in North York, ON. Cassidy's main goal is to create a safe and interactive environment for community members living with dementia through a variety of activities and exercises.
+
+      Cassidy previously volunteered with the Young Onset Dementia Association at the University of Waterloo and understands that a dementia diagnosis affects the whole family.
       
-      She was a volunteering in with a Young Onset Dementia Association @ University of Waterloo and is aware that the whole family is impacted when a dementia diagnosis is made.
-      
-      In her spare time, you can find Cassidy studying in her school library or enjoying  fishing & hiking in her spare time.
+      In her free time, Cassidy can be found studying in the school library or enjoying fishing and hiking.
       `
     },
 ];
@@ -220,7 +221,7 @@ export const blogData: BlogPost[] = [
     credits:'Alzheimer’s Association',
     articleAuthor:'Alzheimer’s Association',
     originalDate:'Feb 16, 2023',
-    originalUrl:'https://www.alz.org/alzheimers-dementia/what-is-dementia/types-of-dementia/vascular-dementia',
+    originalUrl:'https://www.science.org/doi/10.1126/scitranslmed.abl7634',
     content: `:
     Vascular dementia is a type of dementia that results from conditions that block or reduce blood flow to the brain, leading to a decline in thinking skills. The brain relies on a constant supply of oxygen and nutrients from the blood, and inadequate blood flow can damage and kill brain cells, leading to cognitive impairment.
 
@@ -237,6 +238,72 @@ export const blogData: BlogPost[] = [
     Currently, there are no drugs specifically approved by the FDA to treat symptoms of vascular dementia, but there is evidence that drugs approved to treat Alzheimer's symptoms may offer a modest benefit in people with vascular dementia. Treatment primarily focuses on preventing the worsening of vascular dementia by treating the underlying disease, such as hypertension, hyperlipidemia, or diabetes mellitus. Controlling risk factors that may increase the likelihood of further damage to the brain's blood vessels is also an important treatment strategy, and individuals should work with their physicians to develop the best treatment plan for their symptoms and circumstances. Vascular dementia shortens life span, and some data suggest that those who develop dementia following a stroke survive an average of three years. However, cognitive changes may sometimes improve during recovery and rehabilitation from a stroke as the brain generates new blood vessels and brain cells outside the damaged region take on new roles.
     
     In conclusion, vascular dementia is a type of dementia caused by conditions that reduce blood flow to the brain, leading to a decline in thinking skills. Maintaining a healthy lifestyle, professional cognitive screening, and treating underlying diseases are key to preventing the worsening of vascular dementia and improving outcomes.`
+  },
+  {
+    id:'7',
+    title:`Nutrition and Dementia`,
+    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1679950954/Blogs/nutiriton_and_dementia_bhkuy6.jpg',
+    author: 'Cassidy Boniface',
+    postedDate:'Mar 23, 2023',
+    category:'Center Care Health',
+    tags: ['Dementia', 'Caregiver', 'Heart Disease', 'Nutrition'],
+    credits:'',
+    articleAuthor:'Cassidy Boniface',
+    originalDate: '',
+    originalUrl:'https://www.alz.org/alzheimers-dementia/what-is-dementia/types-of-dementia/vascular-dementia',
+    content: `:
+    -March is nutrition awareness month!
+
+    Nutrition plays a vital role in our physical health.
+    Did you know the foods you consume play a role in the risk development and progression of dementia?
+
+    -Why is this important?
+    Nutrition is a modifiable risk factor, meaning we can modify the foods we eat in order to reduce the risk and slow the progression of dementia. Therefore, understanding which foods to include and avoid in your diet is powerful.
+    
+    -What Should I Include in my Diet?
+    -Vitamin B
+    A brain with dementia atrophies twice as fast as normal healthy brains. Until now, the only intervention shown to slow this brain shrinkage is vitamin B supplementation. Vitamin B3 is required to maintain the brain’s tau proteins and nerve cells. In addition, vitamins B6 and B12 work together to form antioxidants in the body, reducing the harmful effects of a substance called homocysteine. Published in the Journal of Alzheimer’s Disease, “intervention trials in elderly with cognitive impairment show that homocysteine-lowering treatment with B vitamins markedly slows the rate of whole and regional brain atrophy and also slows cognitive decline".
+    
+    Where are vitamins B3, B6, and B12 found?
+    Foods high in B vitamins are beef liver, chicken, fish, chickpeas, brown rice, dairy products, dark green leafy vegetables, and beans.
+
+    -Read more at 
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5836397/#:~:text=In%20a%20variety%20of%20clinical,ranges%20from%204.3%20to%2031%25
+    
+    https://www.science.org/doi/10.1126/scitranslmed.abl7634
+    <br>
+    -Omega-3 fatty acids
+    Omega-3 fatty acids are known to reduce inflammation in the body, promote brain circulation, and reduce the formation of beta-amyloid plaque in the brain. Recent studies suggest that a daily increase in omega-3 fatty acids may reduce the risk of dementia development.
+
+    Where are omega-3 fatty acids found?
+    Foods high in omega-3 fatty acids include fish (eg. mackerel and salmon), oysters, sardines, flaxseed, chia seeds, and nuts.
+
+    -Read more here 
+    https://www.j-alz.com/content/can-omega-3-help-prevent-alzheimers-disease
+
+    
+    -What Should I Exclude from my Diet?:
+    Alcoholic beverages
+    Alcohol has many known harmful effects on the body, such as liver damage and various cardiovascular conditions. Did you know even one alcoholic drink each day causes notable brain size reduction over time? These brain changes are related to cognitive impairment and memory loss. When consumed excessively over time, alcohol increases a person’s risk of developing dementia. It is critical to enjoy alcohol in moderation.
+
+    -Read more here
+    https://www.medscape.com/viewarticle/970355?uac=342474MN&faf=1&sso=true&impID=4143181&src=wnl_tp10n_220407_mscpedit 
+    https://www.alzheimers.org.uk/about-dementia/risk-factors-and-prevention/alcohol#:~:text=Excessive%20alcohol%20consumption%20over%20a,significant%20protection%20against%20developing%20dementia.
+
+
+    Foods containing high levels of low-density lipoprotein (LDL) cholesterol
+    LDL cholesterol is “bad” cholesterol as its primary role is returning cholesterol back to the liver. Elevated LDL cholesterol can cause plaque build-up in your blood vessels, and is commonly known to increase the risk of stroke and heart disease. Did you know elevated LDL cholesterol also increases your risk for developing dementia? According to a study published in the Brain Science journal, “...there is an association between the effect of cholesterol and Alzheimer’s disease”.
+
+    Where is LDL cholesterol found?
+    Foods with high levels of LDL cholesterol are foods high in trans fat (eg. processed desserts like cookies and pies), saturated fat (eg. cooking oils such as coconut, palm, and canola oils), and deep-fried foods. One simple substitution can be swapping your canola and vegetable oils for extra-virgin or avocado oils, and cooking meals at home with ingredients you know and trust.
+
+    -Read more here 
+    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7349210/
+    
+    In summary, try your best to include B vitamins and omega-3 fatty acids, and exclude alcohol and fried foods containing trans and saturated fats in your diet in order to prevent and mitigate the development of dementia.
+
+    Always consult your physician before beginning vitamin supplementations.
+  `
   },
 ];
 

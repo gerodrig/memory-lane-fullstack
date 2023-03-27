@@ -24,7 +24,11 @@ export const textToHTML = (text: string): string => {
       } else {
         // Add the current line to the current paragraph
         if (currentHeader !== null) {
-          result += `<p>${line.trim()}</p>`;
+          if(line.trim().includes("www.")){
+            result += `<a href="${line.trim()}" target="_self">${line.trim()}</a>`;
+          } else{
+            result += `<p>${line.trim()}</p>`;
+          }
         } else {
           // If there is no header, ignore the line
           continue;
