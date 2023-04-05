@@ -52,6 +52,9 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
         <meta property="og:title" content={title} />
         <meta property="og:description" content={pageDescription} />
 
+        {/* facebook domain verification */}
+        <meta name="facebook-domain-verification" content="s17vw94zl0bvy7y6euu3tmj4mgqvzl" />
+
         {/* display meta if image is available */}
         {imageFullUrl && <meta name="og:image" content={imageFullUrl} />}
       </Head>
