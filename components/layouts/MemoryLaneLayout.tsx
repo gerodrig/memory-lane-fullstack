@@ -57,7 +57,7 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
 
 
         {/* display meta if image is available */}
-        <meta property="og:image" content="/assets/images/slide-1.jpg" />
+        <meta property="og:image" content="https://res.cloudinary.com/dzn1ds8vx/image/upload/v1681066963/Blogs/slide-1_udkzpa.jpg" />
         {/* {imageFullUrl && <meta name="og:image" content={imageFullUrl} />} */}
       </Head>
 
