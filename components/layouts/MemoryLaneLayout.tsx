@@ -48,15 +48,17 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
             `Memory Lane Home Living Inc. | Dementia Care Home Richmond Hill ON`}
         </title>
         <link rel="icon" href="/favicon.ico" />
+        {/* facebook domain verification */}
+        <meta name="facebook-domain-verification" content="s17vw94zl0bvy7y6euu3tmj4mgqvzl" />
+        
         <meta name="description" content={pageDescription} />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={pageDescription} />
 
-        {/* facebook domain verification */}
-        <meta name="facebook-domain-verification" content="s17vw94zl0bvy7y6euu3tmj4mgqvzl" />
 
         {/* display meta if image is available */}
-        {imageFullUrl && <meta name="og:image" content={imageFullUrl} />}
+        <meta property="og:image" content="/public/assets/images/slide-1.jpg" />
+        {/* {imageFullUrl && <meta name="og:image" content={imageFullUrl} />} */}
       </Head>
 
       {/* Navbar here */}
