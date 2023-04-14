@@ -30,6 +30,14 @@ const nextConfig = {
   //     },
   //   ];
   // },
+  async rewrites () {
+    return [
+      {
+        source: '/:filename',
+        destination: '/static/:filename', // Proxy to Backend
+      },
+    ]
+  },
   images: {
     remotePatterns: [
       {
