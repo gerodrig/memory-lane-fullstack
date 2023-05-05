@@ -39,7 +39,7 @@ export const Team = ({ id = '' }) => {
 
           </div>
 
-          <div className="row">
+          <div className="row d-flex justify-content-center">
           {data
               .filter(({ jobTitle }) => jobTitle !== 'President')
               .map((member, index) => (
@@ -127,7 +127,7 @@ const TeamMember = ({
           </Button>
         </Modal.Footer>
       </Modal>
-      <div className="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+      <div className="col-lg-6 col-xl-4 col-xxl-3 d-flex align-items-stretch mb-4">
         <div
           className={style.member}
           data-aos="fade-up"

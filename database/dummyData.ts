@@ -33,6 +33,12 @@ export const teamData: TeamMember[] = [
       description: `Ms. Guo completed a  bachelor’s degree in Economics from the University of Manitoba. She is a Rotman MBA Candidate from the University of Toronto. Prior to Rotman, she spent three years at a federally chartered non-profit organization, helping healthcare professionals across Canada and internationally. Her passion in business is refining processes to make operations more efficient;  Ms Guo  has strong analytical skills to uncover insights from data to support decision-making. She is passionate about alternative care, senior care, digital health, project management, client relationship management, strategic planning and operations improvement. She is the Vice President of Rotman Women in Management Association and Rotman Healthcare Management Association. She is the Social Impact Consultant at Collaboration Partners.`
     },
     {
+      image: '/assets/images/board-members/kennedi.jpg',
+      name: 'Kennedi Koves',
+      jobTitle: 'Board Member',
+      description: `Kennedi is our newest Board Member at Memory Lane Home Living, assuming responsibility for  Social Media &  Community Partnership Management. She holds a BComm degree in Marketing Management, and currently works full-time as a Marketing Analyst. Kennedi has lived experience with dementia and is passionate about “Aging in Place with Dementia” as it reflects the values and goals of Memory Lane Home Living. In her free time, Kennedi enjoys the outdoors, reading  and a cup of Orange Pekoe tea.`
+    },
+    {
       image: '/assets/images/board-members/madison.jpg',
       name: 'Madison Squires',
       jobTitle: 'Client/Program Manager',
@@ -303,6 +309,67 @@ export const blogData: BlogPost[] = [
     In summary, try your best to include B vitamins and omega-3 fatty acids, and exclude alcohol and fried foods containing trans and saturated fats in your diet in order to prevent and mitigate the development of dementia.
 
     Always consult your physician before beginning vitamin supplementations.
+  `
+  },
+  {
+    id:'8',
+    title:`The Unsung Heroes: Caregivers in Canada and Their Crucial Role in Supporting Elders with Dementia`,
+    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1683261475/Blogs/caregivers_lzcrcm.jpg',
+    author: 'Gerardo Rodriguez',
+    postedDate:'April 15, 2023',
+    category:'Center Care Health',
+    tags: ['Dementia', 'Caregiver', 'Heart Disease', 'Nutrition'],
+    credits:'',
+    articleAuthor:'Gerardo Rodriguez',
+    originalDate: '',
+    originalUrl:' https://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Dementia-numbers',
+    content: `
+    Introduction:
+
+    Canada, like many countries around the world, is facing a rapid growth in its aging population. With the increase in life expectancy and the decrease in birth rates, the number of seniors is expected to rise significantly in the coming years. One of the critical challenges faced by this demographic is dementia, which disproportionately affects women. This blog post aims to highlight the importance of caregivers in Canada, their role in providing care for the elderly, particularly women with dementia, and the support they need to continue their invaluable work.
+    <br>
+    -The Growing Prevalence of Dementia in Canada
+    Dementia is a progressive neurodegenerative disorder that affects an individual's cognitive functions, memory, and communication abilities. In Canada, dementia affects approximately 564,000 people, with 25,000 new cases diagnosed each year. Alarmingly, women represent almost two-thirds of dementia cases in the country, with their risk of developing the condition being higher than men.
+    <br>
+    -The Importance of Caregivers in Supporting Elders with Dementia
+    Caregivers play a vital role in the lives of people with dementia, providing emotional support, assistance with daily tasks, and helping to manage the symptoms of the condition. In Canada, over 8.1 million people identify as caregivers, with many providing unpaid care to their loved ones. A large proportion of these caregivers tend to be family members or friends who have stepped up to help their loved ones navigate the challenges of living with dementia.
+    <br>
+    -Caregivers offer a range of services to individuals with dementia, including
+    
+    1. Personal care: Assisting with daily tasks such as bathing, dressing, and grooming.
+    2. Emotional support: Providing companionship, empathy, and reassurance to help alleviate the feelings of isolation and loneliness that are common in people with dementia.
+    3. Medication management: Ensuring that individuals with dementia take their medications as prescribed and assisting with managing side effects.
+    4. Safety supervision: Monitoring for potential safety hazards and implementing measures to minimize the risk of falls or other accidents.
+    5. Coordination of care: Collaborating with healthcare professionals and other support services to ensure that the needs of the individual with dementia are met.
+
+    <br>
+    Supporting Caregivers in Canada:
+    -Recognizing the invaluable contributions of caregivers and the challenges they face, it is crucial to support them in their caregiving journey. Some ways to support caregivers in Canada include
+
+    1. Providing financial support: Offering financial assistance through tax credits or subsidies can help alleviate the financial strain experienced by caregivers.
+    2. Enhancing access to resources: Ensuring that caregivers have access to up-to-date information, education, and training on dementia care can improve their ability to provide quality care.
+    3 .Offering respite care: Providing short-term, temporary care to individuals with dementia can give caregivers the opportunity to rest and recharge.
+    4. Establishing support networks: Connecting caregivers with others in similar situations can help establish a sense of community and provide a platform for sharing experiences, advice, and emotional support.
+    5 .Advocating for policy change: Encouraging the government to prioritize caregiver support and implement policies that address the unique challenges faced by caregivers can lead to better support systems and resources.
+    6. Promoting self-care: Encouraging caregivers to prioritize their own well-being by engaging in self-care activities, such as exercise, relaxation techniques, and seeking professional help when needed, can help them maintain their physical and mental health.
+    <br>
+    Conclusion:
+    Caregivers in Canada play a critical role in supporting the growing population of elders, particularly women with dementia. By understanding the challenges caregivers face and advocating for better support systems and resources, we can ensure that these unsung heroes are equipped to continue providing the essential care that our aging population needs. With the right support and recognition, caregivers can continue to make a significant difference in the lives of those affected by dementia, fostering a society where both caregivers and those they care for can thrive.
+    <br>
+    -Sources:
+    1. Alzheimer Society of Canada. (2021). Dementia numbers in Canada. 
+    Retrieved from https://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Dementia-numbers
+    2. Canadian Institute for Health Information. (2020). Dementia in Canada. 
+    Retrieved from https://www.cihi.ca/en/dementia-in-canada
+    3. Carstairs, S., & Keon, W. J. (2009). Canada's Aging Population: Seizing the Opportunity. Special Senate Committee on Aging, Government of Canada. 
+    Retrieved from  https://sencanada.ca/content/sen/committee/402/agei/rep/agingfinalreport-e.pdf
+    4. Sinha, S. K. (2012). Living Longer, Living Well: Report Submitted to the Minister of Health and Long-Term Care and the Minister Responsible for Seniors on Recommendations to Inform a Seniors Strategy for Ontario. 
+    Retrieved from http://www.health.gov.on.ca/en/common/ministry/publications/reports/seniors_strategy/docs/seniors_strategy.pdf
+    5. Statistics Canada. (2021). Canada's population clock. 
+    Retrieved from https://www150.statcan.gc.ca/n1/pub/71-607-x/71-607-x2022001-eng.htm
+    6. Turcotte, M. (2013). Family caregiving: What are the consequences? Statistics Canada. 
+    Retrieved from https://www150.statcan.gc.ca/n1/pub/75-006-x/2013001/article/11858-eng.htm
+    7. Government of Canada. (2018). A Dementia Strategy for Canada: Together We Aspire. Retrieved from https://www.canada.ca/en/public-health/services/publications/diseases-conditions/dementia-strategy.html
   `
   },
 ];

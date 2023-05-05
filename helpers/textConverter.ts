@@ -24,7 +24,7 @@ export const textToHTML = (text: string): string => {
       } else {
         // Add the current line to the current paragraph
         if (currentHeader !== null) {
-          if(line.trim().includes("www.")){
+          if(line.trim().includes("http")){
             result += `<a href="${line.trim()}" target="_self">${line.trim()}</a>`;
           } else{
             result += `<p>${line.trim()}</p>`;
