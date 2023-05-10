@@ -354,7 +354,7 @@ export const blogData: BlogPost[] = [
     6. Promoting self-care: Encouraging caregivers to prioritize their own well-being by engaging in self-care activities, such as exercise, relaxation techniques, and seeking professional help when needed, can help them maintain their physical and mental health.
     <br>
     Conclusion:
-    Caregivers in Canada play a critical role in supporting the growing population of elders, particularly women with dementia. By understanding the challenges caregivers face and advocating for better support systems and resources, we can ensure that these unsung heroes are equipped to continue providing the essential care that our aging population needs. With the right support and recognition, caregivers can continue to make a significant difference in the lives of those affected by dementia, fostering a society where both caregivers and those they care for can thrive.
+    Caregivers in Canada play a critical role in supporting the growing population of elders, particularly women with dementia. By understanding the challenges caregivers face and advocating for better support systems and resources, we can ensure that these unsung heroes are equipped to continue providing the essential care that our aging population needs. With the right support and recognition, caregivers can continue to make a significant difference in the lives of those affected by dementia, fostering a society where both caregivers and those they care for can thrive.month
     <br>
     -Sources:
     1. Alzheimer Society of Canada. (2021). Dementia numbers in Canada. 

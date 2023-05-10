@@ -34,7 +34,8 @@ export const Services = ({ id = '' }: ServicesProps) => {
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
-              data-aos-delay="100">
+              data-aos-delay="100"
+            >
               <div className={styleSection.icon}>
                 <HeartPulseFill size={32} />
               </div>
@@ -90,12 +91,12 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </p>
             </div>
 
-           
             <SeparatorIdentifier id="day-program" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
-              data-aos-delay="100">
+              data-aos-delay="100"
+            >
               <div className={styleSection.icon}>
                 <SunFill size={32} />
               </div>
@@ -171,7 +172,8 @@ export const Services = ({ id = '' }: ServicesProps) => {
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
-              data-aos-delay="100">
+              data-aos-delay="100"
+            >
               <div className={styleSection.icon}>
                 <MusicNoteBeamed size={32} />
               </div>
@@ -179,29 +181,33 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Music From The Heart
               </h4>
               <p className={styleSection.description}>
-                Our <span className='fst-italic fw-bold'>Music from the Heart</span>, is a weekly program run by our music
-                therapist to deliver a therapeutic music program to caregivers
-                and their loved ones with a dementia diagnosis, in a community
-                setting. Music therapy is the use of music to accomplish
-                individualized goals such as reducing stress, improving mood and
-                self-expression. It is an evidence-based therapy
-                well-established in the health community. This hour of music is
-                followed by a social hour led by our recreational therapist.
-                Join us for these 2 hours of community engagements. There is not
-                charge for this program, however we do require pre-registration to
-                join us; Please call{' '}
+                Our{' '}
+                <span className="fst-italic fw-bold">Music from the Heart</span>
+                , is a weekly program run by our music therapist to deliver a
+                therapeutic music program to caregivers and their loved ones
+                with a dementia diagnosis, in a community setting. Music therapy
+                is the use of music to accomplish individualized goals such as
+                reducing stress, improving mood and self-expression. It is an
+                evidence-based therapy well-established in the health community.
+                This hour of music is followed by a social hour led by our
+                recreational therapist. Join us for these 2 hours of community
+                engagements. There is not charge for this program, however we do
+                require pre-registration to join us; Please call{' '}
                 <span>
                   <Link href="tel:905-237-1419">905-237-1419</Link>
-                </span>. Caregivers may include family members or PSWs to accompany
+                </span>
+                . Caregivers may include family members or PSWs to accompany
                 their loved one with a dementia diagnosis. They will be active
                 participants in this program.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Presbyterian Church, 1066 Yonge Street @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
+                <span className="fw-bold">WHERE:</span> Presbyterian Church,
+                1066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
+                Richmond Hill, ON.
               </p>
               <p className={styleSection.description}>
                 <span className="fw-bold">COST:</span> No Charge.
-              </p>            
+              </p>
             </div>
 
             <FlyerImage
@@ -209,11 +215,12 @@ export const Services = ({ id = '' }: ServicesProps) => {
               source="/assets/images/flyers/music-from-the-heart.jpg"
             />
 
-<SeparatorIdentifier id="respite-care" className='my-0' />
+            <SeparatorIdentifier id="respite-care" className="my-0" />
             <div
               className={`col-md-12 my-1 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
-              data-aos-delay="100">
+              data-aos-delay="100"
+            >
               <div className={styleSection.icon}>
                 <MoonFill size={32} />
               </div>
@@ -252,7 +259,8 @@ export const Services = ({ id = '' }: ServicesProps) => {
             className={`col-md-12 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
             data-aos-delay="100"
-            id="monthly-monday">
+            id="monthly-monday"
+          >
             <div className={styleSection.icon}>
               <CalendarFill size={32} />
             </div>
@@ -263,7 +271,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Home Living and their wholistic model of care:
               </span>
             </p>
-            <p className="description mb-4">
+            <p className={styleSection.description + ` mb-4`}>
               {' '}
               We meet the first Monday of each month from 7-8pm to personally
               answer any questions you may have. Call us at{' '}
@@ -287,11 +295,12 @@ export const Services = ({ id = '' }: ServicesProps) => {
             className={`col-md-12 ${styleSection['icon-box']}`}
             data-aos="zoom-in"
             data-aos-delay="100"
-            id="monthly-tuesday">
+            id="monthly-tuesday"
+          >
             <p className={style['description-pink']}>
               <span className="fw-bold">MONTHLY CARE-GIVER SUPPORTS GROUP</span>
             </p>
-            <p className="description">
+            <p className={styleSection.description}>
               This is a monthly group for caregivers of loved ones that attend
               our Community Connection, that meet for support. At Memory Lane
               you are not alone on this journey.{' '}
@@ -305,6 +314,46 @@ export const Services = ({ id = '' }: ServicesProps) => {
           <FlyerImage
             className="mt-1 mb-5 col-sm-12"
             source="/assets/images/flyers/MLHL-care-support-last-thursday-of-month.png"
+          />
+
+          <SeparatorIdentifier id="monthly-caregiver-support" margin="my-1" />
+          <div
+            className={`col-md-12 ${styleSection['icon-box']}`}
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            id="monthly-tuesday"
+          >
+            <p className={style['description-pink']}>
+              <span className="fw-bold">WALK A MILE IN MY SHOES</span>
+            </p>
+            <p className={styleSection.description}>
+              The Walk a Mile in My Shoes walking program offers seniors in
+              Richmond Hill, ON, an opportunity to safely walk around their
+              neighbourhood or local parks. Walking is essential to both our
+              physical and mental health, and we strive to ensure all seniors
+              have access to these benefits. Whether you walk by foot, walker,
+              or wheelchair, we have a program for you. We offer walking groups
+              for those with young-onset dementia, seniors who wish to walk in
+              large groups, and seniors who wish to walk individually with
+              volunteers. The Walk a Mile in My Shoes program is a great way to
+              make friends and get active this summer. All walks are coordinated
+              and accompanied by our staff and volunteers from Memory Lane Home
+              Living (MLHL) inc. For more information about this program, please
+              call MLHL (905)-237-1419, or Cassidy at (226)-972-3664,
+              cb.mlliving23@gmail.com. We look forward to walking with you!{' '}
+              <br />
+              <br />
+              <span className="fw-bold">
+                WHERE: Various locations across Richmond Hill, ON.{' '}
+              </span>
+              <br />
+              <span className="fw-bold">COST: No charge.</span>
+            </p>
+          </div>
+
+          <FlyerImage
+            className="mt-1 mb-5 col-sm-12"
+            source="/assets/images/flyers/MLHL-WAMIMS-2023.png"
           />
         </div>
       </section>
