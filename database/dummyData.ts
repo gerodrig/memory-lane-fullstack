@@ -32,12 +32,12 @@ export const teamData: TeamMember[] = [
       jobTitle: 'Board Member',
       description: `Ms. Guo completed a  bachelor’s degree in Economics from the University of Manitoba. She is a Rotman MBA Candidate from the University of Toronto. Prior to Rotman, she spent three years at a federally chartered non-profit organization, helping healthcare professionals across Canada and internationally. Her passion in business is refining processes to make operations more efficient;  Ms Guo  has strong analytical skills to uncover insights from data to support decision-making. She is passionate about alternative care, senior care, digital health, project management, client relationship management, strategic planning and operations improvement. She is the Vice President of Rotman Women in Management Association and Rotman Healthcare Management Association. She is the Social Impact Consultant at Collaboration Partners.`
     },
-    {
-      image: '/assets/images/board-members/kennedi.jpg',
-      name: 'Kennedi Koves',
-      jobTitle: 'Board Member',
-      description: `Kennedi is our newest Board Member at Memory Lane Home Living, assuming responsibility for  Social Media &  Community Partnership Management. She holds a BComm degree in Marketing Management, and currently works full-time as a Marketing Analyst. Kennedi has lived experience with dementia and is passionate about “Aging in Place with Dementia” as it reflects the values and goals of Memory Lane Home Living. In her free time, Kennedi enjoys the outdoors, reading  and a cup of Orange Pekoe tea.`
-    },
+    // {
+    //   image: '/assets/images/board-members/kennedi.jpg',
+    //   name: 'Kennedi Koves',
+    //   jobTitle: 'Board Member',
+    //   description: `Kennedi is our newest Board Member at Memory Lane Home Living, assuming responsibility for  Social Media &  Community Partnership Management. She holds a BComm degree in Marketing Management, and currently works full-time as a Marketing Analyst. Kennedi has lived experience with dementia and is passionate about “Aging in Place with Dementia” as it reflects the values and goals of Memory Lane Home Living. In her free time, Kennedi enjoys the outdoors, reading  and a cup of Orange Pekoe tea.`
+    // },
     {
       image: '/assets/images/board-members/madison.jpg',
       name: 'Madison Squires',
