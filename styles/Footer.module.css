@@ -32,8 +32,6 @@
   .footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #d68eae;
-    color: #fff;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -45,7 +43,7 @@
   }
   
   .footer .footer-top .social-links a:hover {
-    background: #fed1e6;
+    background-color: #888888;
     text-decoration: none;
   }
   
@@ -157,5 +155,4 @@
 
 .footer-newsletter .error {
     margin-left: 10px;
-    color: #d33;
 }

@@ -1,4 +1,4 @@
-import { Facebook, Twitter } from 'react-bootstrap-icons';
+import { Facebook, Instagram } from 'react-bootstrap-icons';
 
 
 import { NewsletterSubscribe } from './NewsletterSubscribe';
@@ -38,11 +38,11 @@ export const Footer = () => {
                 </p>
                 <div className={`${style['social-links']} mt-3`}>
                   <a
-                    href="https://twitter.com/memorylanehl"
-                    className="twitter"
+                    href="https://www.instagram.com/memorylanehomeliving/"
+                    className="instagram"
                     target="_blank"
                     rel="noreferrer">
-                    <Twitter />
+                    <Instagram style={{color: '#C13584'}} />
                   </a>
                   <a
                     href="https://www.facebook.com/memorylanehomeliving/"
