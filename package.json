@@ -32,6 +32,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
-    "@types/facebook-pixel": "^0.0.24"
+    "@types/facebook-pixel": "^0.0.24",
+    "@types/gtag.js": "^0.0.12"
   }
 }

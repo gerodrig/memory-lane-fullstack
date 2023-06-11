@@ -1,6 +1,7 @@
 import type { AppProps } from 'next/app';
 
 import FacebookPixel from 'lib/fpixel/FacebookPixel';
+import GoogleAnalytics from 'lib/ga/GoogleAnalytics';
 
 import '../styles/globals.css';
 import { Loader } from '@components/ui';
@@ -15,6 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
       {!isPageLoading && (
         <>
           <FacebookPixel />
+          <GoogleAnalytics />
+
           <Component {...pageProps} />
         </>
       )}
