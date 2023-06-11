@@ -19,15 +19,8 @@ const {
   EMAILJS_TEMPLATE_ID,
   EMAILJS_PUBLIC_KEY,
   EMAILJS_API,
-  EMAILJS_ACCESS_TOKEN
+  EMAILJS_ACCESS_TOKEN,
 } = process.env;
-console.log(
-  EMAILJS_SERVICE_ID,
-  EMAILJS_TEMPLATE_ID,
-  EMAILJS_PUBLIC_KEY,
-  EMAILJS_API,
-  EMAILJS_ACCESS_TOKEN
-);
 
 
 export default async function handler(
