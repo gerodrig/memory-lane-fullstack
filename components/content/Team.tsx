@@ -32,7 +32,7 @@ export const Team = ({ id = '' }) => {
           <div className="row d-flex justify-content-center">
           <SeparatorIdentifier id="board-directors" />
             {data
-              .filter(({ jobTitle }) => jobTitle === 'President')
+              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('chair'))
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}
@@ -41,7 +41,7 @@ export const Team = ({ id = '' }) => {
 
           <div className="row d-flex justify-content-center">
           {data
-              .filter(({ jobTitle }) => jobTitle !== 'President')
+              .filter(({ jobTitle }) => !jobTitle?.toLowerCase().includes('chair'))
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}

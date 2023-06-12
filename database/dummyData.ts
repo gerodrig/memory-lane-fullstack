@@ -4,8 +4,14 @@ export const teamData: TeamMember[] = [
     {
     image: '/assets/images/board-members/mona.jpg',
     name: 'Mona Lancaster',
-    jobTitle: 'President',
+    jobTitle: 'Chair',
     description: `BA, B Comm. Founding member of Memory Lane Home Living. Mona has a background in Psychology/Sociology and the mental health field. Banking experience followed. While in university she worked as a Nurse's Aide in a Long-Term Care facility. Mona is currently completing a Geriatric Certificate from McMaster University. She has completed the Dementia Montessori Course.  Mona has also completed  the Dementia Care Matters Course, to guide and implement important aspects of the "Butterfly Model of Care “into Memory Lane Home Living Inc.  In 2020 Mona was appointed to the Steering Committee as an Older Adult Representative for Caregivers with the Provincial Geriatric Leadership Office (PGLO).   In December of 2021 Mona Lancaster was awarded an Outstanding Canadian Award for her perseverance and compassion in making a difference for a new way of living in community with dementia. In October2022 Mona was also awarded the  Queen's Platinum Jubilee Community Hero Award.`
+    },
+    {
+    image: '/assets/images/board-members/liz.webp',
+    name: 'Elizabeth (Liz) Morin',
+    jobTitle: 'Vice Chair',
+    description: `Liz retired from the federal public service in 2020, after a 30+ year career focused on Indigenous and social justice issues. Her work took her to all parts of Canada, and to several remote First Nation communities, where she gained a real appreciation for how diverse teams could work together to solve complex problems. Liz graduated with a BA from the University of Toronto, and a MA in Public Administration from Carleton University in Ottawa. Liz brings significant expertise in governance, negotiations, strategic planning and implementation. As the primary care-giver to her Mother who has a dementia diagnosis, Liz is passionate about creating more options for people with dementia to live fully and well in community.`
     },
     {
       image: '/assets/images/board-members/mina.jpg',
@@ -39,7 +45,7 @@ export const teamData: TeamMember[] = [
     //   description: `Kennedi is our newest Board Member at Memory Lane Home Living, assuming responsibility for  Social Media &  Community Partnership Management. She holds a BComm degree in Marketing Management, and currently works full-time as a Marketing Analyst. Kennedi has lived experience with dementia and is passionate about “Aging in Place with Dementia” as it reflects the values and goals of Memory Lane Home Living. In her free time, Kennedi enjoys the outdoors, reading  and a cup of Orange Pekoe tea.`
     // },
     {
-      image: '/assets/images/board-members/madison.jpg',
+      image: '/assets/images/board-members/madison.webp',
       name: 'Madison Squires',
       jobTitle: 'Client/Program Manager',
       description: `Madison holds a degree in Therapeutic Recreation and a minor in Gerontology. She is currently pursuing a Master of Science in Aging and Health. As a Certified Therapeutic Recreation Specialist (CTRS), Madison has worked in various settings, bringing a therapeutic approach to dementia care. She has developed programs aimed at slowing down symptoms and promoting a better quality of life for women experiencing memory loss.
@@ -49,7 +55,7 @@ export const teamData: TeamMember[] = [
       In her free time, Madison can be found playing volleyball.`
     },
     {
-      image: '/assets/images/board-members/cassidy.jpg',
+      image: '/assets/images/board-members/cassidy.webp',
       name: 'Cassidy Boniface',
       jobTitle: 'Program Manager Part-Time',
       description: `Cassidy works part-time as a Recreation Therapist at Memory Lane Home Living for our Wednesday and Saturday programs. She holds a BSc degree in Aging Studies from the University of Waterloo, ON, and is currently pursuing a Doctor of Chiropractic in North York, ON. Cassidy's main goal is to create a safe and interactive environment for community members living with dementia through a variety of activities and exercises.

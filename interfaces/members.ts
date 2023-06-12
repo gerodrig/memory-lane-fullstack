@@ -6,4 +6,4 @@ export interface TeamMember {
     description?: string;
 };
 
-type jobTitle = 'President' | 'Board Member' | 'Client/Program Manager' | 'Program Manager Part-Time';
+type jobTitle = 'Chair' | 'Vice Chair' | 'Board Member' | 'Client/Program Manager' | 'Program Manager Part-Time';
