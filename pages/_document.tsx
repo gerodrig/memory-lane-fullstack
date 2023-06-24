@@ -19,15 +19,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* <noscript>
-            <img
-              height="1"
-              width="1"
-              style={{ display: 'none' }}
-              alt=""
-              src={`https://www.facebook.com/tr?id=${FB_PIXEL_ID}&ev=PageView&noscript=1`}
-            />
-          </noscript> */}
+          <meta name="google-site-verification" content="q6VmvA9x4XZUl8LKplK5x-kidX9LDsghquGtOF73blI" />
         </Head>
         <body>
           <Main />
