@@ -25,10 +25,6 @@ export const Services = ({ id = '' }: ServicesProps) => {
       <SeparatorIdentifier id={id} margin="my-1" />
       <section>
         <div className="container" data-aos="fade-up">
-          <div className={styleSection['section-title']}>
-            <h2>Services</h2>
-          </div>
-
           <div className="row">
             <SeparatorIdentifier id="living-with-us" margin="my-1" />
             <div
@@ -89,6 +85,10 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Thornhill, Vaughan, Stouffville, Newmarket, Markham, Barrie,
                 Orangeville, Bradford, and Toronto, Ontario.{' '}
               </p>
+            </div>
+
+            <div className={styleSection['section-title']}>
+              <h2>Services</h2>
             </div>
 
             <SeparatorIdentifier id="day-program" />

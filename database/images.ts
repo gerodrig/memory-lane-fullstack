@@ -92,4 +92,32 @@ export const imagesEvent = [
       title: 'Senior Fair Markham',
       image: '/assets/images/gallery/event-14.jpg',
     },
+    {
+      title: 'Event 15',
+      image: '/assets/images/gallery/event-15.webp',
+    },
+    {
+      title: 'Event 16',
+      image: '/assets/images/gallery/event-16.webp',
+    },
+    {
+      title: 'Event 17',
+      image: '/assets/images/gallery/event-17.webp',
+    },
+    {
+      title: 'Event 18',
+      image: '/assets/images/gallery/event-18.webp',
+    },
+    {
+      title: 'Event 19',
+      image: '/assets/images/gallery/event-19.webp',
+    },
+    {
+      title: 'Event 20',
+      image: '/assets/images/gallery/event-20.webp',
+    },
+    {
+      title: 'Event 21',
+      image: '/assets/images/gallery/event-21.webp',
+    },
   ] as IGallery[];
