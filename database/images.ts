@@ -93,31 +93,31 @@ export const imagesEvent = [
       image: '/assets/images/gallery/event-14.jpg',
     },
     {
-      title: 'Event 15',
+      title: 'Music from the Heart program led by Music Therapist Thyra Andrews',
       image: '/assets/images/gallery/event-15.webp',
     },
     {
-      title: 'Event 16',
+      title: 'Day Program Activities at our home',
       image: '/assets/images/gallery/event-16.webp',
     },
     {
-      title: 'Event 17',
+      title: 'Music Activities at a local church',
       image: '/assets/images/gallery/event-17.webp',
     },
     {
-      title: 'Event 18',
+      title: 'Celebrating our volunteers',
       image: '/assets/images/gallery/event-18.webp',
     },
     {
-      title: 'Event 19',
+      title: 'EveDancing at our home in our Community Connection program',
       image: '/assets/images/gallery/event-19.webp',
     },
     {
-      title: 'Event 20',
+      title: 'The Alzheimer Society or York Region Annual Walk for 2023, held in Richmond Hill',
       image: '/assets/images/gallery/event-20.webp',
     },
     {
-      title: 'Event 21',
+      title: 'Our Music from the Heart Choir Practice;  preparing for an August 15, 2023 performance',
       image: '/assets/images/gallery/event-21.webp',
     },
   ] as IGallery[];
