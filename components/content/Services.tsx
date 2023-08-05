@@ -26,31 +26,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
       <section>
         <div className="container" data-aos="fade-up">
           <div className="row">
-          <p className={style['description-pink']}>
-              <span className="fw-bold">
-                MONTHLY ZOOM INFORMATION SESSIONS: Find out about Memory Lane
-                Home Living and their wholistic model of care:
-              </span>
-            </p>
-            <p className={styleSection.description + ` mb-4`}>
-              {' '}
-              We meet the first Monday of each month from 7-8pm to personally
-              answer any questions you may have. Call us at{' '}
-              <a className="underline" href="tel:905-237-1419">
-                905-237-1419
-              </a>{' '}
-              or send us an email at{' '}
-              <a className="underline" href="mailto:mlliving14@gmail.com">
-                mlliving14@gmail.com
-              </a>{' '}
-              to access the zoom link.
-            </p>
-
-          <FlyerImage
-            className="mt-1 mb-5 col-sm-12"
-            source="/assets/images/flyers/MLHL-information-evening-first-monday-of-month.png"
-          />
-            <SeparatorIdentifier id="living-with-us" margin="my-1" />
+            <SeparatorIdentifier id="living-with-us" margin="my-5" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
@@ -111,11 +87,39 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </p>
             </div>
 
+            <div>
+              <p className={style['description-pink']}>
+                <span className="fw-bold">
+                  MONTHLY ZOOM INFORMATION SESSIONS: Find out about Memory Lane
+                  Home Living and their wholistic model of care:
+                </span>
+              </p>
+              <p className={styleSection.description + ` mb-4`}>
+                {' '}
+                We meet the first Monday of each month from 7-8pm to personally
+                answer any questions you may have. Call us at{' '}
+                <a className="underline" href="tel:905-237-1419">
+                  905-237-1419
+                </a>{' '}
+                or send us an email at{' '}
+                <a className="underline" href="mailto:mlliving14@gmail.com">
+                  mlliving14@gmail.com
+                </a>{' '}
+                to access the zoom link.
+              </p>
+
+              <FlyerImage
+                className="mt-1 mb-5 col-sm-12"
+                source="/assets/images/flyers/MLHL-information-evening-first-monday-of-month.png"
+              />
+            </div>
+            <SeparatorIdentifier id="services" margin='my-5' />
+
             <div className={styleSection['section-title']}>
               <h2>Services</h2>
             </div>
 
-            <SeparatorIdentifier id="day-program" />
+            <SeparatorIdentifier id="day-program" margin='my-1' />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
@@ -289,7 +293,6 @@ export const Services = ({ id = '' }: ServicesProps) => {
               <CalendarFill size={32} />
             </div>
             <h4 className={style.title}>Monthly Programs</h4>
-           
           </div>
 
           <SeparatorIdentifier id="monthly-caregiver-support" margin="my-1" />
