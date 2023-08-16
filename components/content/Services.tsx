@@ -230,7 +230,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </p>
               <p className={styleSection.description}>
                 <span className="fw-bold">WHERE:</span> Presbyterian Church,
-                1066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
+                10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
                 Richmond Hill, ON.
               </p>
               <p className={styleSection.description}>
