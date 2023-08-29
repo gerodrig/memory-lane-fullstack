@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "memorylanehomeliving.ca",
+  "Id": "680193ce-511a-428f-89c2-2d643d0bf4c3"
+}
