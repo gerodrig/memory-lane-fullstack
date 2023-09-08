@@ -91,7 +91,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
               <p className={style['description-pink']}>
                 <span className="fw-bold">
                   MONTHLY ZOOM INFORMATION SESSIONS: Find out about Memory Lane
-                  Home Living and their wholistic model of care:
+                  Home Living and their holistic model of care:
                 </span>
               </p>
               <p className={styleSection.description + ` mb-4`}>
@@ -111,6 +111,25 @@ export const Services = ({ id = '' }: ServicesProps) => {
               <FlyerImage
                 className="mt-1 mb-5 col-sm-12"
                 source="/assets/images/flyers/MLHL-information-evening-first-monday-of-month.png"
+              />
+            </div>
+            <div>
+              <p className={style['description-pink']}>
+                <span className="fw-bold">
+                  SEPTEMBER SPECIAL EVENT: Come join us to the event we wil be having with the Alzheimer society of York Region.
+                </span>
+              </p>
+              <p className={styleSection.description + ` mb-1`}>
+                {' '}
+                WHEN: September 21st 2023 09:30am - 12:30pm
+              </p>
+              <p className={styleSection.description + ` mb-4`}>
+                WHERE: 45 Crosby Ave, Richmond Hill (Yonge and Crosby)
+              </p>
+
+              <FlyerImage
+                className="mt-1 mb-5 col-sm-12"
+                source="/assets/images/flyers/MLHL-and-Alzheimer-Society.jpg"
               />
             </div>
             <SeparatorIdentifier id="services" margin='my-5' />
