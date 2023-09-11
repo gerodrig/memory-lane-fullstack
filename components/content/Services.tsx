@@ -116,16 +116,26 @@ export const Services = ({ id = '' }: ServicesProps) => {
             <div>
               <p className={style['description-pink']}>
                 <span className="fw-bold">
-                  SEPTEMBER SPECIAL EVENT: Come join us to the event we wil be having with the Alzheimer society of York Region.
+                World Alzheimer’s Day is September 21, 2023. Memory Lane Home Living Inc is collaborating with the Alzheimer Society of York Region to host a special event:
                 </span>
               </p>
               <p className={styleSection.description + ` mb-1`}>
                 {' '}
-                WHEN: September 21st 2023 09:30am - 12:30pm
+                <span className='fw-bold'>WHY:</span> Educate our care partners, care services, and those interested in learning more about dementia and provide resources available in York Region. Keynote speaker is Dan Cohen, MSW, world renowned advocate for those with a dementia diagnosis.
+              </p>
+              <p className={styleSection.description + ` mb-1`}>
+                {' '}
+                <span className='fw-bold'>WHEN:</span> September 21st 2023 09:30am - 12:30pm
               </p>
               <p className={styleSection.description + ` mb-4`}>
-                WHERE: 45 Crosby Ave, Richmond Hill (Yonge and Crosby)
+              <span className='fw-bold'>WHERE:</span> 45 Crosby Ave, Richmond Hill (Yonge and Crosby)
               </p>
+              <p className={styleSection.description + ` mb-4`}>
+              <span className='fw-bold'>COST:</span> No charge. Light Lunch and Refreshments.
+              </p>
+              <Link className={styleSection.description + ` mb-4`} href={'http://qr.link/CA4q0y'} target='_blank'>
+              <span style={{color: '#714b92'}} className='fw-bold'>CLICK HERE TO REGISTER</span>
+              </Link>
 
               <FlyerImage
                 className="mt-1 mb-5 col-sm-12"
