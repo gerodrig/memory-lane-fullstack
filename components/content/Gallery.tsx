@@ -15,7 +15,7 @@ import { SeparatorIdentifier } from '@components/ui/SeparatorIdentifier';
 import style from './Gallery.module.css';
 import sectionStyle from '@styles/Section.module.css';
 
-import { imagesGallery, imagesEvent } from '@data/images';
+import { imagesGallery, imagesEvent, dayProgramGallery } from '@data/images';
 import { IGallery } from 'interfaces';
 
 export const Gallery = ({ id = '' }) => {
@@ -135,6 +135,45 @@ export const Gallery = ({ id = '' }) => {
             ))}
           </Swiper>
 
+          <h4 className={style.title}>Day Program Gallery</h4>
+          <Swiper
+            pagination={{
+              type: 'bullets',
+              clickable: true,
+            }}
+            speed={400}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView={'auto'}
+            modules={[Pagination, Autoplay]}
+            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+              },
+              992: {
+                slidesPerView: 5,
+                spaceBetween: 20,
+              },
+            }}
+            className="swiper">
+            {dayProgramGallery.map(({ title = '', image }, index, array) => (
+              <SwiperSlide key={image}>
+                <Image
+                  onClick={() => handleShowModal(index, array)}
+                  src={image}
+                  height={120}
+                  width={150}
+                  alt={title}
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
           <h4 className={style.title}>Events Gallery</h4>
           <Swiper
             pagination={{

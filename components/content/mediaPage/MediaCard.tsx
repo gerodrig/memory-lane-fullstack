@@ -3,19 +3,29 @@ import Image from 'next/image';
 import { Modal } from 'react-bootstrap';
 import styleSection from '@styles/Section.module.css';
 
+interface Props {
+  image?: string;
+  index?: number;
+  width?: number;
+  height?: number;
+  text?: string;
+  size?: 'sm' | 'lg' | 'xl';
+}
+
 export const MediaCard = ({
   image = '',
   index = 0,
   width = 300,
   height = 300,
   text = '',
-}) => {
+  size = 'lg',
+}: Props) => {
   const [showModal, setShowModal] = useState(false);
 
   return (
     <>
       <Modal
-        size="lg"
+        size={size}
         show={showModal}
         key={image}
         centered
@@ -24,8 +34,8 @@ export const MediaCard = ({
         <Modal.Body>
           <Image
             src={image}
-            height={520}
-            width={520}
+            height={size === 'xl' ? 800 : 520}
+            width={size === 'xl' ? 800 : 520}
             className="img-fluid d-block mx-auto"
             alt={image}
           />

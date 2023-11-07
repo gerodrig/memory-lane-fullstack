@@ -114,13 +114,13 @@ export const Services = ({ id = '' }: ServicesProps) => {
               />
             </div>
 
-            <SeparatorIdentifier id="services" margin='my-5' />
+            <SeparatorIdentifier id="services" margin="my-5" />
 
             <div className={styleSection['section-title']}>
               <h2>Services</h2>
             </div>
 
-            <SeparatorIdentifier id="day-program" margin='my-1' />
+            <SeparatorIdentifier id="day-program" margin="my-1" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
@@ -133,9 +133,13 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Community Connection Day Program
               </h4>
               <p className={styleSection.description}>
-                We invite women with memory challenges to join us for a half day
-                of socialization, activities, and a hot lunch with other women
-                on the same journey. Covid protocol updated regularly.
+                We invite women with memory challenges, such as an MCI diagnosis
+                or a mild to moderate dementia diagnosis to join us for a half
+                day of socialization, activities, and a hot lunch with other
+                women on the same journey. We know that with dementia, one size
+                does not fit all; we have 3 different day programs available in
+                our cozy home environment. Women feel like they are spending the
+                day at a friends house.
               </p>
               <p className={styleSection.description}>
                 Community Connection Schedule:
@@ -147,35 +151,37 @@ export const Services = ({ id = '' }: ServicesProps) => {
                     <li>
                       {check}{' '}
                       <span className="ps-2">
-                        Community Connection for women with a{' '}
+                        Tuesday (11am-3pm) and Thursday (11am-4pm): Community
+                        Connection for women with a{' '}
                         <span className="fw-bold">Young Onset diagnosis</span>,
-                        Tuesday and Thursday 11am to 3pm.
+                        including great conversations, music, crafts, games, and
+                        outdoor activities geared to this 65 and under age
+                        group. We are the only young-onset program in York
+                        Region.
                       </span>
                     </li>
                     <li>
                       {check}{' '}
                       <span className="ps-2">
-                        Community Connection for{' '}
-                        <span className="fw-bold">senior women</span> (80 yrs
-                        and over) with a dementia diagnosis, Fridays 11am to
-                        3pm.
+                        Fridays (11am – 4pm): Community Connection for{' '}
+                        <span className="fw-bold">senior women</span> (75 yrs
+                        and over) with a dementia diagnosis. We provide a sense
+                        of connection through our conversations, singing, music,
+                        exercise, games, art, and the outdoors.
                       </span>
                     </li>
                     <li>
                       {check}{' '}
                       <span className="ps-2">
-                        Community Connection for{' '}
-                        <span className="fw-bold">caregivers</span> or{' '}
+                        Wednesdays (11am – 3pm): Working Wednesdays Program for{' '}
                         <span className="fw-bold">
-                          personal support workers (PSW)
-                        </span>{' '}
-                        and{' '}
-                        <span className="fw-bold">
-                          their person living with dementia (PLWD)
+                          women with an MCI diagnosis or mild dementia diagnosis{' '}
                         </span>
-                        , Wednesdays 11am to 3pm. We teach the caregivers and
-                        PSW how to engage with their PLWD by demonstrating a
-                        variety of activities.
+                        , who want to participate in activities with purpose,
+                        working with us to prepare crafts for various
+                        fundraising initiatives and helping with a variety of
+                        social initiatives. Our Working Wednesday Program is the
+                        only one of its kind in York Region.
                       </span>
                     </li>
                   </ul>
@@ -188,7 +194,15 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </p>
               <p className={styleSection.description}>
                 <span className="fw-bold">COST:</span> $10/Hour for four hours
-                and $10 for lunch.
+                and $10 for lunch. Limited spaces.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">REGISTRATION REQUIRED:</span>{' '}
+                Call us at <Link href="tel:9052371419">905.237.1419</Link>{' '} 
+                or Email us at {' '}
+                <Link href="mailto:mlliving14@gmail.com">
+                mlliving14@gmail.com
+                </Link>
               </p>
             </div>
 
@@ -210,38 +224,51 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Music From The Heart
               </h4>
               <p className={styleSection.description}>
-                Our{' '}
                 <span className="fst-italic fw-bold">Music from the Heart</span>
-                , is a weekly program run by our music therapist to deliver a
-                therapeutic music program to caregivers and their loved ones
-                with a dementia diagnosis, in a community setting. Music therapy
-                is the use of music to accomplish individualized goals such as
-                reducing stress, improving mood and self-expression. It is an
-                evidence-based therapy well-established in the health community.
-                This hour of music is followed by a social hour led by our
-                recreational therapist. Join us for these 2 hours of community
-                engagements. There is not charge for this program, however we do
-                require pre-registration to join us; Please call{' '}
-                <span>
-                  <Link href="tel:905-237-1419">905-237-1419</Link>
-                </span>
-                . Caregivers may include family members or PSWs to accompany
-                their loved one with a dementia diagnosis. They will be active
-                participants in this program.
+                , is a weekly program run by our music therapist to deliver a therapeutic music program to caregivers and their loved ones with a dementia diagnosis in a community setting. Music therapy is the use of music to accomplish individualized goals such as reducing stress and improving mood and self-expression. It is an evidence-based therapy well-established in the health community. We invite care partners and their loved one with a dementia diagnosis to participate together in this program. This is the only community therapy program in York Region. Join us and experience the power of music.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Presbyterian Church,
-                10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
-                Richmond Hill, ON.
+                <span className="fw-bold">WHERE:</span> Presbyterian Church, 10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">COST:</span> No Charge.
+                <span className="fw-bold">COST:</span> No Charge, however, we limit the size of the group.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">REGISTRATION REQUIRED:</span>{' '}
+                Call us at <Link href="tel:9052371419">905.237.1419</Link>{' '} 
+                or Email us at {' '}
+                <Link href="mailto:mlliving14@gmail.com">
+                mlliving14@gmail.com
+                </Link>
+              </p>
+              <br />
+              <br />
+              <p className={styleSection.description}>
+                <span className="fst-italic fw-bold">Music from the Heart Choir</span>
+                , grew out of our music therapy program. We are a choir of care partners with our loved ones with a dementia diagnosis. We come together to share with others our music that is truly from our heart. We perform in Long Term Care homes throughout York Region at no charge. We love what we do, and it shows in our performances. If you would like to join our choir, please call us at 905.237.1419.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">WHERE:</span> Presbyterian Church, 10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">WHEN:</span> We practice on Tuesdays, from 2:00pm to 2:30pm. Performances are usually on Tuesday afternoons approx. once every 3 months.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">COST:</span> No Charge, however, we limit the size of the group.
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">REGISTRATION REQUIRED:</span>{' '}
+                Call us at <Link href="tel:9052371419">905.237.1419</Link>{' '} 
+                or Email us at {' '}
+                <Link href="mailto:mlliving14@gmail.com">
+                mlliving14@gmail.com
+                </Link>
               </p>
             </div>
 
             <FlyerImage
               className="mt-1 mb-5"
-              source="/assets/images/flyers/music-from-the-heart.jpg"
+              source="/assets/images/flyers/MLHL-music-from-the-heart.png"
             />
 
             <SeparatorIdentifier id="respite-care" className="my-0" />

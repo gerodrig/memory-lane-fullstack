@@ -121,3 +121,26 @@ export const imagesEvent = [
       image: '/assets/images/gallery/event-21.webp',
     },
   ] as IGallery[];
+
+  export const dayProgramGallery = [
+    {
+      title: 'Walk A Mile In My Shoes',
+      image: '/assets/images/day_program_gallery/event-1.png',
+    },
+    {
+      title: 'Having a Meal',
+      image: '/assets/images/day_program_gallery/event-2.png',
+    },
+    {
+      title: 'Preparing a Meal',
+      image: '/assets/images/day_program_gallery/event-3.png',
+    },
+    {
+      title: 'Handcrafting',
+      image: '/assets/images/day_program_gallery/event-4.png',
+    },
+    {
+      title: 'Walking on a rainy day',
+      image: '/assets/images/day_program_gallery/event-5.png',
+    },
+  ] as IGallery[];

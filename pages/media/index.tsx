@@ -21,7 +21,7 @@ const mediaContent = [
     }
 ];
 
-export default function Donations() {
+export default function Media() {
   return (
     <MemoryLaneLayout
       title="Memory Lane Home Living Inc. | Dementia Care Home Richmond Hill ON"

@@ -98,7 +98,6 @@ export const Navbar = () => {
     }
   };
 
-
   return (
     <>
       <Topbar hide={!visible} />
@@ -108,7 +107,8 @@ export const Navbar = () => {
           mobileNav
             ? `${styles['navbar-mobile']} ${styles['bi-x']}`
             : styles.header
-        } ${scrolled}`}>
+        } ${scrolled}`}
+      >
         <div className="container d-flex align-items-center">
           {!mobileNav && (
             <Link href="/" className="logo me-auto">
@@ -132,31 +132,42 @@ export const Navbar = () => {
               </li>
               <li
                 className={`${styles.dropdown}`}
-                onClick={() => toogleDropdowns('services')}>
-                <Link href='#' scroll={false}>
-                <span>Services</span> <ChevronDown className="ms-1" />
+                onClick={() => toogleDropdowns('services')}
+              >
+                <Link href="#" scroll={false}>
+                  <span>Services</span> <ChevronDown className="ms-1" />
                 </Link>
                 <ul
                   className={
                     servicesDropdownOpen ? styles['dropdown-active'] : ''
-                  }>
+                  }
+                >
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#living-with-us" scroll={false}>Living With Us</Link>
+                    <Link href="/#living-with-us" scroll={false}>
+                      Living With Us
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#day-program" scroll={false}>Day Programs</Link>
+                    <Link href="/#day-program" scroll={false}>
+                      Day Programs
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#music-from-the-heart" scroll={false}>Music From The Heart</Link>
+                    <Link href="/#music-from-the-heart" scroll={false}>
+                      Music From The Heart
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#respite-care" scroll={false}>Respite Care</Link>
+                    <Link href="/#respite-care" scroll={false}>
+                      Respite Care
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
-                onClick={() => toogleDropdowns('caregivers')}>
+                onClick={() => toogleDropdowns('caregivers')}
+              >
                 <Link href="#" scroll={false}>
                   <span>Caregiver Support</span>{' '}
                   <ChevronDown className="ms-1" />
@@ -164,9 +175,12 @@ export const Navbar = () => {
                 <ul
                   className={
                     caregiversDropdownOpen ? styles['dropdown-active'] : ''
-                  }>
+                  }
+                >
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#monthly-caregiver-support" scroll={false}>Caregiver Support group</Link>
+                    <Link href="/#monthly-caregiver-support" scroll={false}>
+                      Caregiver Support group
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/dementia-resources">Resources</Link>
@@ -178,31 +192,38 @@ export const Navbar = () => {
               </li>
               <li
                 className={`${styles.dropdown}`}
-                onClick={() => toogleDropdowns('about')}>
+                onClick={() => toogleDropdowns('about')}
+              >
                 <Link href="#" scroll={false}>
                   <span>About</span> <ChevronDown className="ms-1" />{' '}
                 </Link>
                 <ul
-                  className={
-                    aboutDropdownOpen ? styles['dropdown-active'] : ''
-                  }>
+                  className={aboutDropdownOpen ? styles['dropdown-active'] : ''}
+                >
                   <li onClick={toggleMobileNav}>
                     <Link href="/mission">Mission</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#gallery" scroll={false}>Gallery</Link>
+                    <Link href="/#gallery" scroll={false}>
+                      Gallery
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#testimonials" scroll={false}>Testimonials</Link>
+                    <Link href="/#testimonials" scroll={false}>
+                      Testimonials
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#team" scroll={false}>Our Team</Link>
+                    <Link href="/#team" scroll={false}>
+                      Our Team
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
-                onClick={() => toogleDropdowns('get-involved')}>
+                onClick={() => toogleDropdowns('get-involved')}
+              >
                 <Link href="#" scroll={false}>
                   <span>Get Involved</span>
                   <ChevronDown className="ms-1" />
@@ -210,29 +231,47 @@ export const Navbar = () => {
                 <ul
                   className={
                     getInvolvedDopdownOpen ? styles['dropdown-active'] : ''
-                  }>
+                  }
+                >
                   <li onClick={toggleMobileNav}>
-                    <Link href="/volunteers">Board of Directors/Volunteers</Link>
+                    <Link href="/volunteers">
+                      Board of Directors/Volunteers
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li
                 className={`${styles.dropdown}`}
-                onClick={() => toogleDropdowns('more')}>
+                onClick={() => toogleDropdowns('more')}
+              >
                 <Link href="#" scroll={false}>
                   <span>More</span>
                   <ChevronDown className="ms-1" />
                 </Link>
                 <ul
-                  className={moreDropDownOpen ? styles['dropdown-active'] : ''}>
+                  className={moreDropDownOpen ? styles['dropdown-active'] : ''}
+                >
+                  <li onClick={toggleMobileNav}>
+                    <Link href="/new">What is New?</Link>
+                  </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/partners">Partner Page</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/media" scroll={false}>Media</Link>
+                    <Link href="/media" scroll={false}>
+                      Media
+                    </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="#subscribe" onClick={() => document.getElementById("subscribe")?.focus()} scroll={false}>Newsletter Sign Up</Link>
+                    <Link
+                      href="#subscribe"
+                      onClick={() =>
+                        document.getElementById('subscribe')?.focus()
+                      }
+                      scroll={false}
+                    >
+                      Newsletter Sign Up
+                    </Link>
                   </li>
                 </ul>
               </li>
@@ -246,16 +285,26 @@ export const Navbar = () => {
 
           {!mobileNav && (
             <Link
+              href="/new"
+              className={`${styles['what-is-new-btn']} debug scrollto`}
+              scroll={false}
+            >
+              New <span className="d-none d-md-inline">at MLHL</span>
+            </Link>
+          )}
+          {!mobileNav && (
+            <Link
               href="/#appointment"
               className={`${styles['appointment-btn']} scrollto`}
-              scroll={false}>
+              scroll={false}
+            >
               <span className="d-none d-md-inline">Contact</span> Us
             </Link>
           )}
           {!mobileNav && (
             <Link href="/donations" className={`${styles['donate-btn']}`}>
-                {/* <span className="d-none d-md-inline">Donate</span> */}
-                Donate
+              {/* <span className="d-none d-md-inline">Donate</span> */}
+              Donate
             </Link>
           )}
         </div>
