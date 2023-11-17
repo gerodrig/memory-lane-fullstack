@@ -357,12 +357,12 @@ export const Services = ({ id = '' }: ServicesProps) => {
             id="monthly-tuesday"
           >
             <p className={style['description-pink']}>
-              <span className="fw-bold">WALK A MILE IN MY SHOES</span>
+              <span className="fw-bold">WALK A MILE IN MY SHOES </span><span className='fw-bold text-danger'>(PAUSED Until Spring)</span>
             </p>
             <p className={styleSection.description}>
               The Walk a Mile in My Shoes walking program offers seniors in
               Richmond Hill, ON, an opportunity to safely walk around their
-              neighbourhood or local parks. Walking is essential to both our
+              neighbourhood or local parks.<span className='fw-bold'>This program runs from May to September.</span> Walking is essential to both our
               physical and mental health, and we strive to ensure all seniors
               have access to these benefits. Whether you walk by foot, walker,
               or wheelchair, we have a program for you. We offer walking groups
@@ -371,9 +371,14 @@ export const Services = ({ id = '' }: ServicesProps) => {
               volunteers. The Walk a Mile in My Shoes program is a great way to
               make friends and get active this summer. All walks are coordinated
               and accompanied by our staff and volunteers from Memory Lane Home
-              Living (MLHL) inc. For more information about this program, please
-              call MLHL (905)-237-1419, or Cassidy at (226)-972-3664,
-              cb.mlliving23@gmail.com. We look forward to walking with you!{' '}
+              Living (MLHL) inc. For more information about this program, please call us at{' '}
+                <a className="underline" href="tel:905-237-1419">
+                  905-237-1419
+                </a>{' '}
+                or send us an email at{' '}
+                <a className="underline" href="mailto:mlliving14@gmail.com">
+                  mlliving14@gmail.com
+                </a>{' '}. We look forward to walking with you!{' '}
               <br />
               <br />
               <span className="fw-bold">
