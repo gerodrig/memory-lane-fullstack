@@ -27,9 +27,9 @@ export default function Home() {
           button="Read More"
         />
         <About id="about" />
+        <Testimonials id="testimonials" />
         <Services id="services" />
         {/* <ContactForm /> */}
-        <Testimonials id="testimonials" />
         <Team id="team" />
         <Gallery id="gallery" />
         <Contact id="contact" />

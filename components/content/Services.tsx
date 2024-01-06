@@ -197,11 +197,11 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 and $10 for lunch. Limited spaces.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">REGISTRATION REQUIRED:</span>{' '}
-                Call us at <Link href="tel:9052371419">905.237.1419</Link>{' '} 
-                or Email us at {' '}
+                <span className="fw-bold">REGISTRATION REQUIRED:</span> Call us
+                at <Link href="tel:9052371419">905.237.1419</Link> or Email us
+                at{' '}
                 <Link href="mailto:mlliving14@gmail.com">
-                mlliving14@gmail.com
+                  mlliving14@gmail.com
                 </Link>
               </p>
             </div>
@@ -225,43 +225,68 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </h4>
               <p className={styleSection.description}>
                 <span className="fst-italic fw-bold">Music from the Heart</span>
-                , is a weekly program run by our music therapist to deliver a therapeutic music program to caregivers and their loved ones with a dementia diagnosis in a community setting. Music therapy is the use of music to accomplish individualized goals such as reducing stress and improving mood and self-expression. It is an evidence-based therapy well-established in the health community. We invite care partners and their loved one with a dementia diagnosis to participate together in this program. This is the only community therapy program in York Region. Join us and experience the power of music.
+                , is a weekly program run by our music therapist to deliver a
+                therapeutic music program to caregivers and their loved ones
+                with a dementia diagnosis in a community setting. Music therapy
+                is the use of music to accomplish individualized goals such as
+                reducing stress and improving mood and self-expression. It is an
+                evidence-based therapy well-established in the health community.
+                We invite care partners and their loved one with a dementia
+                diagnosis to participate together in this program. This is the
+                only community therapy program in York Region. Join us and
+                experience the power of music.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Presbyterian Church, 10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
+                <span className="fw-bold">WHERE:</span> Presbyterian Church,
+                10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
+                Richmond Hill, ON.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">COST:</span> No Charge, however, we limit the size of the group.
+                <span className="fw-bold">COST:</span> No Charge, however, we
+                limit the size of the group.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">REGISTRATION REQUIRED:</span>{' '}
-                Call us at <Link href="tel:9052371419">905.237.1419</Link>{' '} 
-                or Email us at {' '}
+                <span className="fw-bold">REGISTRATION REQUIRED:</span> Call us
+                at <Link href="tel:9052371419">905.237.1419</Link> or Email us
+                at{' '}
                 <Link href="mailto:mlliving14@gmail.com">
-                mlliving14@gmail.com
+                  mlliving14@gmail.com
                 </Link>
               </p>
               <br />
               <br />
               <p className={styleSection.description}>
-                <span className="fst-italic fw-bold">Music from the Heart Choir</span>
-                , grew out of our music therapy program. We are a choir of care partners with our loved ones with a dementia diagnosis. We come together to share with others our music that is truly from our heart. We perform in Long Term Care homes throughout York Region at no charge. We love what we do, and it shows in our performances. If you would like to join our choir, please call us at 905.237.1419.
+                <span className="fst-italic fw-bold">
+                  Music from the Heart Choir
+                </span>
+                , grew out of our music therapy program. We are a choir of care
+                partners with our loved ones with a dementia diagnosis. We come
+                together to share with others our music that is truly from our
+                heart. We perform in Long Term Care homes throughout York Region
+                at no charge. We love what we do, and it shows in our
+                performances. If you would like to join our choir, please call
+                us at 905.237.1419.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Presbyterian Church, 10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
+                <span className="fw-bold">WHERE:</span> Presbyterian Church,
+                10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
+                Richmond Hill, ON.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHEN:</span> We practice on Tuesdays, from 2:00pm to 2:30pm. Performances are usually on Tuesday afternoons approx. once every 3 months.
+                <span className="fw-bold">WHEN:</span> We practice on Tuesdays,
+                from 2:00pm to 2:30pm. Performances are usually on Tuesday
+                afternoons approx. once every 3 months.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">COST:</span> No Charge, however, we limit the size of the group.
+                <span className="fw-bold">COST:</span> No Charge, however, we
+                limit the size of the group.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">REGISTRATION REQUIRED:</span>{' '}
-                Call us at <Link href="tel:9052371419">905.237.1419</Link>{' '} 
-                or Email us at {' '}
+                <span className="fw-bold">REGISTRATION REQUIRED:</span> Call us
+                at <Link href="tel:9052371419">905.237.1419</Link> or Email us
+                at{' '}
                 <Link href="mailto:mlliving14@gmail.com">
-                mlliving14@gmail.com
+                  mlliving14@gmail.com
                 </Link>
               </p>
             </div>
@@ -357,29 +382,34 @@ export const Services = ({ id = '' }: ServicesProps) => {
             id="monthly-tuesday"
           >
             <p className={style['description-pink']}>
-              <span className="fw-bold">WALK A MILE IN MY SHOES </span><span className='fw-bold text-danger'>(PAUSED Until Spring)</span>
+              <span className="fw-bold">WALK A MILE IN MY SHOES </span>
+              <span className="fw-bold text-danger">(PAUSED Until Spring)</span>
             </p>
             <p className={styleSection.description}>
               The Walk a Mile in My Shoes walking program offers seniors in
               Richmond Hill, ON, an opportunity to safely walk around their
-              neighbourhood or local parks.<span className='fw-bold'>This program runs from May to September.</span> Walking is essential to both our
-              physical and mental health, and we strive to ensure all seniors
-              have access to these benefits. Whether you walk by foot, walker,
-              or wheelchair, we have a program for you. We offer walking groups
-              for those with young-onset dementia, seniors who wish to walk in
-              large groups, and seniors who wish to walk individually with
-              volunteers. The Walk a Mile in My Shoes program is a great way to
-              make friends and get active this summer. All walks are coordinated
-              and accompanied by our staff and volunteers from Memory Lane Home
-              Living (MLHL) inc. For more information about this program, please call us at{' '}
-                <a className="underline" href="tel:905-237-1419">
-                  905-237-1419
-                </a>{' '}
-                or send us an email at{' '}
-                <a className="underline" href="mailto:mlliving14@gmail.com">
-                  mlliving14@gmail.com
-                </a>{' '}. We look forward to walking with you!{' '}
-              <br />
+              neighbourhood or local parks.
+              <span className="fw-bold">
+                This program runs from May to September.
+              </span>{' '}
+              Walking is essential to both our physical and mental health, and
+              we strive to ensure all seniors have access to these benefits.
+              Whether you walk by foot, walker, or wheelchair, we have a program
+              for you. We offer walking groups for those with young-onset
+              dementia, seniors who wish to walk in large groups, and seniors
+              who wish to walk individually with volunteers. The Walk a Mile in
+              My Shoes program is a great way to make friends and get active
+              this summer. All walks are coordinated and accompanied by our
+              staff and volunteers from Memory Lane Home Living (MLHL) inc. For
+              more information about this program, please call us at{' '}
+              <a className="underline" href="tel:905-237-1419">
+                905-237-1419
+              </a>{' '}
+              or send us an email at{' '}
+              <a className="underline" href="mailto:mlliving14@gmail.com">
+                mlliving14@gmail.com
+              </a>{' '}
+              . We look forward to walking with you! <br />
               <br />
               <span className="fw-bold">
                 WHERE: Various locations across Richmond Hill, ON.{' '}
