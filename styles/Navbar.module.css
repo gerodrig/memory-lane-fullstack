@@ -109,6 +109,35 @@
   }
 }
 
+/**
+  * Register Button
+  */
+.register-btn {
+  margin-left: 25px;
+  background: #714b92;
+  color: #f0f0f0;
+  border-radius: 4px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.register-btn:hover {
+  background: #b97292;
+  color: #fff;
+}
+
+@media (max-width: 768px) 
+{
+  .register-btn {
+    margin: 0 15px 0 0;
+    padding: 6px 15px;
+  }
+}
+
 /* @media (max-width: 1024px) and (orientation: landscape) {
   .appointment-btn {
     width: 100px;

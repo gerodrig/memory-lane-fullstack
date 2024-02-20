@@ -8,7 +8,7 @@ import {
   Contact,
 } from '../components/content/';
 import { MemoryLaneLayout } from '../components/layouts/MemoryLaneLayout';
-// import { AdModal } from '../components/ui/AdModal';
+import { AdModal } from '../components/ui/AdModal';
 
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       pageDescription="Memory Lane Home Living Inc. is a dementia care home in Richmond Hill, ON. We provide a safe and secure environment for your loved ones.">
 
         {/* Ad modals can be included here        */}
-        {/* <AdModal showModal={true} image="/assets/images/flyers/MLHL-alzheimer-ad-sept2023.jpg" registerLink='qr.link/CA4q0y' /> */}
+        <AdModal showModal={true} image="/assets/images/events/Living-well-with-dementia-march-2024.jpg" registerLink='memorylanehomeliving.ca/events/register' />
 
         <HeroIntro
           image="/assets/images/slide-1.jpg"

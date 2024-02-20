@@ -1,6 +1,7 @@
 
 
 export { AdModal } from "./AdModal";
+export { EventForm } from "./EventForm";
 export { FlyerImage } from "./FlyerImage";
 export { Footer } from './Footer';
 export { Form } from "./Form";

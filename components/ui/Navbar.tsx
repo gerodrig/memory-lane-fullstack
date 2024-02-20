@@ -135,7 +135,7 @@ export const Navbar = () => {
                 onClick={() => toogleDropdowns('services')}
               >
                 <Link href="#" scroll={false}>
-                  <span>Services</span> <ChevronDown className="ms-1" />
+                  <span>Services / Events</span> <ChevronDown className="ms-1" />
                 </Link>
                 <ul
                   className={
@@ -160,6 +160,11 @@ export const Navbar = () => {
                   <li onClick={toggleMobileNav}>
                     <Link href="/#respite-care" scroll={false}>
                       Respite Care
+                    </Link>
+                  </li>
+                  <li onClick={toggleMobileNav}>
+                    <Link href="/events/register" scroll={false}>
+                      Events
                     </Link>
                   </li>
                 </ul>
@@ -293,12 +298,19 @@ export const Navbar = () => {
             </Link>
           )}
           {!mobileNav && (
+            // <Link
+            //   href="/#appointment"
+            //   className={`${styles['appointment-btn']} scrollto`}
+            //   scroll={false}
+            // >
+            //   <span className="d-none d-md-inline">Contact</span> Us
+            // </Link>
             <Link
-              href="/#appointment"
-              className={`${styles['appointment-btn']} scrollto`}
+              href="/events/register"
+              className={`${styles['register-btn']} scrollto`}
               scroll={false}
             >
-              <span className="d-none d-md-inline">Contact</span> Us
+              <span className="d-none d-md-inline">Event</span> Register
             </Link>
           )}
           {!mobileNav && (

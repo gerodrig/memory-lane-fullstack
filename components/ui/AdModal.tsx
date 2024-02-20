@@ -61,13 +61,13 @@ export const AdModal = ({ showModal, image, registerLink }: AdModalProps) => {
           <span className="fw-bold" style={{ color: '#714b92' }}>
             LOCATION:
           </span>{' '}
-          45 Crosby Ave., Richmond Hill (The Community Church).
+          Richmond Hill Presbyterian Church, 10066 Yonge Street
         </p>
         <p className={`mt-1 h4 align-self-start`}>
           <span className="fw-bold" style={{ color: '#714b92' }}>
             COST:
           </span>{' '}
-          No charge. Light Lunch and Refreshments.
+          No charge. Lunch Included.
         </p>
       </Modal.Body>
       {/* <Modal.Footer style={{backgroundColor: '#FAFAFA'}}>

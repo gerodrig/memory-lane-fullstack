@@ -1,5 +1,7 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import { MemoryLaneLayout } from '@components/layouts/MemoryLaneLayout';
-import { YoutubeVideo } from '@components/ui';
+import { FlyerImage, YoutubeVideo } from '@components/ui';
 import styleSection from '@styles/Section.module.css';
 
 const mediaContent = [
@@ -22,9 +24,22 @@ export default function NewPage() {
           </div>
           <div className="column">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
+              Events
+            </h1>
+            <div className="d-flex justify-content-center">
+              <Link href={'/events/register'}>
+                <Image
+                  src="/assets/images/events/Living-well-with-dementia-march-2024.jpg"
+                  alt="event"
+                  width={600}
+                  height={800}
+                />
+              </Link>
+            </div>
+            <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Testimonials
             </h1>
-            <div className='pe-5 me-5'>
+            <div className="pe-5 me-5">
               <YoutubeVideo
                 videoId={'CfHWIwW9xjI'}
                 title="Community Connection Program Testimonial"
