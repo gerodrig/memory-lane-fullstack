@@ -1,7 +1,6 @@
 import { MemoryLaneLayout } from '@components/layouts';
 
 import styleSection from '@styles/Section.module.css';
-import { PartnersGrid } from '@components/content/partnersPage/PartnersGrid';
 import { EventForm } from '@components/ui';
 
 export default function PartnerPage() {
