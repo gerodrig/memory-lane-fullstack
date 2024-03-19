@@ -291,13 +291,14 @@ export const Navbar = () => {
           {!mobileNav && (
             <Link
               href="/new"
-              className={`${styles['what-is-new-btn']} debug scrollto`}
+              className={`${styles['what-is-new-btn']} me-1 ms-4 scrollto`}
               scroll={false}
             >
               New <span className="d-none d-md-inline">at MLHL</span>
             </Link>
           )}
-          {!mobileNav && (
+            {/* //! Event Register button toggle */}
+          {/* {!mobileNav && ( 
             // <Link
             //   href="/#appointment"
             //   className={`${styles['appointment-btn']} scrollto`}
@@ -305,6 +306,7 @@ export const Navbar = () => {
             // >
             //   <span className="d-none d-md-inline">Contact</span> Us
             // </Link>
+
             <Link
               href="/events/register"
               className={`${styles['register-btn']} scrollto`}
@@ -313,6 +315,7 @@ export const Navbar = () => {
               <span className="d-none d-md-inline">Event</span> Register
             </Link>
           )}
+          */}
           {!mobileNav && (
             <Link href="/donations" className={`${styles['donate-btn']}`}>
               {/* <span className="d-none d-md-inline">Donate</span> */}

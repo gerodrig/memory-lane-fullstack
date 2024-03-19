@@ -12,9 +12,9 @@ export default function PartnerPage() {
       <section id="register" style={{ marginTop: '200px' }}>
         <div className="container" data-aos="fade-up">
           <div className={styleSection['section-title']}>
-            <h2>Register For Event</h2>
+            <h2>No Events at this time</h2>
           </div>
-          <h5 className={styleSection.description}>
+          {/* <h5 className={styleSection.description}>
             Please join us on March 15th to learn about Living Well with
             Dementia. We will have presentations and some workshops from a
             physiotherapist, dietitian, pharmacist, dementia experts from the
@@ -25,7 +25,7 @@ export default function PartnerPage() {
           </h5>
           <div className='d-flex justify-content-center'>
             <EventForm />
-          </div>
+          </div> */}
         </div>
       </section>
     </MemoryLaneLayout>
