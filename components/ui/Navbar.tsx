@@ -158,6 +158,11 @@ export const Navbar = () => {
                     </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
+                    <Link href="/#music-from-the-heart-choir" scroll={false}>
+                      Music From The Heart Choir
+                    </Link>
+                  </li>
+                  <li onClick={toggleMobileNav}>
                     <Link href="/#respite-care" scroll={false}>
                       Respite Care
                     </Link>

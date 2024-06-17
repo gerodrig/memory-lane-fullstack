@@ -6,6 +6,7 @@ import {
   MoonFill,
   CalendarFill,
   MusicNoteBeamed,
+  FileMusicFill,
 } from 'react-bootstrap-icons';
 
 import { FlyerImage, SeparatorIdentifier } from '@components/ui';
@@ -133,13 +134,16 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 Community Connection Day Program
               </h4>
               <p className={styleSection.description}>
-                We invite women with memory challenges, such as an MCI diagnosis
-                or a mild to moderate dementia diagnosis to join us for a half
-                day of socialization, activities, and a hot lunch with other
-                women on the same journey. We know that with dementia, one size
-                does not fit all; we have 3 different day programs available in
-                our cozy home environment. Women feel like they are spending the
-                day at a friends house.
+                We have <strong>recently upgraded</strong> our{' '}
+                <em>Community Connection</em> programs to accommodate the needs
+                of the community. We have extended hours, and adjusted program
+                costs. We invite women with memory challenges to join us from
+                10:00 am to 4:00 pm. This is a 6-hour session of socialization,
+                activities, and a hot lunch with other women on the same
+                journey. One size does not fit all when it comes to dementia, so
+                we schedule our program days according to the needs of the
+                participants. Women who join us feel as though they are spending
+                the day at a friends house.
               </p>
               <p className={styleSection.description}>
                 Community Connection Schedule:
@@ -151,65 +155,79 @@ export const Services = ({ id = '' }: ServicesProps) => {
                     <li>
                       {check}{' '}
                       <span className="ps-2">
-                        Tuesday (11am-3pm) and Thursday (11am-4pm): Community
-                        Connection for women with a{' '}
-                        <span className="fw-bold">Young Onset diagnosis</span>,
-                        including great conversations, music, crafts, games, and
-                        outdoor activities geared to this 65 and under age
-                        group. We are the only young-onset program in York
-                        Region.
+                        <strong>Tuesdays</strong> and <strong>Thursdays</strong>{' '}
+                        from 10:00 am to 4:00 pm are{' '}
+                        <em>Community Connection</em> for women who need more
+                        assistance with everyday activities. The program is
+                        directed by a Recreational Therapist, Music & Art
+                        Specialists, and a Personal Support Worker that is
+                        available for any personal care needs. We accommodate
+                        you where you are at. The cost is $60.00 for personal
+                        assistance, program activities, lunch, snacks, and
+                        dessert.
                       </span>
+                      <ul className="mt-4 mb-4">
+                        <li>
+                          <span className="ps-2">
+                            <strong>CAPACITY:</strong> Limited space. 2:1 ratio
+                            of clients to qualified staff.
+                          </span>
+                        </li>
+                      </ul>
                     </li>
                     <li>
                       {check}{' '}
                       <span className="ps-2">
-                        Fridays (11am – 4pm): Community Connection for{' '}
-                        <span className="fw-bold">senior women</span> (75 yrs
-                        and over) with a dementia diagnosis. We provide a sense
-                        of connection through our conversations, singing, music,
-                        exercise, games, art, and the outdoors.
+                        <strong>Wednesdays</strong> and <strong>Fridays</strong>{' '}
+                        from 10:00am to 4:00pm are <em>Community Connection</em>{' '}
+                        for women that are still independent on their journey
+                        but may need some occasional cues. We provide a sense
+                        purpose and connection through conversations, singing,
+                        music, exercise, games, art, and outdoor activities. We
+                        enjoy taking the women to Mill Pond for afternoon walks
+                        when we can. These women are also invited to join our
+                        community initiatives such as our{' '}
+                        <em>Music from the Heart Choir</em>, which travels to
+                        various Long Term Care Homes throughout York Region to
+                        perform. They are invited to assist us with the
+                        Christmas Bazaars we attend to sell our home-made
+                        crafts. We have in the past performed a puppet show to
+                        entertain the children attending the local library,
+                        which is another opportunity to assist Memory Lane Home
+                        Living in the community.  Cost is $40.00 per day
+                        including personalized programs, lunch, snacks, and
+                        dessert.
                       </span>
-                    </li>
-                    <li>
-                      {check}{' '}
-                      <span className="ps-2">
-                        Wednesdays (11am – 3pm): Working Wednesdays Program for{' '}
-                        <span className="fw-bold">
-                          women with an MCI diagnosis or mild dementia diagnosis{' '}
-                        </span>
-                        , who want to participate in activities with purpose,
-                        working with us to prepare crafts for various
-                        fundraising initiatives and helping with a variety of
-                        social initiatives. Our Working Wednesday Program is the
-                        only one of its kind in York Region.
-                      </span>
+                      <ul className="mt-4 mb-4">
+                        <li>
+                          <span className="ps-2">
+                            <strong>WHERE:</strong> 
+                            <em>Memory Lane Home Living.</em> Yonge and Major
+                            Mackenzie Drive West. Richmond Hill, ON.
+                          </span>
+                        </li>
+                        <li>
+                          <span className="ps-2">
+                            <strong>CAPACITY:</strong> Limited space. 2:1 ratio
+                            of clients to qualified staff.
+                          </span>
+                        </li>
+                        <li>
+                          <span className="ps-2">
+                            <strong>REGISTRATION REQUIRED:</strong> Call us at{' '}
+                            <Link href="tel:9052371419">905.237.1419</Link> or
+                            Email us at{' '}
+                            <Link href="mailto:mlliving14@gmail.com">
+                              mlliving14@gmail.com
+                            </Link>
+                          </span>
+                        </li>
+                      </ul>
                     </li>
                   </ul>
                 </div>
               </div>
-
-              <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Memory Lane Home Living
-                @ Yonge and Major Mackenzie Drive West, in Richmond Hill, ON.
-              </p>
-              <p className={styleSection.description}>
-                <span className="fw-bold">COST:</span> $10/Hour for four hours
-                and $10 for lunch. Limited spaces.
-              </p>
-              <p className={styleSection.description}>
-                <span className="fw-bold">REGISTRATION REQUIRED:</span> Call us
-                at <Link href="tel:9052371419">905.237.1419</Link> or Email us
-                at{' '}
-                <Link href="mailto:mlliving14@gmail.com">
-                  mlliving14@gmail.com
-                </Link>
-              </p>
             </div>
-
-            <FlyerImage
-              className="mt-1 mb-5"
-              source="/assets/images/flyers/MLHL-community-connection.png"
-            />
 
             <SeparatorIdentifier id="music-from-the-heart" />
             <div
@@ -225,25 +243,28 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </h4>
               <p className={styleSection.description}>
                 <span className="fst-italic fw-bold">Music from the Heart</span>
-                , is a weekly program run by our music therapist to deliver a
-                therapeutic music program to caregivers and their loved ones
-                with a dementia diagnosis in a community setting. Music therapy
-                is the use of music to accomplish individualized goals such as
-                reducing stress and improving mood and self-expression. It is an
-                evidence-based therapy well-established in the health community.
-                We invite care partners and their loved one with a dementia
-                diagnosis to participate together in this program. This is the
-                only community therapy program in York Region. Join us and
-                experience the power of music.
+                , is a weekly program run on Tuesdays by our Music Therapist who
+                delivers a therapeutic program to caregivers and their loved
+                ones with a dementia diagnosis, in a community setting. Music
+                therapy is the evidence-based use of music to accomplish
+                individualized goals such as reducing stress and improving
+                mood/self-expression. We invite care partners and their loved
+                one with a dementia diagnosis to come together to participate in
+                this music program. Join us and experience the power of music.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Presbyterian Church,
-                10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
-                Richmond Hill, ON.
+                <span className="fw-bold">WHERE:</span> Richmond Hill
+                Presbyterian Church. 10066 Yonge Street, Richmond Hill, ON L4C
+                1T8. Yonge & Major Mackenzie Drive.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">COST:</span> No Charge, however, we
-                limit the size of the group.
+                <span className="fw-bold">
+                  WHEN: Tuesdays 1:15mp to 3:00 pm.
+                </span>
+              </p>
+              <p className={styleSection.description}>
+                <span className="fw-bold">COST:</span> No Charge, Limited
+                seating.
               </p>
               <p className={styleSection.description}>
                 <span className="fw-bold">REGISTRATION REQUIRED:</span> Call us
@@ -253,8 +274,20 @@ export const Services = ({ id = '' }: ServicesProps) => {
                   mlliving14@gmail.com
                 </Link>
               </p>
-              <br />
-              <br />
+            </div>
+
+            <SeparatorIdentifier id="music-from-the-heart-choir" />
+            <div
+              className={`col-md-12 ${styleSection['icon-box']}`}
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div className={styleSection.icon}>
+                <FileMusicFill size={32} />
+              </div>
+              <h4 className={style.title + ' text-center mb-5'}>
+                Music From The Heart Choir
+              </h4>
               <p className={styleSection.description}>
                 <span className="fst-italic fw-bold">
                   Music from the Heart Choir
@@ -267,19 +300,20 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 performances. If you would like to join our choir, please call
                 us at 905.237.1419.
               </p>
+              <p className={styleSection.description}></p>
               <p className={styleSection.description}>
-                <span className="fw-bold">WHERE:</span> Presbyterian Church,
-                10066 Yonge Street @ Yonge and Major Mackenzie Drive West, in
-                Richmond Hill, ON.
+                <span className="fw-bold">WHERE:</span> Richmond Hill
+                Presbyterian Church. 10066 Yonge Street, Richmond Hill, ON L4C
+                1T8. Yonge & Major Mackenzie Drive.
               </p>
               <p className={styleSection.description}>
                 <span className="fw-bold">WHEN:</span> We practice on Tuesdays,
                 from 2:00pm to 2:30pm. Performances are usually on Tuesday
-                afternoons approx. once every 3 months.
+                afternoons, approximately once every 8 weeks.
               </p>
               <p className={styleSection.description}>
-                <span className="fw-bold">COST:</span> No Charge, however, we
-                limit the size of the group.
+                <span className="fw-bold">COST:</span> No Charge. Limited
+                seating.
               </p>
               <p className={styleSection.description}>
                 <span className="fw-bold">REGISTRATION REQUIRED:</span> Call us
@@ -374,55 +408,6 @@ export const Services = ({ id = '' }: ServicesProps) => {
             source="/assets/images/flyers/MLHL-care-support-last-thursday-of-month.png"
           />
 
-          <SeparatorIdentifier id="monthly-caregiver-support" margin="my-1" />
-          <div
-            className={`col-md-12 ${styleSection['icon-box']}`}
-            data-aos="zoom-in"
-            data-aos-delay="100"
-            id="monthly-tuesday"
-          >
-            <p className={style['description-pink']}>
-              <span className="fw-bold">WALK A MILE IN MY SHOES </span>
-              <span className="fw-bold text-danger">(PAUSED Until Spring)</span>
-            </p>
-            <p className={styleSection.description}>
-              The Walk a Mile in My Shoes walking program offers seniors in
-              Richmond Hill, ON, an opportunity to safely walk around their
-              neighbourhood or local parks.
-              <span className="fw-bold">
-                This program runs from May to September.
-              </span>{' '}
-              Walking is essential to both our physical and mental health, and
-              we strive to ensure all seniors have access to these benefits.
-              Whether you walk by foot, walker, or wheelchair, we have a program
-              for you. We offer walking groups for those with young-onset
-              dementia, seniors who wish to walk in large groups, and seniors
-              who wish to walk individually with volunteers. The Walk a Mile in
-              My Shoes program is a great way to make friends and get active
-              this summer. All walks are coordinated and accompanied by our
-              staff and volunteers from Memory Lane Home Living (MLHL) inc. For
-              more information about this program, please call us at{' '}
-              <a className="underline" href="tel:905-237-1419">
-                905-237-1419
-              </a>{' '}
-              or send us an email at{' '}
-              <a className="underline" href="mailto:mlliving14@gmail.com">
-                mlliving14@gmail.com
-              </a>{' '}
-              . We look forward to walking with you! <br />
-              <br />
-              <span className="fw-bold">
-                WHERE: Various locations across Richmond Hill, ON.{' '}
-              </span>
-              <br />
-              <span className="fw-bold">COST: No charge.</span>
-            </p>
-          </div>
-
-          <FlyerImage
-            className="mt-1 mb-5 col-sm-12"
-            source="/assets/images/flyers/MLHL-WAMIMS-2023.png"
-          />
         </div>
       </section>
     </>
