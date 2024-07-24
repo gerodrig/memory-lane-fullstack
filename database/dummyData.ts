@@ -2,7 +2,7 @@ import { ResourcesData, BlogPost, TeamMember } from 'interfaces';
 
 export const teamData: TeamMember[] = [
     {
-    image: '/assets/images/board-members/mona.jpg',
+    image: '/assets/images/board-members/mona.webp',
     name: 'Mona Lancaster',
     jobTitle: 'Founder and Director',
     description: `BA, B Comm. Founding member of Memory Lane Home Living. Mona has a background in Psychology/Sociology and the mental health field. Banking experience followed. While in university, she worked as a Nurse's Aide in a Long-Term Care facility. Mona is currently completing a Geriatric Certificate from McMaster University. She has completed the Dementia Montessori Course. Mona has also completed the Dementia Care Matters Course, to guide and implement important aspects of the "Butterfly Model of Care “into Memory Lane Home Living Inc. In 2020 Mona was appointed to the Steering Committee as an Older Adult Representative for Caregivers with the Provincial Geriatric Leadership Office (PGLO). In December 2021 Mona Lancaster was awarded an Outstanding Canadian Award for her perseverance and compassion in making a difference for a new way of living in community with dementia. In October2022, Mona was also awarded the Queen's Platinum Jubilee Community Hero Award.`
@@ -17,7 +17,7 @@ export const teamData: TeamMember[] = [
       image: '/assets/images/board-members/EKing.webp',
       name: 'Elizabeth King',
       jobTitle: 'Treasurer - Board of Directors',
-      description: `Ms. Guo completed a  bachelor’s degree in Economics from the University of Manitoba. She is a Rotman MBA Candidate from the University of Toronto. Prior to Rotman, she spent three years at a federally chartered non-profit organization, helping healthcare professionals across Canada and internationally. Her passion in business is refining processes to make operations more efficient;  Ms Guo  has strong analytical skills to uncover insights from data to support decision-making. She is passionate about alternative care, senior care, digital health, project management, client relationship management, strategic planning and operations improvement. She is the Vice President of Rotman Women in Management Association and Rotman Healthcare Management Association. She is the Social Impact Consultant at Collaboration Partners.`
+      description: `Elizabeth is retired from practicing law as a government lawyer with the Ministry of Municipal Affairs and Housing for more than eighteen years.  She served as general counsel to the Ontario Mortgage and Housing Corporation for over ten years. She is versed in community housing matters and brings a unique insight and experience to her role as Treasurer for the Memory Lane Board of Directors. `
     },
     {
       image: '/assets/images/board-members/Farideh.webp',

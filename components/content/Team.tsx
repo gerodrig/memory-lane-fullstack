@@ -30,9 +30,18 @@ export const Team = ({ id = '' }) => {
           </div>
 
           <div className="row d-flex justify-content-center">
+          <SeparatorIdentifier id="founder" />
+            {data
+              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('founder'))
+              .map((member, index) => (
+                <TeamMember key={index} {...member} />
+              ))}
+
+          </div>
+          <div className="row d-flex justify-content-center">
           <SeparatorIdentifier id="board-directors" />
             {data
-              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('chair'))
+              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('directors'))
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}
@@ -41,7 +50,7 @@ export const Team = ({ id = '' }) => {
 
           <div className="row d-flex justify-content-center">
           {data
-              .filter(({ jobTitle }) => !jobTitle?.toLowerCase().includes('chair'))
+              .filter(({ jobTitle }) => !jobTitle?.toLowerCase().includes('director'))
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}

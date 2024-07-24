@@ -8,7 +8,6 @@ import {
   Contact,
 } from '../components/content/';
 import { MemoryLaneLayout } from '../components/layouts/MemoryLaneLayout';
-import { AdModal } from '../components/ui/AdModal';
 
 
 export default function Home() {
