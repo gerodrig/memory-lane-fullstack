@@ -4,67 +4,35 @@ export const teamData: TeamMember[] = [
     {
     image: '/assets/images/board-members/mona.jpg',
     name: 'Mona Lancaster',
-    jobTitle: 'Chair',
-    description: `BA, B Comm. Founding member of Memory Lane Home Living. Mona has a background in Psychology/Sociology and the mental health field. Banking experience followed. While in university she worked as a Nurse's Aide in a Long-Term Care facility. Mona is currently completing a Geriatric Certificate from McMaster University. She has completed the Dementia Montessori Course.  Mona has also completed  the Dementia Care Matters Course, to guide and implement important aspects of the "Butterfly Model of Care “into Memory Lane Home Living Inc.  In 2020 Mona was appointed to the Steering Committee as an Older Adult Representative for Caregivers with the Provincial Geriatric Leadership Office (PGLO).   In December of 2021 Mona Lancaster was awarded an Outstanding Canadian Award for her perseverance and compassion in making a difference for a new way of living in community with dementia. In October2022 Mona was also awarded the  Queen's Platinum Jubilee Community Hero Award.`
+    jobTitle: 'Founder and Director',
+    description: `BA, B Comm. Founding member of Memory Lane Home Living. Mona has a background in Psychology/Sociology and the mental health field. Banking experience followed. While in university, she worked as a Nurse's Aide in a Long-Term Care facility. Mona is currently completing a Geriatric Certificate from McMaster University. She has completed the Dementia Montessori Course. Mona has also completed the Dementia Care Matters Course, to guide and implement important aspects of the "Butterfly Model of Care “into Memory Lane Home Living Inc. In 2020 Mona was appointed to the Steering Committee as an Older Adult Representative for Caregivers with the Provincial Geriatric Leadership Office (PGLO). In December 2021 Mona Lancaster was awarded an Outstanding Canadian Award for her perseverance and compassion in making a difference for a new way of living in community with dementia. In October2022, Mona was also awarded the Queen's Platinum Jubilee Community Hero Award.`
     },
     {
     image: '/assets/images/board-members/liz.webp',
-    name: 'Elizabeth (Liz) Morin',
-    jobTitle: 'Vice Chair',
-    description: `Liz retired from the federal public service in 2020, after a 30+ year career focused on Indigenous and social justice issues. Her work took her to all parts of Canada, and to several remote First Nation communities, where she gained a real appreciation for how diverse teams could work together to solve complex problems. Liz graduated with a BA from the University of Toronto, and a MA in Public Administration from Carleton University in Ottawa. Liz brings significant expertise in governance, negotiations, strategic planning and implementation. As the primary care-giver to her Mother who has a dementia diagnosis, Liz is passionate about creating more options for people with dementia to live fully and well in community.`
+    name: 'Liz Morin',
+    jobTitle: 'Board of Directors',
+    description: `Liz retired from the federal public service in 2020, after a 30+ year career focused on Indigenous and social justice issues. Her work took her to all parts of Canada, and to several remote First Nation communities, where she gained a real appreciation for how diverse teams could work together to solve complex problems. Liz graduated with a BA from the University of Toronto, and an MA in Public Administration from Carleton University in Ottawa. Liz brings significant expertise in governance, negotiations, strategic planning and implementation. As the primary caregiver to her Mother who has a dementia diagnosis, Liz is passionate about creating more options for people with dementia to live fully and well in community.`
     },
     {
-      image: '/assets/images/board-members/mina.jpg',
-      name: 'Mina Shirvani',
-      jobTitle: 'Board Member',
-      description: `Mina has extensive working experience in the domestic and international banking industry. Over 30 years working in financial institutions has equipped her with broad knowledge of banking , financial planning and budgeting. She has been awarded numerous times for her performance and community involvement, such as being honoured to be one of the Canadian Winter Olympic Games’ torch bearers in 2010. Mina received her bachelor’s in finance and master’s degree in Economics from Central Missouri State University. She migrated to Canada in 1997 and completed her CSC (Canadian Security Course) and PFP ( Personal Financial Planning ) with honour. Mina is an executive member (Treasurer) of Golden Gavel Toastmaster Club, Richmond Hill. She also acted as the President and Vice President of Public Relation of the club. Mina has been recognized as President Distinguished and received the Toastmaster of the year and President’s Choice Awards.
-      Mina believes in the motto ‘we rise by lifting others.’`
-    },
-    // {
-    //   image: '/assets/images/board-members/chloe.jpg',
-    //   name: 'Chloe Tam',
-    //   jobTitle: 'Board Member',
-    //   description: `Chloe has  a background in Public Health from the University of Waterloo and a Post Graduate Certificate in Non-Profit and Social Sector Management. Chloe brings a wealth of knowledge in the areas of public health and the not-for-profit sector. Chloe is currently working in a not-for-profit organization creating community engagement and fundraising activities. She hopes that members of the community can create valuable relationships amongst themselves and better the quality of lives for all residents. Chloe has lived experience in dementia with her grandmother.`
-    // },
-    // {
-    //   image: '/assets/images/board-members/jennifer.jpg',
-    //   name: 'Jennifer Tran',
-    //   jobTitle: 'Board Member',
-    //   description: `Jennifer has a Bachelor of Applied Social Science degree from University of Guelph. Jennifer majored in Adult Development and minored in Family and Child Studies. She is currently a Program Assistant for senior services serving the community of North York. Jennifer has a background in Social Gerontology and has worked with the vulnerable population in the non-profit sector for many years. She continues to work with adults from all walks of life and is passionate about the efforts being put in place for women to live well with dementia.`
-    // },
-    {
-      image: '/assets/images/board-members/yipin.jpg',
-      name: 'Yipin Guo',
-      jobTitle: 'Board Member',
+      image: '/assets/images/board-members/EKing.webp',
+      name: 'Elizabeth King',
+      jobTitle: 'Treasurer - Board of Directors',
       description: `Ms. Guo completed a  bachelor’s degree in Economics from the University of Manitoba. She is a Rotman MBA Candidate from the University of Toronto. Prior to Rotman, she spent three years at a federally chartered non-profit organization, helping healthcare professionals across Canada and internationally. Her passion in business is refining processes to make operations more efficient;  Ms Guo  has strong analytical skills to uncover insights from data to support decision-making. She is passionate about alternative care, senior care, digital health, project management, client relationship management, strategic planning and operations improvement. She is the Vice President of Rotman Women in Management Association and Rotman Healthcare Management Association. She is the Social Impact Consultant at Collaboration Partners.`
     },
+    {
+      image: '/assets/images/board-members/Farideh.webp',
+      name: 'Farideh',
+      jobTitle: 'Program Assistant',
+      description: `Farideh serves as a committed Program Assistant at Memory Lane Home Living Inc. in Richmond Hill. Armed with a Bachelor of Science degree, she adeptly applies her knowledge across various aspects of her role. Her previous volunteer work in Adult Day Programs for seniors, coupled with her personal experience with dementia, uniquely equips her for this position. Farideh is known for her compassionate and empathetic approach, deeply connecting with both clients and their families.`
+    },
+
     // {
-    //   image: '/assets/images/board-members/kennedi.jpg',
-    //   name: 'Kennedi Koves',
-    //   jobTitle: 'Board Member',
-    //   description: `Kennedi is our newest Board Member at Memory Lane Home Living, assuming responsibility for  Social Media &  Community Partnership Management. She holds a BComm degree in Marketing Management, and currently works full-time as a Marketing Analyst. Kennedi has lived experience with dementia and is passionate about “Aging in Place with Dementia” as it reflects the values and goals of Memory Lane Home Living. In her free time, Kennedi enjoys the outdoors, reading  and a cup of Orange Pekoe tea.`
+    //   image: '/assets/images/board-members/madison.webp',
+    //   name: 'Jessica',
+    //   jobTitle: 'Recreational Therapist',
+    //   description: `Jessica works at Memory Lane Home Living as a Recreational Therapist. She holds a double major in Studio Art and Philosophy. Following the completion of her bachelor's, she moved on to study Recreational Therapy, allowing her to blend her art skills and therapeutic background to create programs that highlight people’s creative abilities. Jessica has worked in various settings in the past, including long term care, private care, and with people who have disabilities. She has lived experience with dementia and the symptoms that accompany a diagnosis.  `
     // },
-    {
-      image: '/assets/images/board-members/madison.webp',
-      name: 'Madison Squires',
-      jobTitle: 'Client/Program Manager',
-      description: `Madison holds a degree in Therapeutic Recreation and a minor in Gerontology. She is currently pursuing a Master of Science in Aging and Health. As a Certified Therapeutic Recreation Specialist (CTRS), Madison has worked in various settings, bringing a therapeutic approach to dementia care. She has developed programs aimed at slowing down symptoms and promoting a better quality of life for women experiencing memory loss.
 
-      Madison was recently invited to join the Richmond Hill Age Friendly Council. She is passionate about ensuring that the community of Richmond Hill provides proper support for those diagnosed with dementia.
-      
-      In her free time, Madison can be found playing volleyball.`
-    },
-    {
-      image: '/assets/images/board-members/cassidy.webp',
-      name: 'Cassidy Boniface',
-      jobTitle: 'Program Manager Part-Time',
-      description: `Cassidy works part-time as a Recreation Therapist at Memory Lane Home Living for our Wednesday and Saturday programs. She holds a BSc degree in Aging Studies from the University of Waterloo, ON, and is currently pursuing a Doctor of Chiropractic in North York, ON. Cassidy's main goal is to create a safe and interactive environment for community members living with dementia through a variety of activities and exercises.
-
-      Cassidy previously volunteered with the Young Onset Dementia Association at the University of Waterloo and understands that a dementia diagnosis affects the whole family.
-      
-      In her free time, Cassidy can be found studying in the school library or enjoying fishing and hiking.
-      `
-    },
 ];
 
 export const blogData: BlogPost[] = [

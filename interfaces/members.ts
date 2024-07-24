@@ -6,4 +6,4 @@ export interface TeamMember {
     description?: string;
 };
 
-type jobTitle = 'Chair' | 'Vice Chair' | 'Board Member' | 'Client/Program Manager' | 'Program Manager Part-Time';
+type jobTitle = 'Founder and Director' | 'Treasurer - Board of Directors' | 'Board of Directors' | 'Client/Program Manager' | 'Program Manager Part-Time' | 'Program Assistant' | 'Recreational Therapist';
