@@ -11,27 +11,26 @@ export const teamData: TeamMember[] = [
     image: '/assets/images/board-members/liz.webp',
     name: 'Liz Morin',
     jobTitle: 'Board of Directors',
-    description: `Liz retired from the federal public service in 2020, after a 30+ year career focused on Indigenous and social justice issues. Her work took her to all parts of Canada, and to several remote First Nation communities, where she gained a real appreciation for how diverse teams could work together to solve complex problems. Liz graduated with a BA from the University of Toronto, and an MA in Public Administration from Carleton University in Ottawa. Liz brings significant expertise in governance, negotiations, strategic planning and implementation. As the primary caregiver to her Mother who has a dementia diagnosis, Liz is passionate about creating more options for people with dementia to live fully and well in community.`
+    description: `Liz retired from the federal public service in 2020, after a 30+ year career focused on Indigenous and social justice issues. Her work took her to all parts of Canada, including remote First Nation communities. Liz graduated with a BA from the University of Toronto, and an MA in Public Administration from Carleton University. Liz brings significant expertise in governance, negotiations, strategic planning and implementation. As the primary caregiver to her Mother who has a dementia diagnosis, Liz is passionate about creating a fulfilling community for people with dementia to live well.`
     },
     {
-      image: '/assets/images/board-members/EKing.webp',
+      image: '/assets/images/board-members/EKing.jpg',
       name: 'Elizabeth King',
       jobTitle: 'Treasurer - Board of Directors',
-      description: `Elizabeth is retired from practicing law as a government lawyer with the Ministry of Municipal Affairs and Housing for more than eighteen years.  She served as general counsel to the Ontario Mortgage and Housing Corporation for over ten years. She is versed in community housing matters and brings a unique insight and experience to her role as Treasurer for the Memory Lane Board of Directors. `
+      description: `Elizabeth is retired from practicing law as a government lawyer with the Ministry of Municipal Affairs and Housing for more than eighteen years. She served as general counsel to the Ontario Mortgage and Housing Corporation for over ten years. She is well-versed in community housing matters and brings a unique insight and experience to her role as Treasurer for the Memory Lane Board of Directors.`
     },
     {
-      image: '/assets/images/board-members/Farideh.webp',
+      image: '/assets/images/board-members/Jessica.jpg',
+      name: 'Jessica',
+      jobTitle: 'Recreational Therapist',
+      description: `Jessica works at Memory Lane Home Living as a Recreational Therapist. She holds a double major in Studio Art and Philosophy. Following the completion of her bachelor's, she moved on to study Recreational Therapy, allowing her to blend her art skills and therapeutic background to create programs that highlight people’s creative abilities. Jessica has worked in various settings in the past, including long term care, private care, and with people who have disabilities. She has lived experience with dementia and the symptoms that accompany a diagnosis.`
+    },
+    {
+      image: '/assets/images/board-members/Farideh.jpg',
       name: 'Farideh',
       jobTitle: 'Program Assistant',
       description: `Farideh serves as a committed Program Assistant at Memory Lane Home Living Inc. in Richmond Hill. Armed with a Bachelor of Science degree, she adeptly applies her knowledge across various aspects of her role. Her previous volunteer work in Adult Day Programs for seniors, coupled with her personal experience with dementia, uniquely equips her for this position. Farideh is known for her compassionate and empathetic approach, deeply connecting with both clients and their families.`
     },
-
-    // {
-    //   image: '/assets/images/board-members/madison.webp',
-    //   name: 'Jessica',
-    //   jobTitle: 'Recreational Therapist',
-    //   description: `Jessica works at Memory Lane Home Living as a Recreational Therapist. She holds a double major in Studio Art and Philosophy. Following the completion of her bachelor's, she moved on to study Recreational Therapy, allowing her to blend her art skills and therapeutic background to create programs that highlight people’s creative abilities. Jessica has worked in various settings in the past, including long term care, private care, and with people who have disabilities. She has lived experience with dementia and the symptoms that accompany a diagnosis.  `
-    // },
 
 ];
 

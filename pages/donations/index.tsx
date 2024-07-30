@@ -17,7 +17,7 @@ export default function Donations() {
           <p className={styleSection.description}>
             Your donation will make an impact to keep women with a dementia
             diagnosis in the community and support their loved ones. Our
-            dementia initiative is designed to to build confidence, friendships
+            dementia initiative is designed to build confidence, friendships
             and invaluable support. Donations will go to the programs, respite
             and our housing costs so that we are affordable to all.
           </p>

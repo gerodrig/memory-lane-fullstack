@@ -28,7 +28,7 @@ export const Team = ({ id = '' }) => {
               dementia journey.
             </p>
           </div>
-
+{/* 
           <div className="row d-flex justify-content-center">
           <SeparatorIdentifier id="founder" />
             {data
@@ -37,11 +37,11 @@ export const Team = ({ id = '' }) => {
                 <TeamMember key={index} {...member} />
               ))}
 
-          </div>
+          </div> */}
           <div className="row d-flex justify-content-center">
           <SeparatorIdentifier id="board-directors" />
             {data
-              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('directors'))
+              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('director'))
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}
@@ -145,7 +145,7 @@ const TeamMember = ({
           <div className={style['member-img']}>
             <Image
               src={image}
-              width={218}
+              width={220}
               height={280}
               className="img-fluid"
               alt=""
