@@ -26,7 +26,7 @@ export const teamData: TeamMember[] = [
       description: `Jessica works at Memory Lane Home Living as a Recreational Therapist. She holds a double major in Studio Art and Philosophy. Following the completion of her bachelor's, she moved on to study Recreational Therapy, allowing her to blend her art skills and therapeutic background to create programs that highlight people’s creative abilities. Jessica has worked in various settings in the past, including long term care, private care, and with people who have disabilities. She has lived experience with dementia and the symptoms that accompany a diagnosis.`
     },
     {
-      image: '/assets/images/board-members/Farideh.jpg',
+      image: '/assets/images/board-members/Farideh.jpeg',
       name: 'Farideh',
       jobTitle: 'Program Assistant',
       description: `Farideh serves as a committed Program Assistant at Memory Lane Home Living Inc. in Richmond Hill. Armed with a Bachelor of Science degree, she adeptly applies her knowledge across various aspects of her role. Her previous volunteer work in Adult Day Programs for seniors, coupled with her personal experience with dementia, uniquely equips her for this position. Farideh is known for her compassionate and empathetic approach, deeply connecting with both clients and their families.`
