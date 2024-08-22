@@ -51,6 +51,11 @@ export default function NewPage() {
                 embed
               />
               <YoutubeVideo
+                videoId={'pPcFHp9rOUM'}
+                title="Walter Testimonial"
+                embed
+              />
+              <YoutubeVideo
                 videoId={'amYH6XXiN1Y'}
                 title="Music From The Heart Program Testimonial"
                 embed

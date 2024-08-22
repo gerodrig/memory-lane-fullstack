@@ -219,7 +219,7 @@ export const Navbar = () => {
                     </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#testimonials" scroll={false}>
+                    <Link href="/testimonials" scroll={false}>
                       Testimonials
                     </Link>
                   </li>
