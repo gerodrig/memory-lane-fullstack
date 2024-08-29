@@ -229,6 +229,11 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </div>
             </div>
 
+            <FlyerImage
+                className="mt-1 mb-5 col-sm-12"
+                source="/assets/images/flyers/MLHL-day-program.jpg"
+              />
+
             <SeparatorIdentifier id="music-from-the-heart" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
@@ -327,7 +332,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
 
             <FlyerImage
               className="mt-1 mb-5"
-              source="/assets/images/flyers/MLHL-music-from-the-heart.png"
+              source="/assets/images/flyers/MLHL-music-choir.png"
             />
 
             <SeparatorIdentifier id="respite-care" className="my-0" />
