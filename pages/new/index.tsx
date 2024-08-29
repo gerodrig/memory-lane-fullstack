@@ -1,15 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { MemoryLaneLayout } from '@components/layouts/MemoryLaneLayout';
-import { FlyerImage, YoutubeVideo } from '@components/ui';
 import styleSection from '@styles/Section.module.css';
-
-const mediaContent = [
-  {
-    src: '/assets/images/flyers/MLHL-community-connection.png',
-    text: `Working Wednesdays Program is a program for women with an MCI diagnosis or mild dementia diagnosis who want to participate in activities with purpose, working with us to prepare crafts for various fundraising initiatives and helping with a variety of social initiatives. Our Working Wednesday Program is the only one of its kind in York Region.`,
-  },
-];
 
 export default function NewPage() {
   return (
@@ -24,42 +15,47 @@ export default function NewPage() {
           </div>
           <div className="column">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
-              Events
+              We are currently looking for Volunteers 2024
             </h1>
             <div className="d-flex justify-content-center">
-              <Link href={'/events/register'}>
-                <Image
-                  src="/assets/images/events/Living-well-with-dementia-march-2024.jpg"
-                  alt="event"
-                  width={600}
-                  height={800}
-                />
-              </Link>
+              <p>
+                Memory Lane Home Living is currently looking for help in the
+                form of volunteers to be on committees (i.e., fundraising,
+                program support, music or art therapists) and/or on the Board of
+                Directors with experience in social media, senior care and
+                recreation therapy, fundraising or finance. We are looking for
+                people who ideally have a lived experience with dementia or a
+                passion to improve the lives of those living with a dementia and
+                their families.
+              </p>
             </div>
-            <h1 className={`text-center mb-5 ${styleSection['check']}`}>
-              Testimonials
-            </h1>
-            <div className="pe-5 me-5">
-              <YoutubeVideo
-                videoId={'CfHWIwW9xjI'}
-                title="Community Connection Program Testimonial"
-                embed
+            <div className="d-flex justify-content-center mb-3 mt-3">
+              <Image
+                src="/assets/images/new/volunteer-breakfast.jpg"
+                alt="Volunteer"
+                width={500}
+                height={500}
+                className="img-fluid"
               />
-              <YoutubeVideo
-                videoId={'ehAzXh-czyM'}
-                title="Living With Us Testimonial"
-                embed
-              />
-              <YoutubeVideo
-                videoId={'pPcFHp9rOUM'}
-                title="Walter Testimonial"
-                embed
-              />
-              <YoutubeVideo
-                videoId={'amYH6XXiN1Y'}
-                title="Music From The Heart Program Testimonial"
-                embed
-              />
+            </div>
+            <div className="mt-4 mb-3 d-flex justify-content-center">
+              <p>
+                At MLHL we are blessed to work with many wonderful volunteers 
+                <span className='h4'> ❤️</span>. Volunteering weaves us together, and strengthens the
+                fabric of our community by those sharing their time, talent and
+                energy to support one another. We hope to attract persons who
+                already have experience as volunteers. Most importantly, though,
+                we need people who are ready to help and to work as a member of
+                a team. If you have a few hours a week that you can give to help
+                us please call us at{' '}
+                <a className="underline" href="tel:905-237-1419">
+                  905-237-1419
+                </a>{' '}
+                or send us an email at{' '}
+                <a className="underline" href="mailto:mlliving14@gmail.com">
+                  mlliving14@gmail.com
+                </a>{' '}
+              </p>
             </div>
           </div>
         </div>
