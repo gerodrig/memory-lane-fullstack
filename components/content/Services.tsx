@@ -111,7 +111,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
 
               <FlyerImage
                 className="mt-1 mb-5 col-sm-12"
-                source="/assets/images/flyers/MLHL-information-evening-first-monday-of-month.png"
+                source="/assets/images/flyers/MLHL-info-session-flyer.jpg"
               />
             </div>
 
@@ -410,7 +410,7 @@ export const Services = ({ id = '' }: ServicesProps) => {
 
           <FlyerImage
             className="mt-1 mb-5 col-sm-12"
-            source="/assets/images/flyers/MLHL-care-support-last-thursday-of-month.png"
+            source="/assets/images/flyers/MLHL-care-partner-connections-flyer.jpg"
           />
 
         </div>
