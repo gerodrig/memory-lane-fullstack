@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { MemoryLaneLayout } from '@components/layouts/MemoryLaneLayout';
 import styleSection from '@styles/Section.module.css';
+import { YoutubeVideo } from '@components/ui';
 
 export default function NewPage() {
   return (
@@ -29,25 +30,31 @@ export default function NewPage() {
                 their families.
               </p>
             </div>
-            <div className="d-flex justify-content-center mb-3 mt-3">
+            <div className="d-flex justify-content-center mb-3 mt-3 px-5 flex-column flex-md-row">
               <Image
-                src="/assets/images/new/volunteer-breakfast.jpg"
-                alt="Volunteer"
-                width={500}
-                height={500}
-                className="img-fluid"
+              src="/assets/images/new/volunteer-breakfast.jpg"
+              alt="Volunteer"
+              width={500}
+              height={500}
+              className="img-fluid"
+              />
+              <YoutubeVideo
+              videoId="G7FVqQ6-Hww"
+              // title="Music From the Heart"
+              width={500}
+              embed
               />
             </div>
             <div className="mt-4 mb-3 d-flex justify-content-center">
               <p>
-                At MLHL we are blessed to work with many wonderful volunteers 
-                <span className='h4'> ❤️</span>. Volunteering weaves us together, and strengthens the
-                fabric of our community by those sharing their time, talent and
-                energy to support one another. We hope to attract persons who
-                already have experience as volunteers. Most importantly, though,
-                we need people who are ready to help and to work as a member of
-                a team. If you have a few hours a week that you can give to help
-                us please call us at{' '}
+                At MLHL we are blessed to work with many wonderful volunteers
+                <span className="h4"> ❤️</span>. Volunteering weaves us
+                together, and strengthens the fabric of our community by those
+                sharing their time, talent and energy to support one another. We
+                hope to attract persons who already have experience as
+                volunteers. Most importantly, though, we need people who are
+                ready to help and to work as a member of a team. If you have a
+                few hours a week that you can give to help us please call us at{' '}
                 <a className="underline" href="tel:905-237-1419">
                   905-237-1419
                 </a>{' '}

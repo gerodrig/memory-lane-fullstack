@@ -7,6 +7,7 @@ type Props = {
   width?: number;
   height?: number;
   embed?: boolean;
+  className?: string;
 };
 
 export const YoutubeVideo = ({
@@ -15,9 +16,10 @@ export const YoutubeVideo = ({
   width = 560,
   height = 315,
   embed = false,
+  className,
 }: Props) => {
   return (
-    <div className="col-xl-4 col-md-6 col-sm-12 mb-4 cursor-pointer mx-auto">
+    <div className={`col-xl-4 col-md-6 col-sm-12 mb-4 cursor-pointer mx-auto ${className}`}>
       {!embed ? (
         <>
           <a
