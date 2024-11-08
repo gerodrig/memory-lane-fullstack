@@ -283,6 +283,16 @@ export const Navbar = () => {
                       Newsletter Sign Up
                     </Link>
                   </li>
+                  <li onClick={toggleMobileNav}>
+                    <Link
+                      href="https://drive.google.com/file/d/1hwUnC7-lv9d3oNW8q-FB8PrarKws3SFB/view?usp=sharing"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      scroll={false}
+                    >
+                      Annual Report 2023
+                    </Link>
+                  </li>
                 </ul>
               </li>
             </ul>
