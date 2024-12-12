@@ -15,6 +15,33 @@ export default function NewPage() {
             <h2>New to Memory Lane Home Living</h2>
           </div>
 
+          <div className="column mb-5">
+            <h1 className={`text-center mb-5 ${styleSection['check']}`}>
+              Upcoming Event: “All My Sons” by Arthur Miller
+            </h1>
+            <div className="d-flex justify-content-center">
+              <p>
+                Memory Lane Home Living is excited to collaborate with Curtain
+                Club Theatre for a special presentation of Arthur Miller’s
+                classic drama All My Sons. Join us on Thursday, January 23,
+                2025, at 8:00 PM for an unforgettable evening of theater and
+                community spirit. Tickets are just $30, and proceeds support
+                local arts and initiatives. To purchase tickets, please call
+                905-237-1419. Don’t miss this opportunity to enjoy a remarkable
+                performance while supporting a great cause!
+              </p>
+            </div>
+            <div className="d-flex justify-content-center mb-3 mt-3 px-5 flex-column flex-md-row">
+              <Image
+                src="/assets/images/new/all-my-sons.jpeg"
+                alt="Volunteer"
+                width={500}
+                height={500}
+                className="img-fluid"
+              />
+            </div>
+          </div>
+
           <div className="column">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               We are currently looking for Volunteers 2024
