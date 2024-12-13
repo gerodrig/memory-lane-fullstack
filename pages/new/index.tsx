@@ -25,8 +25,7 @@ export default function NewPage() {
                 Club Theatre for a special presentation of Arthur Miller’s
                 classic drama All My Sons. Join us on Thursday, January 23,
                 2025, at 8:00 PM for an unforgettable evening of theater and
-                community spirit. Tickets are just $30, and proceeds support
-                local arts and initiatives. To purchase tickets, please call
+                community spirit. Tickets are just $30. THIS WOULD MAKE A GREAT CHRISTMAS PRESENT. To purchase tickets, please call
                 905-237-1419. Don’t miss this opportunity to enjoy a remarkable
                 performance while supporting a great cause!
               </p>
