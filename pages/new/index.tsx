@@ -17,6 +17,62 @@ export default function NewPage() {
 
           <div className="column mb-5">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
+              Upcoming Event: Soupfest & Stand-Up Improv Comedy
+            </h1>
+            <div className="d-flex justify-content-center">
+              <p>
+                Memory Lane Home Living invites you to a delightful afternoon of
+                laughter and warmth at our “Soupfest & Stand-Up” event!
+                Featuring the hilarious Bent Forks Comedy Troupe, this event
+                promises a hearty mix of delicious soups and improvisational
+                comedy that will keep you smiling.
+              </p>
+            </div>
+            <h4>When:</h4>
+            <p>
+              Saturday, February 8, 2025
+              <br />
+              11:30 AM to 2:30 PM
+            </p>
+            <h4>Where:</h4>
+            <p>
+              St. Matthew’s United Church
+              <br />
+              333 Crosby Avenue, Richmond Hill
+            </p>
+
+            <p>
+              🎁 <strong>Looking for the perfect Christmas gift?</strong> Treat
+              your loved ones to this heartwarming fundraiser supporting our
+              local community!
+            </p>
+
+            <p>
+              To purchase tickets or for more information, call{' '}
+              <a href="tel:9052371419">905-237-1419</a> or send us an email at{' '}
+              <a className="underline" href="mailto:mlliving14@gmail.com">
+                mlliving14@gmail.com
+              </a>{' '}
+              .
+            </p>
+
+            <p>
+              <strong>Don’t miss out</strong> on this fantastic opportunity to
+              enjoy a fun-filled afternoon while supporting a great cause!
+            </p>
+            <div className="d-flex justify-content-center mb-3 mt-3 px-5 flex-column flex-md-row">
+              <Image
+                src="/assets/images/new/christmas-soupfest.jpg"
+                alt="Volunteer"
+                width={500}
+                height={500}
+                className="img-fluid"
+              />
+            </div>
+          </div>
+
+          <div className="column mb-5">
+            <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Upcoming Event: “All My Sons” by Arthur Miller
             </h1>
             <div className="d-flex justify-content-center">
