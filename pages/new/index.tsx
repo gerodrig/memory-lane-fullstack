@@ -62,7 +62,7 @@ export default function NewPage() {
             </p>
             <div className="d-flex justify-content-center mb-3 mt-3 px-5 flex-column flex-md-row">
               <Image
-                src="/assets/images/new/christmas-soupfest.jpg"
+                src="/assets/images/new/soupfest.png"
                 alt="Volunteer"
                 width={500}
                 height={500}
