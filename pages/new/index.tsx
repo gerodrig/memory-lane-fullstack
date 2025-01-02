@@ -60,17 +60,52 @@ export default function NewPage() {
               <strong>Don’t miss out</strong> on this fantastic opportunity to
               enjoy a fun-filled afternoon while supporting a great cause!
             </p>
+
+            {/* Embed Google Form */}
+            {/* Add paragraph with link to Google Form */}
+            <div className="text-center mt-5">
+              <p
+                className="font-weight-bold"
+                style={{ fontSize: '1.5rem', color: '#d68eae' }}
+              >
+                🎟️ <strong>Order Your Tickets Online:</strong>
+              </p>
+              <p
+                className="text-dark"
+                style={{ fontSize: '1.2rem', lineHeight: '1.6' }}
+              >
+                Secure your spot for the{' '}
+                <strong>Soupfest & Stand-Up Improv Comedy</strong> event today!
+                Click{' '}
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdTzOmfItlIfKHUq2zTaf-z_cJfZ6Cj4UhZLQvjf54ZcQnhVQ/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-sm mx-2"
+                >
+                  here
+                </a>{' '}
+                to fill out the form and complete your purchase.
+              </p>
+            </div>
+
             <div className="d-flex justify-content-center mb-3 mt-3 px-5 flex-column flex-md-row">
-              <Image
-                src="/assets/images/new/soupfest.png"
-                alt="Volunteer"
-                width={500}
-                height={500}
-                className="img-fluid"
-              />
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdTzOmfItlIfKHUq2zTaf-z_cJfZ6Cj4UhZLQvjf54ZcQnhVQ/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/assets/images/new/soupfest.png"
+                  alt="Volunteer"
+                  width={500}
+                  height={500}
+                  className="img-fluid"
+                />
+              </a>
             </div>
           </div>
-
+1
           <div className="column mb-5">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Upcoming Event: “All My Sons” by Arthur Miller
@@ -81,7 +116,8 @@ export default function NewPage() {
                 Club Theatre for a special presentation of Arthur Miller’s
                 classic drama All My Sons. Join us on Thursday, January 23,
                 2025, at 8:00 PM for an unforgettable evening of theater and
-                community spirit. Tickets are just $30. THIS WOULD MAKE A GREAT CHRISTMAS PRESENT. To purchase tickets, please call
+                community spirit. Tickets are just $30. THIS WOULD MAKE A GREAT
+                CHRISTMAS PRESENT. To purchase tickets, please call
                 905-237-1419. Don’t miss this opportunity to enjoy a remarkable
                 performance while supporting a great cause!
               </p>
