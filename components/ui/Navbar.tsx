@@ -1,17 +1,25 @@
 import { useEffect, useState } from 'react';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import Cookies from 'js-cookie';
 import { ChevronDown, List } from 'react-bootstrap-icons';
 
 import { Topbar } from './Topbar';
 
 import styles from '@styles/Navbar.module.css';
 
+const WEEK_IN_MILLISECONDS = 7 * 24 * 60 * 60 * 1000;
+
 export const Navbar = () => {
   const [visible, setVisible] = useState(true);
   const [scrolled, setScrolled] = useState('');
   const [mobileNav, setMobileNav] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+
+  // Blinking effect
+  const [isBlinking, setIsBlinking] = useState(true);
+
   const [width, setWidth] = useState(
     typeof window !== 'undefined' ? window.innerWidth : 0
   );
@@ -22,6 +30,20 @@ export const Navbar = () => {
   const [getInvolvedDopdownOpen, setGetInvolvedDropDownOpen] = useState(false);
   const [moreDropDownOpen, setMoreDropDownOpen] = useState(false);
 
+  //Blinkinge effect check for cookie
+  useEffect(() => {
+    // Check if the cookie exists and is valid
+    const lastClicked = Cookies.get('mlhl-button-clicked');
+    if (lastClicked) {
+      const lastClickedTime = parseInt(lastClicked, 10);
+      const currentTime = new Date().getTime();
+      if (currentTime - lastClickedTime < WEEK_IN_MILLISECONDS) {
+        setIsBlinking(false);
+      }
+    }
+  }, []);
+
+  
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -98,6 +120,19 @@ export const Navbar = () => {
     }
   };
 
+  //toggle blinking effect
+
+  const handleNewClick = () => {
+
+    //Exit if the button is not blinking
+    if (!isBlinking) return;
+    // Save the current timestamp in the cookie
+    Cookies.set('mlhl-button-clicked', new Date().getTime().toString(), {
+      expires: 1, // Cookie will expire in 1 day
+    });
+    setIsBlinking(false);
+  };
+
   return (
     <>
       <Topbar hide={!visible} />
@@ -153,8 +188,8 @@ export const Navbar = () => {
                     </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/#music-from-the-heart" scroll={false}>
-                      Music From The Heart
+                    <Link href="/#music-from-the-heart-therapy" scroll={false}>
+                      Music From The Heart Therapy
                     </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
@@ -168,7 +203,7 @@ export const Navbar = () => {
                     </Link>
                   </li>
                   <li onClick={toggleMobileNav}>
-                    <Link href="/events/register" scroll={false}>
+                    <Link href="/events/register" scroll={true}>
                       Events
                     </Link>
                   </li>
@@ -306,8 +341,9 @@ export const Navbar = () => {
           {!mobileNav && (
             <Link
               href="/new"
-              className={`${styles['what-is-new-btn']} me-1 ms-4 scrollto`}
-              scroll={false}
+              className={`${styles['what-is-new-btn']} ${isBlinking ? '' : styles['blinking-stop']} me-1 ms-4 scrollto`}
+              scroll={true}
+              onClick={handleNewClick}
             >
               New <span className="d-none d-md-inline">at MLHL</span>
             </Link>

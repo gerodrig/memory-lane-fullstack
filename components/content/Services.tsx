@@ -9,7 +9,7 @@ import {
   FileMusicFill,
 } from 'react-bootstrap-icons';
 
-import { FlyerImage, SeparatorIdentifier } from '@components/ui';
+import { FlyerImage, SeparatorIdentifier, YoutubeVideo } from '@components/ui';
 
 import style from './Services.module.css';
 import styleSection from '@styles/Section.module.css';
@@ -230,11 +230,11 @@ export const Services = ({ id = '' }: ServicesProps) => {
             </div>
 
             <FlyerImage
-                className="mt-1 mb-5 col-sm-12"
-                source="/assets/images/flyers/MLHL-day-program.jpg"
-              />
+              className="mt-1 mb-5 col-sm-12"
+              source="/assets/images/flyers/MLHL-day-program.jpg"
+            />
 
-            <SeparatorIdentifier id="music-from-the-heart" />
+            <SeparatorIdentifier id="music-from-the-heart-therapy" />
             <div
               className={`col-md-12 ${styleSection['icon-box']}`}
               data-aos="zoom-in"
@@ -244,10 +244,10 @@ export const Services = ({ id = '' }: ServicesProps) => {
                 <MusicNoteBeamed size={32} />
               </div>
               <h4 className={style.title + ' text-center mb-5'}>
-                Music From The Heart
+                Music From The Heart Therapy
               </h4>
               <p className={styleSection.description}>
-                <span className="fst-italic fw-bold">Music from the Heart</span>
+                <span className="fst-italic fw-bold">Music from the Heart Therapy</span>
                 , is a weekly program run on Tuesdays by our Music Therapist who
                 delivers a therapeutic program to caregivers and their loved
                 ones with a dementia diagnosis, in a community setting. Music
@@ -330,10 +330,18 @@ export const Services = ({ id = '' }: ServicesProps) => {
               </p>
             </div>
 
-            <FlyerImage
+            <div className="d-flex justify-content-center mb-3 mt-3 px-5 flex-column">
+              <FlyerImage
               className="mt-1 mb-5"
               source="/assets/images/flyers/MLHL-music-choir.png"
-            />
+              />
+              <YoutubeVideo
+              videoId="G7FVqQ6-Hww"
+              // title="Music From the Heart"
+              width={500}
+              embed
+              />
+            </div>
 
             <SeparatorIdentifier id="respite-care" className="my-0" />
             <div
@@ -412,7 +420,6 @@ export const Services = ({ id = '' }: ServicesProps) => {
             className="mt-1 mb-5 col-sm-12"
             source="/assets/images/flyers/MLHL-care-partner-connections-flyer.jpg"
           />
-
         </div>
       </section>
     </>

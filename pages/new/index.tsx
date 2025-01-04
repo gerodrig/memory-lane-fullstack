@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { MemoryLaneLayout } from '@components/layouts/MemoryLaneLayout';
 import styleSection from '@styles/Section.module.css';
-import { FlyerImage, YoutubeVideo } from '@components/ui';
 
 export default function NewPage() {
   return (
@@ -156,12 +155,6 @@ export default function NewPage() {
                 width={500}
                 height={500}
                 className="img-fluid"
-              />
-              <YoutubeVideo
-                videoId="G7FVqQ6-Hww"
-                // title="Music From the Heart"
-                width={500}
-                embed
               />
             </div>
 

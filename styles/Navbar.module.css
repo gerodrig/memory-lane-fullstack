@@ -46,7 +46,7 @@
 /**
   * What is New Button
   */
-.what-is-new-btn {
+/* .what-is-new-btn {
   background-color: #D94A76; 
   color: #ffffff; 
   padding: 10px 20px; 
@@ -60,22 +60,74 @@
   text-decoration: none;
   display: inline-block;
   cursor: pointer; 
-}
+} */
 
-.what-is-new-btn:hover {
+/* .what-is-new-btn:hover {
   background-color: #BB2768;
   color: #ffffff;
   text-decoration: none;
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15); 
   transform: translateY(-2px); 
   outline: none;
-}
+} */
 
-@media (max-width: 768px) 
+/* @media (max-width: 768px) 
 {
   .what-is-new-btn {
     margin: 0 15px 0 0;
     padding: 6px 15px;
+  }
+} */
+
+.what-is-new-btn {
+  background-color: #D94A76; /* Original button color */
+  color: #ffffff;
+  padding: 12px 25px; /* Bigger padding for initial size */
+  margin: 0 -10px 0 10px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  animation: flashy-flash 1.2s infinite ease-in-out; /* Flashy animation */
+}
+
+.what-is-new-btn.blinking-stop {
+  animation: none; /* Stops animation when clicked */
+}
+
+.what-is-new-btn:hover {
+  background-color: #BB2768;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+@keyframes flashy-flash {
+  0% {
+    background-color: #D94A76; /* Original color */
+    transform: scale(1);
+  }
+  50% {
+    background-color: #FF6F91; /* Lighter color for flash effect */
+    transform: scale(1.1); /* Slight size increase */
+  }
+  100% {
+    background-color: #D94A76; /* Back to original color */
+    transform: scale(1); /* Return to normal size */
+  }
+}
+
+@media (max-width: 768px) {
+  .what-is-new-btn {
+    margin: 0 15px 0 0;
+    padding: 10px 20px; /* Adjust size for smaller screens */
   }
 }
 
