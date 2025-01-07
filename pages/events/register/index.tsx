@@ -17,15 +17,14 @@ export default function PartnerPage() {
           </div>
           <div className="column mb-5">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
-              Upcoming Event: Soupfest & Stand-Up Improv Comedy
+              Upcoming Event: Soupfest and Improv Comedy
             </h1>
             <div className="d-flex justify-content-center">
               <p>
                 Memory Lane Home Living invites you to a delightful afternoon of
-                laughter and warmth at our “Soupfest & Stand-Up” event!
-                Featuring the hilarious Bent Forks Comedy Troupe, this event
-                promises a hearty mix of delicious soups and improvisational
-                comedy that will keep you smiling.
+                soup sampling and laughter at our “Soupfest and Improv Comedy”. 
+                Bent Fork Improv is the improvisational comedy that will keep
+                you smiling.
               </p>
             </div>
             <h4>When:</h4>
@@ -42,9 +41,9 @@ export default function PartnerPage() {
             </p>
 
             <p>
-              🎁 <strong>Looking for the perfect Christmas gift?</strong> Treat
-              your loved ones to this heartwarming fundraiser supporting our
-              local community!
+              💝 <strong>Looking for the perfect Valentines Gift?</strong> 💝
+              Treat your loved ones to this heartwarming fundraiser supporting
+              our local community!
             </p>
 
             <p>
@@ -105,7 +104,7 @@ export default function PartnerPage() {
               </a>
             </div>
           </div>
-          1
+
           <div className="column mb-5">
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Upcoming Event: “All My Sons” by Arthur Miller
