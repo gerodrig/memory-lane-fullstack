@@ -30,16 +30,10 @@ export const Navbar = () => {
   const [getInvolvedDopdownOpen, setGetInvolvedDropDownOpen] = useState(false);
   const [moreDropDownOpen, setMoreDropDownOpen] = useState(false);
 
-  //Blinkinge effect check for cookie
+  //Blinkinge effect check for path an dblinking
   useEffect(() => {
-    // Check if the cookie exists and is valid
-    const lastClicked = Cookies.get('mlhl-button-clicked');
-    if (lastClicked) {
-      const lastClickedTime = parseInt(lastClicked, 10);
-      const currentTime = new Date().getTime();
-      if (currentTime - lastClickedTime < WEEK_IN_MILLISECONDS) {
-        setIsBlinking(false);
-      }
+    if (window.location.href.includes('/new')) {
+      setIsBlinking(false);
     }
   }, []);
 
@@ -120,18 +114,6 @@ export const Navbar = () => {
     }
   };
 
-  //toggle blinking effect
-
-  const handleNewClick = () => {
-
-    //Exit if the button is not blinking
-    if (!isBlinking) return;
-    // Save the current timestamp in the cookie
-    Cookies.set('mlhl-button-clicked', new Date().getTime().toString(), {
-      expires: 1, // Cookie will expire in 1 day
-    });
-    setIsBlinking(false);
-  };
 
   return (
     <>
@@ -297,7 +279,7 @@ export const Navbar = () => {
                   className={moreDropDownOpen ? styles['dropdown-active'] : ''}
                 >
                   <li onClick={toggleMobileNav}>
-                    <Link href="/new">What is New?</Link>
+                    <Link href="/new">What is New? / SOUPFEST</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/partners">Partner Page</Link>
@@ -343,9 +325,9 @@ export const Navbar = () => {
               href="/new"
               className={`${styles['what-is-new-btn']} ${isBlinking ? '' : styles['blinking-stop']} me-1 ms-4 scrollto`}
               scroll={true}
-              onClick={handleNewClick}
             >
-              New <span className="d-none d-md-inline">at MLHL</span>
+              SOUPFEST
+              {/* New <span className="d-none d-md-inline">at MLHL</span> */}
             </Link>
           )}
             {/* //! Event Register button toggle */}

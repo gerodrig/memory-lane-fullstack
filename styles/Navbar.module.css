@@ -126,8 +126,9 @@
 
 @media (max-width: 768px) {
   .what-is-new-btn {
-    margin: 0 15px 0 0;
-    padding: 10px 20px; /* Adjust size for smaller screens */
+    padding: 6px 12px; /* reduced from 8px 15px */
+    font-size: 10px; /* slightly reduced from 12px */
+    transform: scale(0.8); /* alternative way to reduce overall size */
   }
 }
 
