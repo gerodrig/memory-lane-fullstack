@@ -1,6 +1,13 @@
 import Image from 'next/image';
 import { MemoryLaneLayout } from '@components/layouts/MemoryLaneLayout';
 import styleSection from '@styles/Section.module.css';
+import dynamic from 'next/dynamic';
+import { FlashingBanner } from '@components/ui/FlashingBanner';
+
+const CountdownTimer = dynamic(() => import('@components/CountdownTimer'), {
+  ssr: false,
+  loading: () => <p>Loading countdown...</p>,
+});
 
 export default function NewPage() {
   return (
@@ -17,6 +24,8 @@ export default function NewPage() {
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Upcoming Event: Soupfest and Improv Comedy
             </h1>
+            <FlashingBanner text="LIMITED SEATING AVAILABLE - BOOK NOW!" />
+            <CountdownTimer />
             <div className="d-flex justify-content-center">
               <p>
                 Memory Lane Home Living invites you to a delightful afternoon of
@@ -107,6 +116,7 @@ export default function NewPage() {
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Upcoming Event: “All My Sons” by Arthur Miller
             </h1>
+
             <div className="d-flex justify-content-center">
               <p>
                 Memory Lane Home Living is excited to collaborate with Curtain

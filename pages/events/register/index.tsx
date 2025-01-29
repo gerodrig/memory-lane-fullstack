@@ -1,6 +1,13 @@
 import { MemoryLaneLayout } from '@components/layouts';
+import { FlashingBanner } from '@components/ui/FlashingBanner';
+
+const CountdownTimer = dynamic(() => import('@components/CountdownTimer'), {
+  ssr: false,
+  loading: () => <p>Loading countdown...</p>,
+});
 
 import styleSection from '@styles/Section.module.css';
+import dynamic from 'next/dynamic';
 // import { EventForm } from '@components/ui';
 import Image from 'next/image';
 
@@ -19,6 +26,8 @@ export default function PartnerPage() {
             <h1 className={`text-center mb-5 ${styleSection['check']}`}>
               Upcoming Event: Soupfest and Improv Comedy
             </h1>
+            <FlashingBanner text="LIMITED SEATING AVAILABLE - BOOK NOW!" />
+            <CountdownTimer />
             <div className="d-flex justify-content-center">
               <p>
                 Memory Lane Home Living invites you to a delightful afternoon of
