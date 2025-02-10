@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import Image from 'next/image';
 import Link from 'next/link';
-import Cookies from 'js-cookie';
+// import Cookies from 'js-cookie';
 import { ChevronDown, List } from 'react-bootstrap-icons';
 
 import { Topbar } from './Topbar';
@@ -279,7 +279,7 @@ export const Navbar = () => {
                   className={moreDropDownOpen ? styles['dropdown-active'] : ''}
                 >
                   <li onClick={toggleMobileNav}>
-                    <Link href="/new">What is New? / SOUPFEST</Link>
+                    <Link href="/new">What is New?</Link>
                   </li>
                   <li onClick={toggleMobileNav}>
                     <Link href="/partners">Partner Page</Link>
@@ -326,8 +326,8 @@ export const Navbar = () => {
               className={`${styles['what-is-new-btn']} ${isBlinking ? '' : styles['blinking-stop']} me-1 ms-4 scrollto`}
               scroll={true}
             >
-              SOUPFEST
-              {/* New <span className="d-none d-md-inline">at MLHL</span> */}
+
+              New <span className="d-none d-md-inline">at MLHL</span>
             </Link>
           )}
             {/* //! Event Register button toggle */}
