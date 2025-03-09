@@ -49,6 +49,7 @@ export const MemoryLaneLayout: FC<MemoryLaneLayoutProps> = ({
         </title>
         <link rel="icon" href="/favicon.ico" />
         {/* facebook domain verification */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="facebook-domain-verification" content="s17vw94zl0bvy7y6euu3tmj4mgqvzl" />
         
         <meta name="description" content={pageDescription} />

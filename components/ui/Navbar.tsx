@@ -31,11 +31,12 @@ export const Navbar = () => {
   const [moreDropDownOpen, setMoreDropDownOpen] = useState(false);
 
   //Blinkinge effect check for path an dblinking
-  useEffect(() => {
-    if (window.location.href.includes('/new')) {
-      setIsBlinking(false);
-    }
-  }, []);
+  //! NEw at MLHL hidden
+  // useEffect(() => {
+  //   if (window.location.href.includes('/new')) {
+  //     setIsBlinking(false);
+  //   }
+  // }, []);
 
   
   useEffect(() => {
@@ -278,9 +279,12 @@ export const Navbar = () => {
                 <ul
                   className={moreDropDownOpen ? styles['dropdown-active'] : ''}
                 >
+                  {/* 
+                  
+                  //! New at MLHL hidden
                   <li onClick={toggleMobileNav}>
                     <Link href="/new">What is New?</Link>
-                  </li>
+                  </li> */}
                   <li onClick={toggleMobileNav}>
                     <Link href="/partners">Partner Page</Link>
                   </li>
@@ -319,7 +323,8 @@ export const Navbar = () => {
             />
           </nav>
           {/* <!-- .navbar --> */}
-
+{/* 
+          //! New at MLHL hidden
           {!mobileNav && (
             <Link
               href="/new"
@@ -329,7 +334,7 @@ export const Navbar = () => {
 
               New <span className="d-none d-md-inline">at MLHL</span>
             </Link>
-          )}
+          )} */}
             {/* //! Event Register button toggle */}
           {/* {!mobileNav && ( 
             // <Link
