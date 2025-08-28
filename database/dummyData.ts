@@ -54,7 +54,7 @@ export const teamData: TeamMember[] = [
     description: `Alysa is the Recreation Therapist at Memory Lane Home Living. She holds an Honours Bachelor's degree in Recreation Therapy from Seneca College and brings experience from both long-term care and retirement homes. Passionate about supporting emotional and cognitive well-being through meaningful activities, Alysa is currently advancing her studies in Health Care Management to blend hands-on practice with leadership in elder care. She believes in the power of fun, connection, and creativity to bring purpose to daily life- and finds joy in helping others rediscover theirs.`,
   },
   {
-    image: '/assets/images/board-members/farideh.jpeg',
+    image: '/assets/images/board-members/farideh.webp',
     name: 'Farideh',
     jobTitle: 'Program Assistant',
     imagePosition: 'center 70%',
