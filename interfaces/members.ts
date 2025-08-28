@@ -4,6 +4,9 @@ export interface TeamMember {
     name?: string;
     jobTitle?: jobTitle;
     description?: string;
+    imagePosition?: string;
+    imageFit?: string;
+    imageScale?: number;
 };
 
-type jobTitle = 'Founder and Director' | 'Treasurer - Board of Directors' | 'Board of Directors' | 'Client/Program Manager' | 'Program Manager Part-Time' | 'Program Assistant' | 'Recreational Therapist';
+type jobTitle = 'Board of Directors, President' | 'Board of Directors, Treasurer' | 'Board of Directors, Secretary' | 'Board of Directors' | 'Canada Summer Jobs Student' | 'Program Manager Part-Time' | 'Program Assistant' | 'Recreation Therapist';

@@ -1,52 +1,88 @@
 import { ResourcesData, BlogPost, TeamMember } from 'interfaces';
 
 export const teamData: TeamMember[] = [
-    {
+  {
     image: '/assets/images/board-members/mona.webp',
     name: 'Mona Lancaster',
-    jobTitle: 'Founder and Director',
-    description: `BA, B Comm. Founding member of Memory Lane Home Living. Mona has a background in Psychology/Sociology and the mental health field. Banking experience followed. While in university, she worked as a Nurse's Aide in a Long-Term Care facility. Mona is currently completing a Geriatric Certificate from McMaster University. She has completed the Dementia Montessori Course. Mona has also completed the Dementia Care Matters Course, to guide and implement important aspects of the "Butterfly Model of Care “into Memory Lane Home Living Inc. In 2020 Mona was appointed to the Steering Committee as an Older Adult Representative for Caregivers with the Provincial Geriatric Leadership Office (PGLO). In December 2021 Mona Lancaster was awarded an Outstanding Canadian Award for her perseverance and compassion in making a difference for a new way of living in community with dementia. In October2022, Mona was also awarded the Queen's Platinum Jubilee Community Hero Award.`
-    },
-    {
-    image: '/assets/images/board-members/liz.webp',
-    name: 'Liz Morin',
-    jobTitle: 'Board of Directors',
-    description: `Liz retired from the federal public service in 2020, after a 30+ year career focused on Indigenous and social justice issues. Her work took her to all parts of Canada, including remote First Nation communities. Liz graduated with a BA from the University of Toronto, and an MA in Public Administration from Carleton University. Liz brings significant expertise in governance, negotiations, strategic planning and implementation. As the primary caregiver to her Mother who has a dementia diagnosis, Liz is passionate about creating a fulfilling community for people with dementia to live well.`
-    },
-    {
-      image: '/assets/images/board-members/EKing.jpg',
-      name: 'Elizabeth King',
-      jobTitle: 'Treasurer - Board of Directors',
-      description: `Elizabeth is retired from practicing law as a government lawyer with the Ministry of Municipal Affairs and Housing for more than eighteen years. She served as general counsel to the Ontario Mortgage and Housing Corporation for over ten years. She is well-versed in community housing matters and brings a unique insight and experience to her role as Treasurer for the Memory Lane Board of Directors.`
-    },
-    {
-      image: '/assets/images/board-members/Jessica.jpg',
-      name: 'Jessica',
-      jobTitle: 'Recreational Therapist',
-      description: `Jessica works at Memory Lane Home Living as a Recreational Therapist. She holds a double major in Studio Art and Philosophy. Following the completion of her bachelor's, she moved on to study Recreational Therapy, allowing her to blend her art skills and therapeutic background to create programs that highlight people’s creative abilities. Jessica has worked in various settings in the past, including long term care, private care, and with people who have disabilities. She has lived experience with dementia and the symptoms that accompany a diagnosis.`
-    },
-    {
-      image: '/assets/images/board-members/Farideh.jpeg',
-      name: 'Farideh',
-      jobTitle: 'Program Assistant',
-      description: `Farideh serves as a committed Program Assistant at Memory Lane Home Living Inc. in Richmond Hill. Armed with a Bachelor of Science degree, she adeptly applies her knowledge across various aspects of her role. Her previous volunteer work in Adult Day Programs for seniors, coupled with her personal experience with dementia, uniquely equips her for this position. Farideh is known for her compassionate and empathetic approach, deeply connecting with both clients and their families.`
-    },
+    jobTitle: 'Board of Directors, President',
+    imagePosition: 'center -10%',
+    imageFit: 'contain',
+    imageScale: 1.4,
+    description: `BA, B Comm. Founding member of Memory Lane Home Living. Mona has a background in Psychology/Sociology and the mental health field. Banking experience followed. While in university, she worked as a Nurse's Aide in a Long-Term Care facility. Mona is currently completing a Geriatric Certificate from McMaster University. She has completed the Dementia Montessori Course. Mona has also completed the Dementia Care Matters Course, to guide and implement important aspects of the "Butterfly Model of Care “into Memory Lane Home Living Inc. In 2020 Mona was appointed to the Steering Committee as an Older Adult Representative for Caregivers with the Provincial Geriatric Leadership Office (PGLO). In December 2021 Mona Lancaster was awarded an Outstanding Canadian Award for her perseverance and compassion in making a difference for a new way of living in community with dementia. In October2022, Mona was also awarded the Queen's Platinum Jubilee Community Hero Award.`,
+  },
+  {
+    image: '/assets/images/board-members/dannese.webp',
+    name: 'Dannese Yang',
+    jobTitle: 'Board of Directors, Treasurer',
+    imagePosition: 'center 20%',
+    description: `An enthusiastic and highly motivated CPA, Dannese Yang holds an MBA from the Ivey Business School and an Honours Bachelor of Commerce in Accounting from York University. She brings a wealth of experience in accounting and leadership across diverse sectors.
 
+    New to the not-for-profit world, Dannese is deeply passionate about supporting dementia-related initiatives - an area close to her heart, inspired by her grandfather's journey with dementia. She is committed to raising awareness and driving meaningful change in this important field.
+
+    Outside of her professional life, Dannese enjoys traveling and cherishing quality time with her children and extended family.`,
+  },
+  {
+    image: '/assets/images/board-members/andre.webp',
+    name: 'Andre Mattera',
+    jobTitle: 'Board of Directors, Secretary',
+    imagePosition: 'center 30%',
+    description: `Andre is a dynamic business leader with over 20 years of entrepreneurial and executive experience across diverse industries. As the owner and facilitator of a TAB York Region, he helps forward-thinking business owners align their business goals with their personal values through confidential peer advisory boards and one-on-one coaching. Known for turning obstacles into opportunities, Andre empowers leaders to grow profitable, balanced businesses.
+
+    Andre is excited to be part of our not-for-profit initiative as he is currently living the experience with his parents and in-laws.`,
+  },
+  {
+    image: '/assets/images/board-members/peg.webp',
+    name: 'Peg Bocci',
+    jobTitle: 'Board of Directors',
+    description: `Peg Bocci is the founder of Silver Lining Senior Advisors and principal at Move Seniors Lovingly. With over 23 years of experience supporting older adults, she specializes in senior transitions and eldercare planning, guiding families through the emotional and logistical challenges of downsizing and moving with empathy and expertise. Drawing on both personal and professional experience with dementia, Peg brings a deep understanding and resilience to her work.
+
+    Outside of her professional life, she enjoys gardening, cooking, traveling, and proudly cheering on her children from the sidelines of the soccer field.`,
+  },
+  {
+    image: '/assets/images/board-members/lilian.webp',
+    name: 'Lilian Lum',
+    jobTitle: 'Board of Directors',
+    description: `Lilian Lum Mbah is a multilingual MBA holder and Certified Professional Consultant on Aging, award-winning entrepreneur and founder of Divine Favour Healthcare Staffing Inc., and a trusted homecare provider serving seniors and individuals with disabilities across Ontario. Inspired by caring for her late mother, Lilian built a company known for its compassionate, personalized c are and reliable staffing solutions for long-term and retirement homes.
+
+    Lilian was recently honoured with the 2024 Equity Entrepreneur Award and has been recognized for her leadership and impact in the healthcare sector. Beyond business, Lilian is deeply involved in community service - volunteering in senior homes, supporting youth programs, and doing street-level outreach with the Niagara Dream Center. Lilian is also a proud mother of four and is currently writing her first book about caregiving, leadership, and faith.`,
+  },
+  {
+    image: '/assets/images/board-members/alysa.webp',
+    name: 'Alysa',
+    jobTitle: 'Recreation Therapist',
+    imagePosition: 'center 70%',
+    description: `Alysa is the Recreation Therapist at Memory Lane Home Living. She holds an Honours Bachelor's degree in Recreation Therapy from Seneca College and brings experience from both long-term care and retirement homes. Passionate about supporting emotional and cognitive well-being through meaningful activities, Alysa is currently advancing her studies in Health Care Management to blend hands-on practice with leadership in elder care. She believes in the power of fun, connection, and creativity to bring purpose to daily life- and finds joy in helping others rediscover theirs.`,
+  },
+  {
+    image: '/assets/images/board-members/farideh.jpeg',
+    name: 'Farideh',
+    jobTitle: 'Program Assistant',
+    imagePosition: 'center 70%',
+    description: `Farideh serves as a committed Program Assistant at Memory Lane Home Living Inc. in Richmond Hill. Armed with a Bachelor of Science degree, she adeptly applies her knowledge across various aspects of her role. Her previous volunteer work in Adult Day Programs for seniors, coupled with her personal experience with dementia, uniquely equips her for this position. Farideh is known for her compassionate and empathetic approach, deeply connecting with both clients and their families.`,
+  },
+  {
+    image: '/assets/images/board-members/jamie.webp',
+    name: 'Jamie',
+    jobTitle: 'Program Assistant',
+    description: `Jamie is the 2025 Summer Student at Memory Lane Home Living through the Canada Summer Jobs program. She is currently pursuing an Honours Bachelor of Music Therapy degree, specializing in piano, with a minor in Psychology at Wilfrid Laurier University. Jamie's interest in Music Therapy has led her to volunteer in retirement homes, where she discovered a passion for supporting and connecting with older adults. She also enjoys cooking, baking, the creative arts, and learning new things - always bringing warmth and curiosity to her work.`,
+  },
 ];
 
 export const blogData: BlogPost[] = [
   {
-    id:'1',
-    title:`Understanding Early-Onset Alzheimer Disease`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676697483/Blogs/5f91d7c3fdac2311c4c17855_Early-onset-alzheimers-hero-image_gbbnpl.jpg',
-    author:'External Author',
-    postedDate:'Jan 07, 2023',
-    category:'Person Center Care',
+    id: '1',
+    title: `Understanding Early-Onset Alzheimer Disease`,
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676697483/Blogs/5f91d7c3fdac2311c4c17855_Early-onset-alzheimers-hero-image_gbbnpl.jpg',
+    author: 'External Author',
+    postedDate: 'Jan 07, 2023',
+    category: 'Person Center Care',
     tags: ['Alzheimer', 'Dementia', 'Caregiver'],
-    credits:'hopkinsmedicine',
-    articleAuthor:'hopkinsmedicine.org',
-    originalDate:'Jan 07, 2023',
-    originalUrl:'https://www.hopkinsmedicine.org/health/conditions-and-diseases/alzheimers-disease/earlyonset-alzheimer-disease#:~:text=Although%20Alzheimer%20disea',
+    credits: 'hopkinsmedicine',
+    articleAuthor: 'hopkinsmedicine.org',
+    originalDate: 'Jan 07, 2023',
+    originalUrl:
+      'https://www.hopkinsmedicine.org/health/conditions-and-diseases/alzheimers-disease/earlyonset-alzheimer-disease#:~:text=Although%20Alzheimer%20disea',
     content: `Introduction:
     Alzheimer disease is a form of dementia that affects memory, thinking, and behavior. It is the most common form of dementia and typically affects older adults. However, a small number of people develop Alzheimer disease at a younger age, which is known as early-onset Alzheimer disease. In this blog post, we will discuss what early-onset Alzheimer disease is, its causes, symptoms, diagnosis, treatment, and prevention.
     
@@ -75,20 +111,22 @@ export const blogData: BlogPost[] = [
     Living with early-onset Alzheimer disease can be difficult, but it is important to have a positive outlook and stay active and mentally engaged. It is also important to rely on friends and family, and consider joining a support group if helpful. Keeping your mind and body healthy with a healthy diet, regular exercise, and reducing stress can also help improve quality of life.
     
     -When to Call Your Healthcare Provider
-    It is important to monitor your condition and call your healthcare provider if you notice any sudden changes that require additional help.`
+    It is important to monitor your condition and call your healthcare provider if you notice any sudden changes that require additional help.`,
   },
   {
-    id:'2',
-    title:`Frontotemporal Dementia`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676703333/Blogs/dt_210223_brain_pain_frontotemporal_dementia_800x450_pxhvgr.webp',
-    author:'External Author',
-    postedDate:'Jan 07, 2023',
-    category:'Person Center Care',
+    id: '2',
+    title: `Frontotemporal Dementia`,
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676703333/Blogs/dt_210223_brain_pain_frontotemporal_dementia_800x450_pxhvgr.webp',
+    author: 'External Author',
+    postedDate: 'Jan 07, 2023',
+    category: 'Person Center Care',
     tags: ['Alzheimer', 'Dementia', 'Caregiver'],
-    credits:'Mayo Clinic',
-    articleAuthor:'Mayo Clinic Staff',
-    originalDate:'Nov 16, 2021',
-    originalUrl:'https://www.mayoclinic.org/diseases-conditions/frontotemporal-dementia/symptoms-causes/syc-20354737',
+    credits: 'Mayo Clinic',
+    articleAuthor: 'Mayo Clinic Staff',
+    originalDate: 'Nov 16, 2021',
+    originalUrl:
+      'https://www.mayoclinic.org/diseases-conditions/frontotemporal-dementia/symptoms-causes/syc-20354737',
     content: `Introduction:
     Frontotemporal Dementia (FTD) is a group of brain disorders that primarily affect the frontal and temporal lobes of the brain. These areas of the brain are associated with personality, behavior, and language. FTD is a type of dementia that can be misdiagnosed as a psychiatric problem or Alzheimer's disease, however, it tends to occur at a younger age and is the cause of approximately 10-20% of dementia cases.
     
@@ -102,22 +140,24 @@ export const blogData: BlogPost[] = [
     The only known risk factor for FTD is a family history of dementia. There are no other known risk factors.
     
     -Conclusion:
-    FTD is a type of dementia that can be difficult to diagnose due to its varying symptoms and its tendency to be misdiagnosed as a psychiatric problem or Alzheimer's disease. However, understanding the symptoms, causes, and risk factors of FTD can help individuals get the proper diagnosis and treatment they need. If you or a loved one is experiencing symptoms of FTD, it is important to seek medical advice from a healthcare professional.`
+    FTD is a type of dementia that can be difficult to diagnose due to its varying symptoms and its tendency to be misdiagnosed as a psychiatric problem or Alzheimer's disease. However, understanding the symptoms, causes, and risk factors of FTD can help individuals get the proper diagnosis and treatment they need. If you or a loved one is experiencing symptoms of FTD, it is important to seek medical advice from a healthcare professional.`,
   },
   {
-    id:'3',
-    title:`New study investigates
+    id: '3',
+    title: `New study investigates
     which activities are tied to
     a lower dementia risk.`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676703850/Blogs/chores_dementia_GettyImages521981107_Thumb-732x549_tely0s.webp',
-    author:'External Author',
-    postedDate:'Jan 07, 2023',
-    category:'Person Center Care',
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676703850/Blogs/chores_dementia_GettyImages521981107_Thumb-732x549_tely0s.webp',
+    author: 'External Author',
+    postedDate: 'Jan 07, 2023',
+    category: 'Person Center Care',
     tags: ['Dementia', 'Caregiver'],
-    credits:'The Globe and Mail',
-    articleAuthor:'Annie Lennon',
-    originalDate:'August 02, 2022',
-    originalUrl:'https://www.theglobeandmail.com/canada/article-canada-alzheimer-2030-projection/#:~:text=Nearly%20one%20million%20people%20in,the%20Alzheimer%20Society%20of%20Canada.',
+    credits: 'The Globe and Mail',
+    articleAuthor: 'Annie Lennon',
+    originalDate: 'August 02, 2022',
+    originalUrl:
+      'https://www.theglobeandmail.com/canada/article-canada-alzheimer-2030-projection/#:~:text=Nearly%20one%20million%20people%20in,the%20Alzheimer%20Society%20of%20Canada.',
     content: `Introduction:
     Dementia is a growing concern, with over 55 million people living with the condition worldwide and nearly 10 million new cases reported every year. While several potential risk factors have been identified, a recent study suggests that physical and mental activities may be an effective way to prevent dementia.
     
@@ -134,21 +174,23 @@ export const blogData: BlogPost[] = [
     According to Professor Gill Livingston, physical and mental activities may feed the brain with new information and store this new content information in our brain. Dr. Dorina Cadar further explained that social interaction, a sense of belonging to a group, and having friends with common interests are key to psychological well-being and mental resilience.
     
     -Conclusion:
-    The researchers concluded that frequent mental and physical activities could be effective interventions for preventing dementia. However, they noted that the study's limitations include that the UK Biobank data disproportionately comes from a high-income and healthy population with few minority groups and may not be fully representative. Additionally, the cohort was relatively young, given the mean age for developing dementia is around 80 years old, and the study did not accurately diagnose subtypes of dementia and that mental activities could have been investigated in more detail.`
+    The researchers concluded that frequent mental and physical activities could be effective interventions for preventing dementia. However, they noted that the study's limitations include that the UK Biobank data disproportionately comes from a high-income and healthy population with few minority groups and may not be fully representative. Additionally, the cohort was relatively young, given the mean age for developing dementia is around 80 years old, and the study did not accurately diagnose subtypes of dementia and that mental activities could have been investigated in more detail.`,
   },
   {
-    id:'4',
-    title:`Nearly one million Canadians projected to have
+    id: '4',
+    title: `Nearly one million Canadians projected to have
     dementia by 2030, new report says`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676704227/Blogs/Demencia_liaw5u.jpg',
-    author:'External Author',
-    postedDate:'Dec 23, 2022',
-    category:'Person Center Care',
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676704227/Blogs/Demencia_liaw5u.jpg',
+    author: 'External Author',
+    postedDate: 'Dec 23, 2022',
+    category: 'Person Center Care',
     tags: ['Dementia', 'Caregiver'],
-    credits:'Medical News Today',
-    articleAuthor:'Wency Leung',
-    originalDate:'Sept 06, 2022',
-    originalUrl:'https://www.theglobeandmail.com/canada/article-canada-alzheimer-2030-projection/',
+    credits: 'Medical News Today',
+    articleAuthor: 'Wency Leung',
+    originalDate: 'Sept 06, 2022',
+    originalUrl:
+      'https://www.theglobeandmail.com/canada/article-canada-alzheimer-2030-projection/',
     content: `Introduction:
     Dementia is a growing concern in Canada, with projections indicating that nearly one million people in Canada will have dementia by 2030, an increase of over 65 percent from 2020. The Alzheimer Society of Canada has published a report, "Navigating the Path Forward for Dementia in Canada", which highlights the alarming trend of dementia in the country and the impact it will have on caregivers.
     
@@ -162,20 +204,21 @@ export const blogData: BlogPost[] = [
     The report offers recommendations aimed at organizations, health systems, and various levels of government. The federal government is recommended to cost out and fully fund the national dementia strategy, while the provincial and territorial governments are recommended to improve education for all ages and help workplaces provide flexible support to caregivers.
     
     -Conclusion:
-    The rising trend of dementia in Canada is a cause for concern, and the impact it will have on caregivers is alarming. However, the report highlights that by investing in addressing modifiable risk factors, the government and the country can change the trend and reduce the number of cases of dementia. It is crucial for communities, public-health agencies, and other governmental organizations to support individuals in making changes to reduce their risk of developing dementia. It's time to act now to prevent the growing trend of dementia in Canada.`
+    The rising trend of dementia in Canada is a cause for concern, and the impact it will have on caregivers is alarming. However, the report highlights that by investing in addressing modifiable risk factors, the government and the country can change the trend and reduce the number of cases of dementia. It is crucial for communities, public-health agencies, and other governmental organizations to support individuals in making changes to reduce their risk of developing dementia. It's time to act now to prevent the growing trend of dementia in Canada.`,
   },
   {
-    id:'5',
-    title:`Alive Inside: A Documentary of Music and Memory`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676747456/Blogs/2a3c920d-9975-4af0-9719-4856f02721c9_vthezv.jpg',
-    author:'Michael Rossato-Bennett',
-    postedDate:'2014',
-    category:'Person Center Care',
+    id: '5',
+    title: `Alive Inside: A Documentary of Music and Memory`,
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676747456/Blogs/2a3c920d-9975-4af0-9719-4856f02721c9_vthezv.jpg',
+    author: 'Michael Rossato-Bennett',
+    postedDate: '2014',
+    category: 'Person Center Care',
     tags: ['Dementia', 'Caregiver', 'Music Therapy'],
-    credits:'Medical News Today',
-    articleAuthor:'Michael Rossato-Bennett',
-    originalDate:'2014',
-    originalUrl:'http://www.aliveinside.us/',
+    credits: 'Medical News Today',
+    articleAuthor: 'Michael Rossato-Bennett',
+    originalDate: '2014',
+    originalUrl: 'http://www.aliveinside.us/',
     content: `:
     The documentary "Alive Inside" explores the power of music and its ability to reawaken our humanity and restore a sense of self to those with dementia. Filmmaker Michael Rossato-Bennett follows social worker Dan Cohen as he fights against a broken healthcare system to demonstrate the healing power of music, showing how it can triumph where prescription medication fails. The film features interviews with experts including renowned neurologist and author Oliver Sacks and musician Bobby McFerrin, as well as family members who have witnessed the miraculous effects of personalized music on their loved ones.
 
@@ -187,20 +230,21 @@ export const blogData: BlogPost[] = [
     
     Rossato-Bennett used private donations, funding from various foundations, and a Kickstarter campaign to fund the production and distribution of "Alive Inside." The film has continued to earn accolades and recognition around the world, taking home the prize for Best Documentary at the Milan International Film Festival and many more.
     
-    Rossato-Bennett's ultimate goal goes beyond supplying every nursing-home resident with an MP3 player. He wants to inspire others to start an empathy revolution and has created the Alive Inside App, a free tool designed to help anyone find music for their elder. Through music, Rossato-Bennett believes we have the power to help millions of people awaken to who they are and what they can be. He hopes that his film will awaken hearts and minds to the healing power of music and human connection and inspire others to go on this journey.`
+    Rossato-Bennett's ultimate goal goes beyond supplying every nursing-home resident with an MP3 player. He wants to inspire others to start an empathy revolution and has created the Alive Inside App, a free tool designed to help anyone find music for their elder. Through music, Rossato-Bennett believes we have the power to help millions of people awaken to who they are and what they can be. He hopes that his film will awaken hearts and minds to the healing power of music and human connection and inspire others to go on this journey.`,
   },
   {
-    id:'6',
-    title:`February is Heart Month.  Learn how Heart Disease can contribute to Vascular Dementia`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676757249/Blogs/vascular-dementia-inlineimage_2_cxsd2w.jpg',
+    id: '6',
+    title: `February is Heart Month.  Learn how Heart Disease can contribute to Vascular Dementia`,
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1676757249/Blogs/vascular-dementia-inlineimage_2_cxsd2w.jpg',
     author: 'Alzheimer’s Association',
-    postedDate:'Feb 16, 2023',
-    category:'Person Center Care',
+    postedDate: 'Feb 16, 2023',
+    category: 'Person Center Care',
     tags: ['Dementia', 'Caregiver', 'Heart Disease'],
-    credits:'Alzheimer’s Association',
-    articleAuthor:'Alzheimer’s Association',
-    originalDate:'Feb 16, 2023',
-    originalUrl:'https://www.science.org/doi/10.1126/scitranslmed.abl7634',
+    credits: 'Alzheimer’s Association',
+    articleAuthor: 'Alzheimer’s Association',
+    originalDate: 'Feb 16, 2023',
+    originalUrl: 'https://www.science.org/doi/10.1126/scitranslmed.abl7634',
     content: `:
     Vascular dementia is a type of dementia that results from conditions that block or reduce blood flow to the brain, leading to a decline in thinking skills. The brain relies on a constant supply of oxygen and nutrients from the blood, and inadequate blood flow can damage and kill brain cells, leading to cognitive impairment.
 
@@ -216,20 +260,22 @@ export const blogData: BlogPost[] = [
     -Treatment and Outcomes:
     Currently, there are no drugs specifically approved by the FDA to treat symptoms of vascular dementia, but there is evidence that drugs approved to treat Alzheimer's symptoms may offer a modest benefit in people with vascular dementia. Treatment primarily focuses on preventing the worsening of vascular dementia by treating the underlying disease, such as hypertension, hyperlipidemia, or diabetes mellitus. Controlling risk factors that may increase the likelihood of further damage to the brain's blood vessels is also an important treatment strategy, and individuals should work with their physicians to develop the best treatment plan for their symptoms and circumstances. Vascular dementia shortens life span, and some data suggest that those who develop dementia following a stroke survive an average of three years. However, cognitive changes may sometimes improve during recovery and rehabilitation from a stroke as the brain generates new blood vessels and brain cells outside the damaged region take on new roles.
     
-    In conclusion, vascular dementia is a type of dementia caused by conditions that reduce blood flow to the brain, leading to a decline in thinking skills. Maintaining a healthy lifestyle, professional cognitive screening, and treating underlying diseases are key to preventing the worsening of vascular dementia and improving outcomes.`
+    In conclusion, vascular dementia is a type of dementia caused by conditions that reduce blood flow to the brain, leading to a decline in thinking skills. Maintaining a healthy lifestyle, professional cognitive screening, and treating underlying diseases are key to preventing the worsening of vascular dementia and improving outcomes.`,
   },
   {
-    id:'7',
-    title:`Nutrition and Dementia`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1679950954/Blogs/nutiriton_and_dementia_bhkuy6.jpg',
+    id: '7',
+    title: `Nutrition and Dementia`,
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1679950954/Blogs/nutiriton_and_dementia_bhkuy6.jpg',
     author: 'Cassidy Boniface',
-    postedDate:'Mar 23, 2023',
-    category:'Center Care Health',
+    postedDate: 'Mar 23, 2023',
+    category: 'Center Care Health',
     tags: ['Dementia', 'Caregiver', 'Heart Disease', 'Nutrition'],
-    credits:'',
-    articleAuthor:'Cassidy Boniface',
+    credits: '',
+    articleAuthor: 'Cassidy Boniface',
     originalDate: '',
-    originalUrl:'https://www.alz.org/alzheimers-dementia/what-is-dementia/types-of-dementia/vascular-dementia',
+    originalUrl:
+      'https://www.alz.org/alzheimers-dementia/what-is-dementia/types-of-dementia/vascular-dementia',
     content: `:
     -March is nutrition awareness month!
 
@@ -282,20 +328,22 @@ export const blogData: BlogPost[] = [
     In summary, try your best to include B vitamins and omega-3 fatty acids, and exclude alcohol and fried foods containing trans and saturated fats in your diet in order to prevent and mitigate the development of dementia.
 
     Always consult your physician before beginning vitamin supplementations.
-  `
+  `,
   },
   {
-    id:'8',
-    title:`The Unsung Heroes: Caregivers in Canada and Their Crucial Role in Supporting Elders with Dementia`,
-    image: 'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1683261475/Blogs/caregivers_lzcrcm.jpg',
+    id: '8',
+    title: `The Unsung Heroes: Caregivers in Canada and Their Crucial Role in Supporting Elders with Dementia`,
+    image:
+      'https://res.cloudinary.com/dzn1ds8vx/image/upload/v1683261475/Blogs/caregivers_lzcrcm.jpg',
     author: 'Gerardo Rodriguez',
-    postedDate:'April 15, 2023',
-    category:'Center Care Health',
+    postedDate: 'April 15, 2023',
+    category: 'Center Care Health',
     tags: ['Dementia', 'Caregiver', 'Heart Disease', 'Nutrition'],
-    credits:'',
-    articleAuthor:'Gerardo Rodriguez',
+    credits: '',
+    articleAuthor: 'Gerardo Rodriguez',
     originalDate: '',
-    originalUrl:' https://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Dementia-numbers',
+    originalUrl:
+      ' https://alzheimer.ca/en/Home/About-dementia/What-is-dementia/Dementia-numbers',
     content: `
     Introduction:
 
@@ -343,34 +391,39 @@ export const blogData: BlogPost[] = [
     6. Turcotte, M. (2013). Family caregiving: What are the consequences? Statistics Canada. 
     Retrieved from https://www150.statcan.gc.ca/n1/pub/75-006-x/2013001/article/11858-eng.htm
     7. Government of Canada. (2018). A Dementia Strategy for Canada: Together We Aspire. Retrieved from https://www.canada.ca/en/public-health/services/publications/diseases-conditions/dementia-strategy.html
-  `
+  `,
   },
 ];
 
-export const resourcesData: ResourcesData[]= [
+export const resourcesData: ResourcesData[] = [
   {
-      title: 'Dementia Dialogue',
-      description: 'David Harvey, founder of Dementia Dialogue & Canadian has created podcasts that relate to the Canadian Healthcare system.',
-      url: 'https://www.dementiadialogue.ca/season-2-part-1',
+    title: 'Dementia Dialogue',
+    description:
+      'David Harvey, founder of Dementia Dialogue & Canadian has created podcasts that relate to the Canadian Healthcare system.',
+    url: 'https://www.dementiadialogue.ca/season-2-part-1',
   },
   {
-      title: 'Dementia Advocacy Canada',
-      description: 'Dementia Advocacy Canada (DAC) works with partners and community organizations, to connect patients and caregivers with the education and support they require',
-      url: 'https://www.dementiacanada.com/',
+    title: 'Dementia Advocacy Canada',
+    description:
+      'Dementia Advocacy Canada (DAC) works with partners and community organizations, to connect patients and caregivers with the education and support they require',
+    url: 'https://www.dementiacanada.com/',
   },
   {
-      title: 'Dementia Alliance International',
-      description: 'Dementia Alliance International is a registered non-profit organisation whose membership is exclusively for people with a medically confirmed diagnosis of any type of a dementia from all around the world.',
-      url: 'https://www.dementiaallianceinternational.org/',
+    title: 'Dementia Alliance International',
+    description:
+      'Dementia Alliance International is a registered non-profit organisation whose membership is exclusively for people with a medically confirmed diagnosis of any type of a dementia from all around the world.',
+    url: 'https://www.dementiaallianceinternational.org/',
   },
   {
-      title: 'Toronto Memory Program',
-      description: 'Toronto Memory Program is a multidisciplinary, community based medical facility specializing in the diagnosis and treatment of Alzheimer’s disease and related disorders.',
-      url: 'https://www.torontomemoryprogram.com/',
+    title: 'Toronto Memory Program',
+    description:
+      'Toronto Memory Program is a multidisciplinary, community based medical facility specializing in the diagnosis and treatment of Alzheimer’s disease and related disorders.',
+    url: 'https://www.torontomemoryprogram.com/',
   },
   {
-      title: 'Canadian Association for Mental Health - Memory Clinic',
-      description: 'This clinic offers assessments and follow-up services for clients over the age of 50 with concerns regarding memory or other areas of cognition.',
-      url: 'https://www.camh.ca/en/your-care/programs-and-services/memory-clinic',
+    title: 'Canadian Association for Mental Health - Memory Clinic',
+    description:
+      'This clinic offers assessments and follow-up services for clients over the age of 50 with concerns regarding memory or other areas of cognition.',
+    url: 'https://www.camh.ca/en/your-care/programs-and-services/memory-clinic',
   },
-]
+];

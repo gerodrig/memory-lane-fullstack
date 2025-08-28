@@ -14,21 +14,37 @@ export const Team = ({ id = '' }) => {
     <>
       <section
         // id="team"
-        className={`${style['board-members']} ${styleSection['section-bg']} my-5`}>
+        className={`${style['board-members']} ${styleSection['section-bg']} my-5`}
+      >
         <div className="container" data-aos="fade-up">
           <div className={`${styleSection['section-title']}`}>
-          <SeparatorIdentifier id={id} />
+            <SeparatorIdentifier id={id} />
             <h2>Our Team</h2>
             <p className={styleSection.description}>
-              We are grateful for the guidance and support from friends, family,
-              knowledgeable individuals in this field, and especially the
-              Alzheimer Society of York Region, Seneca Social Service Worker
-              Gerontology Program (King Campus). Memory Lane Home Living was
-              designed to address the issues that many of us encounter on the
-              dementia journey.
+              Board members, staff and volunteers all contribute meaningfully to
+              our no-for-profit dementia initiative. Our board members bring
+              collective wisdom and expertise to ensure decisions are made in
+              the best interest of the organization. Our dedicated staff manage
+              day-to-day operations and report to the board, while a robust and
+              diverse group of volunteers strengthens our efforts in countless
+              ways.
+            </p>
+            <br />
+            <p className={styleSection.description}>
+              Clients also play an active role in daily life at Memory Lane Home
+              Living, contributing through their own volunteerism and
+              participating in activities that give back to the broader
+              community – our Music from the Heart Choir being a shining
+              example.
+            </p>
+            <br />
+            <p className={styleSection.description}>
+              It is this vibrant community of board members, staff, volunteers,
+              and clients that makes it possible for us to fulfill our mission
+              and create meaningful impact every day.
             </p>
           </div>
-{/* 
+          {/* 
           <div className="row d-flex justify-content-center">
           <SeparatorIdentifier id="founder" />
             {data
@@ -39,23 +55,35 @@ export const Team = ({ id = '' }) => {
 
           </div> */}
           <div className="row d-flex justify-content-center">
-          <SeparatorIdentifier id="board-directors" />
+            <SeparatorIdentifier id="board-directors" />
             {data
-              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes('director'))
+              .filter(({ jobTitle }) => jobTitle?.toLowerCase().includes(','))
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}
-
           </div>
 
           <div className="row d-flex justify-content-center">
-          {data
-              .filter(({ jobTitle }) => !jobTitle?.toLowerCase().includes('director'))
+            <SeparatorIdentifier id="board-directors" />
+            {data
+              .filter(
+                ({ jobTitle }) =>
+                  jobTitle?.toLowerCase() === 'board of directors'
+              )
+              .map((member, index) => (
+                <TeamMember key={index} {...member} />
+              ))}
+          </div>
+
+          <div className="row d-flex justify-content-center">
+            {data
+              .filter(
+                ({ jobTitle }) => !jobTitle?.toLowerCase().includes('director')
+              )
               .map((member, index) => (
                 <TeamMember key={index} {...member} />
               ))}
 
-              
             {/* <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch"
               data-bs-toggle="modal"
@@ -105,6 +133,8 @@ const TeamMember = ({
   name = '',
   jobTitle = '',
   description = '',
+  imageFit = 'cover',
+  imagePosition = 'center top',  imageScale = 1
 }) => {
   const [showModal, setShowModal] = useState(false);
   const handleClose = () => setShowModal(false);
@@ -116,7 +146,8 @@ const TeamMember = ({
         show={showModal}
         key={image}
         centered
-        onHide={() => setShowModal(false)}>
+        onHide={() => setShowModal(false)}
+      >
         <Modal.Body>
           <Image
             src={image}
@@ -131,7 +162,8 @@ const TeamMember = ({
           <Button
             variant="primary"
             className={styleSection['modal-button']}
-            onClick={handleClose}>
+            onClick={handleClose}
+          >
             Close
           </Button>
         </Modal.Footer>
@@ -141,14 +173,19 @@ const TeamMember = ({
           className={style.member}
           data-aos="fade-up"
           data-aos-delay="100"
-          onClick={() => setShowModal(true)}>
+          onClick={() => setShowModal(true)}
+        >
           <div className={style['member-img']}>
             <Image
               src={image}
-              width={220}
-              height={280}
-              className="img-fluid"
-              alt=""
+              alt={name}
+              // width={220}
+              // height={280}
+              // className="img-fluid"
+              layout='fill'
+              objectFit={imageFit}
+              objectPosition={imagePosition}
+              style={{ transform: `scale(${imageScale})` }}
             />
           </div>
 
